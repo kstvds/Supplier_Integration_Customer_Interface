@@ -1,0 +1,10 @@
+ChromeDriver = D:\\Driver\\chromedriver.exe
+IEDriver = D:\\IEDriverServer.exe
+URL = https://ctssuppliers2.stage.aws.dotw.com/_myadmin/
+ExcelPathSearch = D:\\Supplier Repository\\MyAdmin\\TestDataSearch.xlsx
+ScreenShot=D:/Supplier Repository/MyAdmin/Test Screenshots
+ReportPath=D:\\Supplier Repository\\Report\\Report.html
+ExcelPathSave = D:\\Supplier Repository\\MyAdmin\\TestDataSave.xlsx
+ExcelPathBook = D:\\Supplier Repository\\MyAdmin\\TestDataBook.xlsm
+ExcelPathTourVisa = D:\\Supplier Repository\\MyAdmin\\TestDataTourVisa.xlsx
+ExcelPathAmendCancel = D:\\Supplier Repository\\MyAdmin\\TestDataAmendCancel.xlsx
