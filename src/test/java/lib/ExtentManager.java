@@ -16,7 +16,7 @@ public class ExtentManager {
 		if (extent == null) {
 
 			extent = new ExtentReports(Config.GenerateReport());
-			extent.loadConfig(new File(System.getProperty("user.dir") + "ReportsConfig.xml"));
+			extent.loadConfig(new File(System.getProperty("D:\\Supplier MyAdmin\\Supplier_Integration_MyAdmin\\Supplier_Admin\\") + "ReportsConfig.xml"));
 
 			extent.addSystemInfo("Selenium Version", "2.53.0").addSystemInfo("Environment", "QA");
 
