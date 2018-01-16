@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SupplierSuite]">
+  <parameter name="browsername" value="CH"/>
+  <test name="SupplierTestone(failed)">
+    <parameter name="browsername" value="CH"/>
+    <classes>
+      <class name="Search.Search_Prepay_Within_DeadLine">
+        <methods>
+          <include name="getResult"/>
+          <include name="afterTest"/>
+          <include name="SearchPrepay" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Search.Search_Prepay_Within_DeadLine -->
+    </classes>
+  </test> <!-- SupplierTestone(failed) -->
+</suite> <!-- Failed suite [SupplierSuite] -->

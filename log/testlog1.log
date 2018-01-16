@@ -1,0 +1,563 @@
+2018-01-12 18:38:16,589 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:38:19,531 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:38:25,146 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:38:25,532 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//*[@id='password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir7172_31803}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cb62744d67186004f74a3c822a4567cc
+*** Element info: {Using=name, value=//*[@id='password']}
+2018-01-12 18:39:55,438 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:39:58,378 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:40:04,173 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:40:05,568 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//*[@id='password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir6360_11312}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: a0d4c94c22e6f10f92d5d1d1bd34c4c0
+*** Element info: {Using=name, value=//*[@id='password']}
+2018-01-12 18:41:10,514 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:41:13,441 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:41:19,130 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:41:20,500 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//*[@id='password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir7260_4228}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 398957650a9e43227f6502d6dd834ffa
+*** Element info: {Using=name, value=//*[@id='password']}
+2018-01-12 18:42:26,980 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:42:29,863 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:42:37,027 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:42:38,407 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//input[@id='password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir5900_22473}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 89fe9e6ace492f881e48cb65b0e31609
+*** Element info: {Using=name, value=//input[@id='password']}
+2018-01-12 18:45:05,316 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:45:08,794 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:45:15,766 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:45:17,149 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//input[@name='Password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir1168_14985}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6560a37f8ca7abeef851798523202a9c
+*** Element info: {Using=name, value=//input[@name='Password']}
+2018-01-12 18:47:10,940 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:47:13,912 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:47:19,612 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:47:20,983 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//input[@name='Password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir6868_25437}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: bb2eabae1dca77379cfd9b87d296f009
+*** Element info: {Using=name, value=//input[@name='Password']}
+2018-01-12 18:49:02,090 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:49:04,997 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:49:12,170 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:49:13,562 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//input[@name='Password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir7156_9373}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 623148c4ea8a0a1fc0dfda31968fffa3
+*** Element info: {Using=name, value=//input[@name='Password']}
+2018-01-12 18:50:41,060 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:50:43,862 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:50:50,870 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:50:54,235 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//input[@name='Password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir7096_28457}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: e44c1e5b55180491e70d8c0e3c7a435d
+*** Element info: {Using=name, value=//input[@name='Password']}
+2018-01-12 18:52:45,522 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:52:48,695 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:52:56,043 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:52:59,407 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//input[@name='Password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir10232_21615}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 330b135b61d38e78dccc33de12e83500
+*** Element info: {Using=name, value=//input[@name='Password']}
+2018-01-12 18:54:43,531 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:54:47,332 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:54:54,634 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:55:00,065 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"name","selector":"//input[@name='Password']"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir12788_18416}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: da8f419ae1f83b5e62004845bb4aac13
+*** Element info: {Using=name, value=//input[@name='Password']}
+2018-01-12 18:56:38,669 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:56:41,545 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:56:47,290 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:57:22,823 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.name: //input[@name='Password']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir10180_12573}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: ce33010c38f36ceee0013f8b61da02bd
+2018-01-12 18:59:20,394 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:59:23,399 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 18:59:29,136 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 18:59:59,861 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.name: //input[@name='Password' and @id='password']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir12324_1986}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: fd8330c6682077d51721de471eb8b19e
+2018-01-12 19:00:21,144 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:00:30,978 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:00:33,627 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:00:33,781 [main] INFO Search_Prepay - Unable to locate element: {"method":"xpath","selector":"//*[@id='userID']"}
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=7.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7be215ee-c40d-4be2-8cad-b16e8423cba5
+*** Element info: {Using=xpath, value=//*[@id='userID']}
+2018-01-12 19:05:58,285 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:06:01,576 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:06:07,279 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:06:38,335 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.name: //input[@name='Password' and @id='password']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir12792_19537}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 346a671ca3f168a8e256700007a5a2e0
+2018-01-12 19:14:41,730 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:14:44,910 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:14:50,525 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:15:21,015 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.name: //input[@placeholder="PASSWORD"]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir616_13407}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 22d28969df8a5be5235129e86b62a69b
+2018-01-12 19:22:38,101 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:22:41,244 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:22:48,431 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:23:01,666 [main] INFO Search_Prepay - Login Successful
+2018-01-12 19:25:14,726 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:25:17,959 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:25:24,874 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:25:37,744 [main] INFO Search_Prepay - Login Successful
+2018-01-12 19:25:59,748 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:26:03,240 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:26:08,768 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:26:22,361 [main] INFO Search_Prepay - Login Successful
+2018-01-12 19:29:11,832 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:29:15,042 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:29:20,700 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:29:34,356 [main] INFO Search_Prepay - Login Successful
+2018-01-12 19:40:17,473 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:40:20,660 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:40:27,539 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:40:40,487 [main] INFO Search_Prepay - Login Successful
+2018-01-12 19:40:42,738 [main] INFO Search_Prepay - Applying search Filters
+2018-01-12 19:40:42,739 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-12 19:41:18,073 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:41:21,300 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:41:27,030 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:41:42,178 [main] INFO Search_Prepay - Login Successful
+2018-01-12 19:42:12,734 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.xpath: /html/body/div[13]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir12044_18582}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: abb2df1e55bf3073ed1f4f970c40624b
+2018-01-12 19:42:32,147 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:42:35,264 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:42:40,793 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:42:55,909 [main] INFO Search_Prepay - Login Successful
+2018-01-12 19:43:05,545 [main] INFO Search_Prepay - disconnected: unable to send message to renderer
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 148 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir10160_28308}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 3fad625ebcb89237d890666930be2c6a
+*** Element info: {Using=xpath, value=/html/body/div[13]}
+2018-01-12 19:44:04,817 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:44:08,005 [main] INFO Search_Prepay - Browser Opened
+2018-01-12 19:44:15,145 [main] INFO Search_Prepay - Test Case Started
+2018-01-12 19:44:30,329 [main] INFO Search_Prepay - Login Successful
+2018-01-12 19:44:32,571 [main] INFO Search_Prepay - Applying search Filters
+2018-01-12 19:44:32,571 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 11:17:34,368 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 11:17:40,507 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 11:17:46,204 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 11:17:59,781 [main] INFO Search_Prepay - Login Successful
+2018-01-15 11:18:02,156 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 11:18:02,156 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 11:23:38,484 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 11:23:41,615 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 11:23:47,271 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 11:23:59,147 [main] INFO Search_Prepay - Login Successful
+2018-01-15 11:24:01,423 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 11:24:01,424 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 12:06:48,064 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 12:06:52,144 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 12:07:00,720 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 12:07:15,184 [main] INFO Search_Prepay - Login Successful
+2018-01-15 12:07:17,432 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 12:07:17,432 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 12:08:30,890 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 12:08:34,714 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 12:08:40,676 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 12:08:52,804 [main] INFO Search_Prepay - Login Successful
+2018-01-15 12:08:55,044 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 12:08:55,044 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 12:32:56,638 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 12:32:59,716 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 12:33:06,363 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 12:33:21,684 [main] INFO Search_Prepay - Login Successful
+2018-01-15 12:33:23,921 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 12:33:23,921 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 12:37:04,010 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 12:37:07,353 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 12:37:16,371 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 12:37:31,173 [main] INFO Search_Prepay - Login Successful
+2018-01-15 12:37:33,405 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 12:37:33,406 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 13:15:13,205 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:15:16,561 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 13:15:23,265 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:15:35,664 [main] INFO Search_Prepay - Login Successful
+2018-01-15 13:15:37,913 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 13:15:37,913 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 13:25:09,322 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:25:12,738 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 13:25:19,709 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:25:35,799 [main] INFO Search_Prepay - Login Successful
+2018-01-15 13:26:02,839 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:26:06,561 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 13:26:14,426 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:26:29,947 [main] INFO Search_Prepay - Login Successful
+2018-01-15 13:27:00,148 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.xpath: /html/body/div[13]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir6156_21271}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 354a1b46d14c9bef4a563576ad165eda
+2018-01-15 13:27:33,679 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:27:36,989 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 13:27:44,196 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:27:57,788 [main] INFO Search_Prepay - Login Successful
+2018-01-15 13:27:59,934 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 13:27:59,935 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 13:30:02,079 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:30:05,459 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 13:30:11,062 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:30:24,562 [main] INFO Search_Prepay - Login Successful
+2018-01-15 13:30:26,727 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 13:30:26,728 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 13:30:56,800 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.xpath: //*[@id='destination']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir2892_24743}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: dc4117d16eb5f2672810b8401a486910
+2018-01-15 13:33:31,170 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:33:34,398 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 13:33:40,923 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 13:34:11,957 [main] INFO Search_Prepay - Login Successful
+2018-01-15 13:34:14,112 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 13:34:14,113 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 13:34:16,730 [main] INFO Search_Prepay - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="15/01/2018" data-validations="required"> is not clickable at point (332, 232). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir13120_27893}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 0ae06f67ba07aaebae62fbcc3f067ae4
+2018-01-15 14:02:15,955 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:02:19,100 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 14:02:25,722 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:02:54,115 [main] INFO Search_Prepay - Login Successful
+2018-01-15 14:03:17,524 [main] INFO Search_Prepay - disconnected: unable to send message to renderer
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir7480_22623}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: f00f2eaa3b41d6772f185fa79259ac16
+*** Element info: {Using=xpath, value=/html/body/div[13]}
+2018-01-15 14:03:56,946 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:04:00,840 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 14:04:11,766 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:04:41,095 [main] INFO Search_Prepay - Login Successful
+2018-01-15 14:05:18,749 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.xpath: /html/body/div[13]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir2796_1321}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: eec9c235ffc4c935f2cc3136e1c1728a
+2018-01-15 14:06:08,236 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:06:11,499 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 14:06:17,176 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:06:45,359 [main] INFO Search_Prepay - Login Successful
+2018-01-15 14:06:54,607 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 14:06:54,608 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 14:07:24,673 [main] INFO Search_Prepay - Timed out after 30 seconds waiting for visibility of element located by By.xpath: //*[@id='destinationId']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir16264_27997}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 6a28ce4e32f5188131d1a4cd80042a47
+2018-01-15 14:09:05,116 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:09:09,047 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 14:09:19,089 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:09:32,176 [main] INFO Search_Prepay - Login Successful
+2018-01-15 14:09:41,415 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 14:09:41,416 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 14:13:28,747 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:13:33,310 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 14:13:43,156 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 14:14:14,871 [main] INFO Search_Prepay - Login Successful
+2018-01-15 14:14:24,221 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 14:14:24,222 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 15:10:05,728 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 15:10:10,196 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 15:10:16,058 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 15:10:30,477 [main] INFO Search_Prepay - Login Successful
+2018-01-15 15:10:39,768 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 15:10:39,768 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 15:10:42,373 [main] INFO Search_Prepay - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="15/01/2018" data-validations="required"> is not clickable at point (532, 232). Other element would receive the click: <div class="introjs-helperLayer" style="width: 42px; height:26px; top:226px;left: 775px;">...</div>
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 46 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir18384_26822}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cc4083d343cba51f9429d3244e5f0b70
+2018-01-15 15:13:15,771 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 15:13:18,960 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 15:13:24,958 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 15:13:38,309 [main] INFO Search_Prepay - Login Successful
+2018-01-15 15:13:47,560 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 15:13:47,561 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 15:13:50,157 [main] INFO Search_Prepay - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="15/01/2018" data-validations="required"> is not clickable at point (532, 232). Other element would receive the click: <div class="introjs-helperLayer" style="width: 42px; height:26px; top:226px;left: 775px;">...</div>
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir15168_17175}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: d34a5dc1b15744cbb5f54f18b8b5357d
+2018-01-15 15:15:26,119 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 15:15:29,506 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 15:15:35,661 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 15:15:49,048 [main] INFO Search_Prepay - Login Successful
+2018-01-15 15:15:58,240 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 15:15:58,240 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 15:27:06,099 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 15:27:09,269 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 15:27:15,273 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 15:27:29,132 [main] INFO Search_Prepay - Login Successful
+2018-01-15 15:27:31,298 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 15:27:31,298 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 16:10:43,182 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 16:10:46,679 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 16:10:53,729 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 16:11:05,426 [main] INFO Search_Prepay - Login Successful
+2018-01-15 16:11:07,614 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 16:11:07,614 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 16:11:19,463 [main] INFO Search_Prepay - Hotel Search Complete Prepay
+2018-01-15 17:55:27,476 [main] INFO Search_Credit - Test Case Started
+2018-01-15 17:55:31,095 [main] INFO Search_Credit - Browser Opened
+2018-01-15 17:55:38,183 [main] INFO Search_Credit - Test Case Started
+2018-01-15 17:55:51,001 [main] INFO Search_Credit - Login Successful
+2018-01-15 17:55:53,226 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 17:55:53,227 [main] INFO Search_Credit - Starting HotelSearch Credit
+2018-01-15 17:56:06,053 [main] INFO Search_Credit - Hotel Search Complete Credit
+2018-01-15 18:08:52,789 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:08:59,017 [main] INFO Search_Credit - Browser Opened
+2018-01-15 18:09:06,499 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:09:21,223 [main] INFO Search_Credit - Login Successful
+2018-01-15 18:09:24,671 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 18:09:24,672 [main] INFO Search_Credit - Starting HotelSearch Credit
+2018-01-15 18:09:28,129 [main] INFO Search_Credit - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="15/01/2018" data-validations="required"> is not clickable at point (532, 232). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 52 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir14528_11099}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: cdbc79332858058826e3631a863160b6
+2018-01-15 18:16:24,922 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:16:28,838 [main] INFO Search_Credit - Browser Opened
+2018-01-15 18:16:36,654 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:16:52,509 [main] INFO Search_Credit - Login Successful
+2018-01-15 18:16:54,670 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 18:16:54,671 [main] INFO Search_Credit - Starting HotelSearch Credit
+2018-01-15 18:17:07,296 [main] INFO Search_Credit - Hotel Search Complete Credit
+2018-01-15 18:25:36,025 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:25:40,141 [main] INFO Search_Credit - Browser Opened
+2018-01-15 18:25:45,773 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:26:14,945 [main] INFO Search_Credit - Login Successful
+2018-01-15 18:26:17,120 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 18:26:17,121 [main] INFO Search_Credit - Starting HotelSearch Credit Card
+2018-01-15 18:26:19,934 [main] INFO Search_Credit - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="15/01/2018" data-validations="required"> is not clickable at point (532, 232). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir14628_3073}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 59db927410674756c93b0a3154a2ad9f
+2018-01-15 18:38:23,714 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:38:27,368 [main] INFO Search_Credit - Browser Opened
+2018-01-15 18:38:33,162 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:38:47,169 [main] INFO Search_Credit - Login Successful
+2018-01-15 18:38:49,367 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 18:38:49,368 [main] INFO Search_Credit - Starting HotelSearch Credit Card
+2018-01-15 18:39:09,072 [main] INFO Search_Credit - Hotel Search Complete Credit Card
+2018-01-15 18:56:43,613 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:56:47,995 [main] INFO Search_Credit - Browser Opened
+2018-01-15 18:56:55,057 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:57:07,636 [main] INFO Search_Credit - Login Successful
+2018-01-15 18:57:09,888 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 18:57:09,889 [main] INFO Search_Credit - Starting HotelSearch Credit
+2018-01-15 18:57:40,159 [main] INFO Search_Credit - Timed out after 30 seconds waiting for visibility of element located by By.xpath: //*[@id='destination']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir16904_10875}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: deb4baea2aa62836235d73831a739ee0
+2018-01-15 18:58:13,013 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:58:16,333 [main] INFO Search_Credit - Browser Opened
+2018-01-15 18:58:22,456 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:58:35,049 [main] INFO Search_Credit - Login Successful
+2018-01-15 18:58:37,230 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 18:58:37,231 [main] INFO Search_Credit - Starting HotelSearch Credit
+2018-01-15 18:58:55,974 [main] INFO Search_Credit - null
+2018-01-15 18:59:17,836 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:59:21,073 [main] INFO Search_Credit - Browser Opened
+2018-01-15 18:59:28,886 [main] INFO Search_Credit - Test Case Started
+2018-01-15 18:59:43,673 [main] INFO Search_Credit - Login Successful
+2018-01-15 18:59:45,848 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 18:59:45,849 [main] INFO Search_Credit - Starting HotelSearch Credit
+2018-01-15 18:59:57,989 [main] INFO Search_Credit - Hotel Search Complete Credit
+2018-01-15 19:14:34,783 [main] INFO Search_Credit - Test Case Started
+2018-01-15 19:14:40,244 [main] INFO Search_Credit - Browser Opened
+2018-01-15 19:14:47,817 [main] INFO Search_Credit - Test Case Started
+2018-01-15 19:15:00,619 [main] INFO Search_Credit - Login Successful
+2018-01-15 19:15:02,952 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 19:15:02,952 [main] INFO Search_Credit - Starting HotelSearch Credit Card
+2018-01-15 19:15:05,964 [main] INFO Search_Credit - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="15/01/2018" data-validations="required"> is not clickable at point (532, 232). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 57 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir17584_7798}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8d2052d37f8097c6b384b3d6c580e2cc
+2018-01-15 19:15:49,820 [main] INFO Search_Credit - Test Case Started
+2018-01-15 19:15:53,671 [main] INFO Search_Credit - Browser Opened
+2018-01-15 19:15:59,839 [main] INFO Search_Credit - Test Case Started
+2018-01-15 19:16:12,670 [main] INFO Search_Credit - Login Successful
+2018-01-15 19:16:14,862 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 19:16:14,863 [main] INFO Search_Credit - Starting HotelSearch Credit Card
+2018-01-15 19:16:26,114 [main] INFO Search_Credit - Hotel Search Complete Credit Card
+2018-01-15 19:19:23,292 [main] INFO Search_Credit - Test Case Started
+2018-01-15 19:19:26,871 [main] INFO Search_Credit - Browser Opened
+2018-01-15 19:19:37,007 [main] INFO Search_Credit - Test Case Started
+2018-01-15 19:19:48,144 [main] INFO Search_Credit - Login Successful
+2018-01-15 19:19:50,339 [main] INFO Search_Credit - Applying search Filters
+2018-01-15 19:19:50,339 [main] INFO Search_Credit - Starting HotelSearch Credit Card
+2018-01-15 19:20:00,634 [main] INFO Search_Credit - Hotel Search Complete Credit Card
+2018-01-15 19:37:31,920 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 19:37:37,610 [main] INFO Search_Prepay - Browser Opened
+2018-01-15 19:37:47,793 [main] INFO Search_Prepay - Test Case Started
+2018-01-15 19:38:03,813 [main] INFO Search_Prepay - Login Successful
+2018-01-15 19:38:06,006 [main] INFO Search_Prepay - Applying search Filters
+2018-01-15 19:38:06,006 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-15 19:38:18,608 [main] INFO Search_Prepay - Hotel Search Complete Prepay
+2018-01-16 18:59:08,028 [main] INFO Search_Prepay - Test Case Started
+2018-01-16 18:59:13,474 [main] INFO Search_Prepay - Browser Opened
+2018-01-16 18:59:20,959 [main] INFO Search_Prepay - Test Case Started
+2018-01-16 18:59:33,921 [main] INFO Search_Prepay - Login Successful
+2018-01-16 18:59:36,347 [main] INFO Search_Prepay - Applying search Filters
+2018-01-16 18:59:36,348 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-16 18:59:56,315 [main] INFO Search_Prepay - no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Within Deadline')]"}
+  (Session info: chrome=58.0.3029.110)
+  (Driver info: chromedriver=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.30.477700 (0057494ad8732195794a7b32078424f92a5fce41), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir3720_13017}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=58.0.3029.110, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, unexpectedAlertBehaviour=}]
+Session ID: 8a5381b76b6af3b7b6a17d6203b2bde5
+*** Element info: {Using=xpath, value=//span[contains(text(),'Within Deadline')]}
+2018-01-16 19:00:58,314 [main] INFO Search_Prepay - Test Case Started
+2018-01-16 19:01:02,197 [main] INFO Search_Prepay - Browser Opened
+2018-01-16 19:01:08,435 [main] INFO Search_Prepay - Test Case Started
+2018-01-16 19:01:21,123 [main] INFO Search_Prepay - Login Successful
+2018-01-16 19:01:23,335 [main] INFO Search_Prepay - Applying search Filters
+2018-01-16 19:01:23,336 [main] INFO Search_Prepay - Starting HotelSearch Prepay
+2018-01-16 19:01:32,215 [main] INFO Search_Prepay - Hotel Search Complete Prepay
