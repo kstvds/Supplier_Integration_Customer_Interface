@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-SupplierSuite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +101,17 @@
                     <div class="method-list-content passed suite-SupplierSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SupplierSuite" title="Search.Search_Prepay_Within_DeadLine" hash-for-method="SearchPrepay(CH)">SearchPrepay(CH)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SupplierSuite" title="Search.Search_Credit_Within_DeadLine" hash-for-method="SearchCreditWithinDeadLine(CH)">SearchCreditWithinDeadLine(CH)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SupplierSuite" title="Search.Search_Credit_Card_Within_DeadLine" hash-for-method="SearchCreditWithinDeadLine(CH)">SearchCreditWithinDeadLine(CH)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SupplierSuite" title="Search.Search_Prepay_Within_DeadLine" hash-for-method="SearchPrepayWithinDeadLine(CH)">SearchPrepayWithinDeadLine(CH)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SupplierSuite -->
@@ -119,14 +129,46 @@
           <div class="suite-SupplierSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">Search.Search_Credit_Card_Within_DeadLine</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchCreditWithinDeadLine(CH)">
+                  </a> <!-- SearchCreditWithinDeadLine(CH) -->
+                  <span class="method-name">SearchCreditWithinDeadLine</span>
+                  <span class="parameters">(CH)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SupplierSuite-class-passed -->
+          <div class="suite-SupplierSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Search.Search_Credit_Within_DeadLine</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchCreditWithinDeadLine(CH)">
+                  </a> <!-- SearchCreditWithinDeadLine(CH) -->
+                  <span class="method-name">SearchCreditWithinDeadLine</span>
+                  <span class="parameters">(CH)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SupplierSuite-class-passed -->
+          <div class="suite-SupplierSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">Search.Search_Prepay_Within_DeadLine</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SearchPrepay(CH)">
-                  </a> <!-- SearchPrepay(CH) -->
-                  <span class="method-name">SearchPrepay</span>
+                  <a name="SearchPrepayWithinDeadLine(CH)">
+                  </a> <!-- SearchPrepayWithinDeadLine(CH) -->
+                  <span class="method-name">SearchPrepayWithinDeadLine</span>
                   <span class="parameters">(CH)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -148,6 +190,18 @@
       &lt;class name=&quot;Search.Search_Prepay_Within_DeadLine&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SupplierTestone --&gt;
+  &lt;test name=&quot;SupplierTesttwo&quot;&gt;
+    &lt;parameter name=&quot;browsername&quot; value=&quot;CH&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Search.Search_Credit_Within_DeadLine&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SupplierTesttwo --&gt;
+  &lt;test name=&quot;SupplierTestthree&quot;&gt;
+    &lt;parameter name=&quot;browsername&quot; value=&quot;CH&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Search.Search_Credit_Card_Within_DeadLine&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SupplierTestthree --&gt;
 &lt;/suite&gt; &lt;!-- SupplierSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,6 +214,12 @@
             <ul>
               <li>
                 <span class="test-name">SupplierTestone (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SupplierTesttwo (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SupplierTestthree (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +245,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SearchPrepay')
-data.setCell(0, 2, 'Search.Search_Prepay_Within_DeadLine')
-data.setCell(0, 3, 34659);
+data.setCell(0, 1, 'SearchCreditWithinDeadLine')
+data.setCell(0, 2, 'Search.Search_Credit_Within_DeadLine')
+data.setCell(0, 3, 36370);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SearchPrepayWithinDeadLine')
+data.setCell(1, 2, 'Search.Search_Prepay_Within_DeadLine')
+data.setCell(1, 3, 35661);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SearchCreditWithinDeadLine')
+data.setCell(2, 2, 'Search.Search_Credit_Card_Within_DeadLine')
+data.setCell(2, 3, 35223);
 window.suiteTableData['SupplierSuite']= { tableData: data, tableDiv: 'times-div-SupplierSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-SupplierSuite">
               </div> <!-- times-div-SupplierSuite -->
             </div> <!-- times-div -->
@@ -222,16 +290,46 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Search.Search_Prepay_Within_DeadLine</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">SearchPrepay(CH)</span>
+                <span class="method-name">SearchPrepayWithinDeadLine(CH)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=SearchPrepay status=SUCCESS method=Search_Prepay_Within_DeadLine.SearchPrepay(java....)</span>
-                <span class="method-start">34660 ms</span>
+                <span class="method-name">getResult([TestResult name=SearchPrepayWithinDeadLine status=SUCCESS method=Search_Prepay_Within_DeadLine.Sear...)</span>
+                <span class="method-start">35662 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">34663 ms</span>
+                <span class="method-start">35665 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Search.Search_Credit_Within_DeadLine</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SearchCreditWithinDeadLine(CH)</span>
+                <span class="method-start">38445 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">74816 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=SearchCreditWithinDeadLine status=SUCCESS method=Search_Credit_Within_DeadLine.Sear...)</span>
+                <span class="method-start">74816 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Search.Search_Credit_Card_Within_DeadLine</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SearchCreditWithinDeadLine(CH)</span>
+                <span class="method-start">75006 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=SearchCreditWithinDeadLine status=SUCCESS method=Search_Credit_Card_Within_DeadLine...)</span>
+                <span class="method-start">110229 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">110230 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

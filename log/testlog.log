@@ -561,3 +561,49 @@ Session ID: 8a5381b76b6af3b7b6a17d6203b2bde5
 2018-01-16 19:01:23,335 - Search_Prepay -INFO - Applying search Filters
 2018-01-16 19:01:23,336 - Search_Prepay -INFO - Starting HotelSearch Prepay
 2018-01-16 19:01:32,215 - Search_Prepay -INFO - Hotel Search Complete Prepay
+2018-01-17 12:06:22,725 - Search_Prepay_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:06:26,601 - Search_Prepay_Within_DeadLine -INFO - Browser Opened
+2018-01-17 12:06:32,812 - Search_Prepay_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:06:47,141 - Search_Prepay_Within_DeadLine -INFO - Login Successful
+2018-01-17 12:06:49,415 - Search_Prepay_Within_DeadLine -INFO - Applying search Filters
+2018-01-17 12:06:49,415 - Search_Prepay_Within_DeadLine -INFO - Starting HotelSearch Prepay Within DeadLine
+2018-01-17 12:07:01,964 - Search_Prepay_Within_DeadLine -INFO - Hotel Search Complete Prepay Within DeadLine
+2018-01-17 12:07:05,082 - Search_Credit_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:07:08,425 - Search_Credit_Within_DeadLine -INFO - Browser Opened
+2018-01-17 12:07:14,720 - Search_Credit_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:07:28,983 - Search_Credit_Within_DeadLine -INFO - Login Successful
+2018-01-17 12:07:31,166 - Search_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-01-17 12:07:31,167 - Search_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-01-17 12:07:42,471 - Search_Credit_Within_DeadLine -INFO - Hotel Search Complete c Within DeadLine
+2018-01-17 12:07:42,652 - Search_Credit_Card_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:07:45,745 - Search_Credit_Card_Within_DeadLine -INFO - Browser Opened
+2018-01-17 12:07:52,215 - Search_Credit_Card_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:08:06,383 - Search_Credit_Card_Within_DeadLine -INFO - Login Successful
+2018-01-17 12:08:08,584 - Search_Credit_Card_Within_DeadLine -INFO - Applying search Filters
+2018-01-17 12:08:08,584 - Search_Credit_Card_Within_DeadLine -INFO - Starting HotelSearch Credit Card Within DeadLine
+2018-01-17 12:08:17,095 - Search_Credit_Card_Within_DeadLine -INFO - Hotel Search Complete Credit Card Within DeadLine
+2018-01-17 12:11:10,976 - Search_Prepay_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:11:14,573 - Search_Prepay_Within_DeadLine -INFO - Browser Opened
+2018-01-17 12:11:21,290 - Search_Prepay_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:11:34,559 - Search_Prepay_Within_DeadLine -INFO - Login Successful
+2018-01-17 12:11:36,786 - Search_Prepay_Within_DeadLine -INFO - Applying search Filters
+2018-01-17 12:11:36,787 - Search_Prepay_Within_DeadLine -INFO - Starting HotelSearch Prepay Within DeadLine
+2018-01-17 12:11:45,844 - Search_Prepay_Within_DeadLine -INFO - Hotel Search Complete Prepay Within DeadLine
+2018-01-17 12:11:48,773 - Search_Credit_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:11:51,786 - Search_Credit_Within_DeadLine -INFO - Browser Opened
+2018-01-17 12:11:58,493 - Search_Credit_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:12:14,263 - Search_Credit_Within_DeadLine -INFO - Login Successful
+2018-01-17 12:12:16,435 - Search_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-01-17 12:12:16,436 - Search_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-01-17 12:12:24,999 - Search_Credit_Within_DeadLine -INFO - Hotel Search Complete c Within DeadLine
+2018-01-17 12:12:25,247 - Search_Credit_Card_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:12:28,730 - Search_Credit_Card_Within_DeadLine -INFO - Browser Opened
+2018-01-17 12:12:35,810 - Search_Credit_Card_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:12:49,486 - Search_Credit_Card_Within_DeadLine -INFO - Login Successful
+2018-01-17 12:12:51,648 - Search_Credit_Card_Within_DeadLine -INFO - Applying search Filters
+2018-01-17 12:12:51,648 - Search_Credit_Card_Within_DeadLine -INFO - Starting HotelSearch Credit Card Within DeadLine
+2018-01-17 12:13:00,412 - Search_Credit_Card_Within_DeadLine -INFO - Hotel Search Complete Credit Card Within DeadLine
+2018-01-17 12:21:05,406 - Search_Prepay_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:21:09,069 - Search_Prepay_Within_DeadLine -INFO - Browser Opened
+2018-01-17 12:21:15,495 - Search_Prepay_Within_DeadLine -INFO - Test Case Started
+2018-01-17 12:21:27,648 - Search_Prepay_Within_DeadLine -INFO - Login Successful

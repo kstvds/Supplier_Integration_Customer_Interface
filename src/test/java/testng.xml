@@ -6,16 +6,16 @@
 <class name="Search.Search_Prepay_Within_DeadLine" />
 </classes> 
 </test>
-<!--test name="SupplierTesttwo" >
+<test name="SupplierTesttwo" >
 <parameter name="browsername" value="CH"/>
 <classes> 
-<class name="Cancel_MyAdmin.Cancel_Prepay" />
+<class name="Search.Search_Credit_Within_DeadLine" />
 </classes> 
 </test>
 <test name="SupplierTestthree" >
 <parameter name="browsername" value="CH"/>
 <classes> 
-<class name="Cancel_MyAdmin.Cancel_Credit" />
+<class name="Search.Search_Credit_Card_Within_DeadLine" />
 </classes> 
-</test-->
+</test>
 </suite>
