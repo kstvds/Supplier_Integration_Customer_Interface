@@ -169,7 +169,7 @@ public class Search_Credit_NFR {
                          String actualresult= driverqa.findElement(Search.HotelTitle).getText();
                          String ActualNFR = driverqa.findElement(Search.Deadlinetext).getText();
                          Assert.assertTrue(ActualNFR.contains(expectedNFR));
-						 Assert.assertTrue(actualresult.contains(expectedresult));
+						 Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 						 test.log(LogStatus.INFO, "Ending HotelSearch Credit NFR");
 						 test.log(LogStatus.PASS, "PASSED HotelSearch Credit NFR");
 						 logger.info("Hotel Search Complete Credit NFR");

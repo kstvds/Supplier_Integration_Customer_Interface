@@ -11,6 +11,10 @@ public class Search {
     public static final By HotelTitle = By.xpath("//h3[@class='unitName']");
     public static final By Deadlinetext = By.xpath("//span[contains(text(),'Within Deadline')]");
     public static final By NFRtext = By.xpath("//span[contains(text(),'Strictly Non Refundable')]");
+    public static final By NoOfAdults = By.xpath("//*[@id='search_row1']/div[2]/span[1]/input//following::input[1]");
+    public static final By NoOfChilds = By.xpath("//*[@id='search_row1']/div[2]/span[1]/input//following::input[2]");
+    public static final By PaymentOption = By.xpath("//*[@id='searchFieldsContainer']/div[6]/div[2]/button");
+    public static final By NetPay = By.xpath("//*[@id='searchFieldsContainer']/div[6]/div[2]/div/ul/li[1]/a/span[1]");
     //public static final By Submit = By.xpath("//*[@id='button']");
     // static final By Closetuto = By.xpath("/html/body/div[13]");
 }

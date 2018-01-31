@@ -21,6 +21,7 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import ObjectRepository.Booking;
 import ObjectRepository.LoginPage;
 import ObjectRepository.Search;
 import Utility.Configuration;
@@ -164,12 +165,18 @@ public class Search_Credit_Within_DeadLine {
 						 String expectedDaedline=excel.getData(0, 30, 1);
 						 driverqa.findElement(Search.SearchBtn).click();
 						 wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
+						 WebElement element = driverqa.findElement(Booking.ClickDeadline);
+						 JavascriptExecutor js = (JavascriptExecutor) driverqa;
+						 js.executeScript("var evt = document.createEvent('MouseEvents');" + "evt.initMouseEvent('click',true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0,null);" + "arguments[0].dispatchEvent(evt);", element); 
+						 wait.until(ExpectedConditions.visibilityOfElementLocated(Search.Deadlinetext));
+
 						 Thread.sleep(2000);
 						 obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit_Within_DeadLine/Search-Result.jpg");
                          String actualresult= driverqa.findElement(Search.HotelTitle).getText();
                          String ActualDeadLine = driverqa.findElement(Search.Deadlinetext).getText();
+                         
                          Assert.assertTrue(ActualDeadLine.contains(expectedDaedline));
-						 Assert.assertTrue(actualresult.contains(expectedresult));
+						 Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 						 test.log(LogStatus.INFO, "Ending HotelSearch Credit Within DeadLine");
 						 test.log(LogStatus.PASS, "PASSED HotelSearch Credit Within DeadLine");
 						 logger.info("Hotel Search Complete c Within DeadLine");

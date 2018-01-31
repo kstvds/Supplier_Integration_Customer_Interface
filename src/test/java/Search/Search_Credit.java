@@ -46,7 +46,7 @@ public class Search_Credit {
 	//NewAccoBooking acco = new NewAccoBooking();
 	//Operations opo = new Operations();
 	Logger logger = Logger.getLogger("Search_Credit");
-	
+	String errorpath;
 	 @Test
 	 @Parameters({ "browsername" })
 	  public void SearchCredit(String browsername) throws Exception {
@@ -109,6 +109,7 @@ public class Search_Credit {
 			
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Log-In.jpg");
 			test.log(LogStatus.FAIL, "Login");
+			errorpath=Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Log-In.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -170,13 +171,14 @@ public class Search_Credit {
 						 Thread.sleep(2000);
 						 obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit/Search-Result.jpg");
                          String actualresult= driverqa.findElement(Search.HotelTitle).getText();
-						 Assert.assertTrue(actualresult.contains(expectedresult));
+						 Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 						 test.log(LogStatus.INFO, "Ending HotelSearch Credit");
 						 test.log(LogStatus.PASS, "PASSED HotelSearch Credit");
 						 logger.info("Hotel Search Complete Credit");
 			} catch (Exception e) {
 				test.log(LogStatus.FAIL, "Hotel Search Credit");
-				obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit/Search-Result.jpg");
+				obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Search-Result.jpg");
+				errorpath=Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Search-Result.jpg";
 				logger.info(e.getMessage());
 				test.log(LogStatus.FAIL, e.getMessage());
 				rep.endTest(test);
@@ -186,12 +188,14 @@ public class Search_Credit {
 				
 			  	 }
 	 @AfterMethod
-		public void getResult(ITestResult result) {
-			if (result.getStatus() == ITestResult.FAILURE) {
-				test.log(LogStatus.FAIL, result.getThrowable());
-			}
-			rep.endTest(test);
-		}
+	 public void getResult(ITestResult result) {
+		  if (result.getStatus() == ITestResult.FAILURE) {
+		 
+		  test.log(LogStatus.FAIL, test.addScreenCapture(errorpath));
+		  test.log(LogStatus.FAIL, result.getThrowable());
+		  }
+		  rep.endTest(test);
+		  }
 
 		@AfterTest
 		public void afterTest() {

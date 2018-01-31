@@ -167,7 +167,7 @@ public class Search_Credit_Card {
 						 Thread.sleep(2000);
 						 obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit_Card/Search-Result.jpg");
                          String actualresult= driverqa.findElement(Search.HotelTitle).getText();
-						 Assert.assertTrue(actualresult.contains(expectedresult));
+						 Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 						 test.log(LogStatus.INFO, "Ending HotelSearch Credit Card");
 						 test.log(LogStatus.PASS, "PASSED HotelSearch Credit Card");
 						 logger.info("Hotel Search Complete Credit Card");

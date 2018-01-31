@@ -3,10 +3,10 @@
 <test name="SupplierTestone" >
 <parameter name="browsername" value="CH"/>
 <classes> 
-<class name="Search.Search_Prepay_Within_DeadLine" />
+<class name="Booking.Credit_Book" />
 </classes> 
 </test>
-<test name="SupplierTesttwo" >
+<!--test name="SupplierTesttwo" >
 <parameter name="browsername" value="CH"/>
 <classes> 
 <class name="Search.Search_Credit_Within_DeadLine" />
@@ -17,5 +17,5 @@
 <classes> 
 <class name="Search.Search_Credit_Card_Within_DeadLine" />
 </classes> 
-</test>
+</test-->
 </suite>

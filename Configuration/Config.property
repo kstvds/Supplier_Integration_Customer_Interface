@@ -1,4 +1,4 @@
-ChromeDriver = D:\\Driver\\chromedriver.exe
+ChromeDriver = D:\\chromedriver.exe
 IEDriver = D:\\IEDriverServer.exe
 URL = https://ctssuppliers2.stage.aws.dotw.com/_myadmin/
 ExcelPathSearch = D:\\Supplier Repository\\MyAdmin\\TestDataSearch.xlsx

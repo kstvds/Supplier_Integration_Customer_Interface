@@ -176,7 +176,7 @@ public class Search_Prepay {
 						 Thread.sleep(2000);
 						 obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Prepay/Search-Result.jpg");
                          String actualresult= driverqa.findElement(Search.HotelTitle).getText();
-						 Assert.assertTrue(actualresult.contains(expectedresult));
+						 Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 						 test.log(LogStatus.INFO, "Ending HotelSearch Prepay");
 						 test.log(LogStatus.PASS, "PASSED HotelSearch Prepay");
 						 logger.info("Hotel Search Complete Prepay");
