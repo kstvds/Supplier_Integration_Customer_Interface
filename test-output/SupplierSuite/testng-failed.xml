@@ -5,13 +5,13 @@
   <test name="SupplierTestone(failed)">
     <parameter name="browsername" value="CH"/>
     <classes>
-      <class name="Booking.Credit_Book">
+      <class name="Booking.Credit_Card_Book">
         <methods>
-          <include name="CreditBook" invocation-numbers="0"/>
+          <include name="CreditCardBook" invocation-numbers="0"/>
           <include name="getResult"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- Booking.Credit_Book -->
+      </class> <!-- Booking.Credit_Card_Book -->
     </classes>
   </test> <!-- SupplierTestone(failed) -->
 </suite> <!-- Failed suite [SupplierSuite] -->

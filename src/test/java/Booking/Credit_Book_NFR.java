@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +26,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import ObjectRepository.Booking;
 import ObjectRepository.LoginPage;
-//import ObjectRepository.NewAccoBooking;
 import ObjectRepository.PaymentPage;
 import ObjectRepository.Search;
 import Utility.Configuration;
@@ -38,9 +36,9 @@ import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
 /* #######  Test for accommodation booking for Credit user #########
-######  Scenario Logs In, Books a specified hotel   ##### */
+######  Scenario Logs In, Books a specified hotel with NFR rate ##### */
 
-public class Credit_Book {
+public class Credit_Book_NFR {
 	public WebDriver driverqa;
 	ExtentTest test;
 	String errorpath;
@@ -50,14 +48,14 @@ public class Credit_Book {
 	Takescreenshot obj = new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
 	LoginPage login = new LoginPage();
-	Logger logger = Logger.getLogger("Credit_Book");
+	Logger logger = Logger.getLogger("Credit_Book_NFR");
 
 	/* ####### Passing browser as parameters in test ######### **/
 
 	@Test
 	@Parameters({ "browsername" })
-	public void CreditBook(String browsername) throws Exception {
-		test = rep.startTest("Credit Book");
+	public void CreditBookNFR(String browsername) throws Exception {
+		test = rep.startTest("Credit Book NFR");
 		excel = new ExcelDataConfig(Config.getExcelPathBook());
 		PropertyConfigurator.configure("Log4j.properties");
 		logger.info("Test Case Started");
@@ -109,13 +107,13 @@ public class Credit_Book {
 			// driverqa.findElement(LoginPage.Closetuto).click();
 			action.sendKeys(Keys.ESCAPE).build().perform();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Log-In.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Log-In.jpg");
 
 		} catch (Throwable e) {
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Log-In.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR/Log-In.jpg");
 			test.log(LogStatus.FAIL, "Login");
-			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Log-In.jpg";
+			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR/Log-In.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -133,9 +131,9 @@ public class Credit_Book {
 			Thread.sleep(2000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.dest));
 			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
-			Thread.sleep(4000);
+			Thread.sleep(3000);
 			action.sendKeys(Keys.ARROW_DOWN).build().perform();
-			// action.sendKeys(Keys.ARROW_DOWN).build().perform();
+			//action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action.sendKeys(Keys.ENTER).build().perform();
 			test.log(LogStatus.INFO, "Selecting dates");
 			driverqa.findElement(Search.InDate).click();
@@ -170,9 +168,7 @@ public class Credit_Book {
 
 			}
 			test.log(LogStatus.PASS, "Selection of Dates");
-			WebElement Noofchilds = driverqa.findElement(Search.NoOfChilds);
-			Noofchilds.clear();
-			Noofchilds.sendKeys("01");
+			
 			driverqa.findElement(Search.PaymentOption).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.NetPay));
 			Thread.sleep(1000);
@@ -182,22 +178,27 @@ public class Credit_Book {
 
 			actions.moveToElement(element).click().perform();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Filters.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Filters.jpg");
 			String expectedresult = excel.getData(0, 9, 1);
 			driverqa.findElement(Search.SearchBtn).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Search-Result.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
+			String expectedNFR=excel.getData(0, 32, 1);
+			String ActualNFR = driverqa.findElement(Search.Deadlinetext).getText();
+			Assert.assertTrue(ActualNFR.contains(expectedNFR));
+			
 			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
+			//Assert.assertTrue(ToolTipText2.equalsIgnoreCase(expectedresult));
 			test.log(LogStatus.INFO, "Ending HotelSearch Credit");
 			test.log(LogStatus.PASS, "PASSED HotelSearch Credit");
 			logger.info("Hotel Search Complete Credit");
 		} catch (Throwable e) {
 			test.log(LogStatus.FAIL, "Hotel Search Credit");
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Search-Result.jpg");
-			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Search-Result.jpg";
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR/Search-Result.jpg");
+			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR/Search-Result.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -240,14 +241,14 @@ public class Credit_Book {
 			}
 			driverqa.findElement(Booking.PrcdToBookChckBox).click();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Passenger-Details.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Passenger-Details.jpg");
 			logger.info("Entered Passenger details");
 			test.log(LogStatus.INFO, "Entered Passenger details");
 			test.log(LogStatus.PASS, "Passenger details");
 			driverqa.findElement(Booking.ConfirmBook).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ProccedToBook));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Confirm-Booking.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Confirm-Booking.jpg");
 			driverqa.findElement(Booking.ProccedToBook).click();
 			logger.info("Entering Payment details");
 			test.log(LogStatus.INFO, "Entering Payment details");
@@ -273,7 +274,7 @@ public class Credit_Book {
 			test.log(LogStatus.INFO, "Entered Payment details");
 			test.log(LogStatus.PASS, "Payment details");
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Payment-Details.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Payment-Details.jpg");
 			driverqa.findElement(PaymentPage.AcceptTerms).click();
 			Thread.sleep(3000);
 			driverqa.findElement(PaymentPage.AcceptTerms).click();
@@ -281,7 +282,7 @@ public class Credit_Book {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ViewBooking));
 			JavascriptExecutor js = (JavascriptExecutor) driverqa;
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Search-Booking-Page.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Search-Booking-Page.jpg");
 			// WebElement Element = driverqa.findElement(Booking.Invoice);
 			// This will scroll the page till the element is found
 			/*
@@ -291,11 +292,11 @@ public class Credit_Book {
 			 */
 			driverqa.findElement(Booking.ViewBooking).click();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Booking-Details1.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Booking-Details1.jpg");
 			// This will scroll the page till the element is found
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Booking-Details2.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR/Booking-Details2.jpg");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingStatusPrepay));
 			String ExpectedStatus = "Confirmed";
 			String ExpectedNoOfAdults = "2 Adults";
@@ -311,8 +312,8 @@ public class Credit_Book {
 
 		} catch (Throwable e) {
 			test.log(LogStatus.FAIL, "Hotel Book Prepay");
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Booking.jpg");
-			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Booking.jpg";
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR/Booking.jpg");
+			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR/Booking.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -340,6 +341,7 @@ public class Credit_Book {
 
 		rep.endTest(test);
 		rep.flush();
-		//driverqa.close();
+		driverqa.close();
 	}
 }
+

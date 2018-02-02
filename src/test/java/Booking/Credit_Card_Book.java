@@ -133,7 +133,7 @@ public class Credit_Card_Book {
 			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
 			Thread.sleep(3000);
 			action.sendKeys(Keys.ARROW_DOWN).build().perform();
-			// action.sendKeys(Keys.ARROW_DOWN).build().perform();
+			//action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action.sendKeys(Keys.ENTER).build().perform();
 			test.log(LogStatus.INFO, "Selecting dates");
 			driverqa.findElement(Search.InDate).click();
@@ -266,18 +266,21 @@ public class Credit_Card_Book {
 					Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card/Search-Booking-Page.jpg");
 			// WebElement Element = driverqa.findElement(Booking.Invoice);
 			// This will scroll the page till the element is found
-			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card/View-Booking.jpg");
 			/*
 			 * Assert.assertTrue(ActualStatus.equalsIgnoreCase(ExpectedStatus));
 			 * Assert.assertTrue(ActualNoOfAdults.equalsIgnoreCase(
 			 * ExpectedNoOfAdults));
 			 */
 			driverqa.findElement(Booking.ViewBooking).click();
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card/Booking-Details1.jpg");
+			// This will scroll the page till the element is found
+			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card/Booking-Details2.jpg");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingStatusPrepay));
 			String ExpectedStatus = "Confirmed";
-			String ExpectedNoOfAdults = "01 Adults";
+			String ExpectedNoOfAdults = "01 Adult";
 			String ActualNoOfAdults = driverqa.findElement(Booking.noOfAdultsPrepay).getText();
 			String ActualStatus = driverqa.findElement(Booking.BookingStatusPrepay).getText();
 			Assert.assertTrue(ActualStatus.equalsIgnoreCase(ExpectedStatus));

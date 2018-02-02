@@ -3,19 +3,19 @@
 <test name="SupplierTestone" >
 <parameter name="browsername" value="CH"/>
 <classes> 
-<class name="Booking.Credit_Book" />
+<class name="Booking.Credit_Card_Book" />
 </classes> 
 </test>
-<!--test name="SupplierTesttwo" >
+<!-- <test name="SupplierTesttwo" >
 <parameter name="browsername" value="CH"/>
 <classes> 
-<class name="Search.Search_Credit_Within_DeadLine" />
+<class name="Booking.Prepay_Book" />
 </classes> 
 </test>
 <test name="SupplierTestthree" >
 <parameter name="browsername" value="CH"/>
 <classes> 
-<class name="Search.Search_Credit_Card_Within_DeadLine" />
+<class name="Booking.Credit_Book" />
 </classes> 
-</test-->
+</test> -->
 </suite>

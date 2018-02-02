@@ -2518,3 +2518,559 @@ System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arc
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir12032_32541}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
 Session ID: 69d53b08c75c12ba3b5a1fbaa563f80c
+2018-02-01 10:56:32,299 [main] INFO Credit_Book - Test Case Started
+2018-02-01 10:56:37,661 [main] INFO Credit_Book - Browser Opened
+2018-02-01 10:56:44,976 [main] INFO Credit_Book - Test Case Started
+2018-02-01 10:56:57,847 [main] INFO Credit_Book - Login Successful
+2018-02-01 10:57:00,281 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 10:57:00,281 [main] INFO Credit_Book - Starting HotelSearch Credit Card
+2018-02-01 10:57:15,380 [main] INFO Credit_Book - Hotel Search Complete Credit Card
+2018-02-01 10:57:15,380 [main] INFO Credit_Book - Starting Hotel Book
+2018-02-01 10:57:15,436 [main] INFO Credit_Book - Selecting Room
+2018-02-01 10:57:15,497 [main] INFO Credit_Book - Room Selected
+2018-02-01 10:57:15,497 [main] INFO Credit_Book - Entering Passenger details
+2018-02-01 10:57:26,436 [main] INFO Credit_Book - Entered Passenger details
+2018-02-01 10:57:32,203 [main] INFO Credit_Book - Entering Payment details
+2018-02-01 10:57:34,987 [main] INFO Credit_Book - Entered Payment details
+2018-02-01 10:58:55,589 [main] INFO Credit_Book - Test Case Started
+2018-02-01 10:58:58,608 [main] INFO Credit_Book - Browser Opened
+2018-02-01 10:59:01,209 [main] INFO Credit_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@id='viewButton']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir18400_15948}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 8696f70466292ba2fdf33faff900cf91
+2018-02-01 10:59:05,219 [main] INFO Credit_Book - Test Case Started
+2018-02-01 10:59:18,166 [main] INFO Credit_Book - Login Successful
+2018-02-01 10:59:20,495 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 10:59:20,495 [main] INFO Credit_Book - Starting HotelSearch Credit Card
+2018-02-01 10:59:35,679 [main] INFO Credit_Book - Hotel Search Complete Credit Card
+2018-02-01 10:59:35,679 [main] INFO Credit_Book - Starting Hotel Book
+2018-02-01 10:59:35,712 [main] INFO Credit_Book - Selecting Room
+2018-02-01 10:59:35,780 [main] INFO Credit_Book - Room Selected
+2018-02-01 10:59:35,780 [main] INFO Credit_Book - Entering Passenger details
+2018-02-01 10:59:46,703 [main] INFO Credit_Book - Entered Passenger details
+2018-02-01 10:59:52,368 [main] INFO Credit_Book - Entering Payment details
+2018-02-01 10:59:55,198 [main] INFO Credit_Book - Entered Payment details
+2018-02-01 11:01:21,167 [main] INFO Credit_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@id='viewButton']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir17824_744}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ef3cfd5433e18b7fa42214d896a32d96
+2018-02-01 11:02:07,905 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:02:10,883 [main] INFO Credit_Book - Browser Opened
+2018-02-01 11:02:17,138 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:02:29,122 [main] INFO Credit_Book - Login Successful
+2018-02-01 11:02:31,468 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 11:02:31,468 [main] INFO Credit_Book - Starting HotelSearch Credit Card
+2018-02-01 11:02:46,314 [main] INFO Credit_Book - Hotel Search Complete Credit Card
+2018-02-01 11:02:46,315 [main] INFO Credit_Book - Starting Hotel Book
+2018-02-01 11:02:46,347 [main] INFO Credit_Book - Selecting Room
+2018-02-01 11:02:46,406 [main] INFO Credit_Book - Room Selected
+2018-02-01 11:02:46,407 [main] INFO Credit_Book - Entering Passenger details
+2018-02-01 11:02:57,334 [main] INFO Credit_Book - Entered Passenger details
+2018-02-01 11:03:03,063 [main] INFO Credit_Book - Entering Payment details
+2018-02-01 11:03:05,841 [main] INFO Credit_Book - Entered Payment details
+2018-02-01 11:04:32,366 [main] INFO Credit_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@id='viewButton']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir19052_22170}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 169da232dc4f90bd3abea67340f6b4e0
+2018-02-01 11:17:31,160 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:17:34,273 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 11:17:40,878 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:17:53,518 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 11:17:55,868 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 11:17:55,868 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting HotelSearch Prepay
+2018-02-01 11:18:37,177 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Timed out after 30 seconds waiting for visibility of element located by By.xpath: //h3[@class='unitName']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir10400_11497}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bf921b5524395d781d0023dfc0d73df9
+2018-02-01 11:19:04,604 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:19:07,626 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 11:19:13,827 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:19:24,927 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 11:19:27,277 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 11:19:27,277 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting HotelSearch Prepay
+2018-02-01 11:19:42,212 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Hotel Search Complete Prepay
+2018-02-01 11:19:42,213 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting Hotel Book
+2018-02-01 11:19:42,244 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Selecting Room
+2018-02-01 11:19:42,309 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Room Selected
+2018-02-01 11:19:42,309 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Entering Passenger details
+2018-02-01 11:19:48,636 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Entered Passenger details
+2018-02-01 11:20:19,162 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Timed out after 30 seconds waiting for visibility of element located by By.xpath: //*[contains(text(),'Confirmed')]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir17912_17284}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: aaa0a9e0484940a5dc142450c3f60f1e
+2018-02-01 11:20:37,209 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:20:40,203 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 11:20:46,473 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:20:57,857 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 11:21:00,203 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 11:21:00,204 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting HotelSearch Prepay
+2018-02-01 11:21:14,136 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Hotel Search Complete Prepay
+2018-02-01 11:21:14,136 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting Hotel Book
+2018-02-01 11:21:14,172 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Selecting Room
+2018-02-01 11:21:14,236 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Room Selected
+2018-02-01 11:21:14,236 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Entering Passenger details
+2018-02-01 11:21:45,009 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Timed out after 30 seconds waiting for visibility of element located by By.xpath: //*[@id='pbcpFirstName1_0']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir11484_22359}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: aacf370bce41c3a6e4ffd3a4afc1b865
+2018-02-01 11:22:13,361 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:22:16,351 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 11:22:22,492 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:22:33,541 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 11:22:35,886 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 11:22:35,886 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting HotelSearch Prepay
+2018-02-01 11:22:49,948 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Hotel Search Complete Prepay
+2018-02-01 11:22:49,948 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting Hotel Book
+2018-02-01 11:22:49,979 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Selecting Room
+2018-02-01 11:22:50,042 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Room Selected
+2018-02-01 11:22:50,042 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Entering Passenger details
+2018-02-01 11:22:56,434 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Entered Passenger details
+2018-02-01 11:23:11,485 [main] INFO Prepay_Book_Same_First_Name_Last_Name - expected [true] but found [false]
+2018-02-01 11:27:54,537 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:27:57,573 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 11:28:04,554 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 11:28:15,568 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 11:28:17,898 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 11:28:17,899 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting HotelSearch Prepay
+2018-02-01 11:28:32,125 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Hotel Search Complete Prepay
+2018-02-01 11:28:32,125 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting Hotel Book
+2018-02-01 11:28:32,158 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Selecting Room
+2018-02-01 11:28:32,220 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Room Selected
+2018-02-01 11:28:32,220 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Entering Passenger details
+2018-02-01 11:28:38,585 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Entered Passenger details
+2018-02-01 11:28:55,710 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Hotel Booked
+2018-02-01 11:38:46,815 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:38:49,800 [main] INFO Credit_Book - Browser Opened
+2018-02-01 11:38:55,858 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:39:10,019 [main] INFO Credit_Book - Login Successful
+2018-02-01 11:39:12,380 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 11:39:12,380 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 11:39:27,675 [main] INFO Credit_Book - Hotel Search Complete Credit
+2018-02-01 11:39:27,676 [main] INFO Credit_Book - Starting Hotel Book
+2018-02-01 11:39:27,706 [main] INFO Credit_Book - Selecting Room
+2018-02-01 11:39:27,770 [main] INFO Credit_Book - Room Selected
+2018-02-01 11:39:27,770 [main] INFO Credit_Book - Entering Passenger details
+2018-02-01 11:39:39,242 [main] INFO Credit_Book - Entered Passenger details
+2018-02-01 11:39:44,945 [main] INFO Credit_Book - Entering Payment details
+2018-02-01 11:39:47,723 [main] INFO Credit_Book - Entered Payment details
+2018-02-01 11:41:13,708 [main] INFO Credit_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@id='viewButton']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir15660_6604}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ff2d2face86533e0bb6460486d5c6a5a
+2018-02-01 11:42:40,425 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:42:43,456 [main] INFO Credit_Book - Browser Opened
+2018-02-01 11:42:50,624 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:43:02,635 [main] INFO Credit_Book - Login Successful
+2018-02-01 11:43:04,990 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 11:43:04,990 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 11:43:19,840 [main] INFO Credit_Book - Hotel Search Complete Credit
+2018-02-01 11:43:19,841 [main] INFO Credit_Book - Starting Hotel Book
+2018-02-01 11:43:19,873 [main] INFO Credit_Book - Selecting Room
+2018-02-01 11:43:19,949 [main] INFO Credit_Book - Room Selected
+2018-02-01 11:43:19,950 [main] INFO Credit_Book - Entering Passenger details
+2018-02-01 11:43:53,225 [main] INFO Credit_Book - Entered Passenger details
+2018-02-01 11:43:58,899 [main] INFO Credit_Book - Entering Payment details
+2018-02-01 11:44:01,694 [main] INFO Credit_Book - Entered Payment details
+2018-02-01 11:44:28,525 [main] INFO Credit_Book - expected [true] but found [false]
+2018-02-01 11:45:10,464 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:45:13,821 [main] INFO Credit_Book - Browser Opened
+2018-02-01 11:45:20,084 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:45:31,076 [main] INFO Credit_Book - Login Successful
+2018-02-01 11:45:33,441 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 11:45:33,442 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 11:45:41,937 [main] INFO Credit_Book - unknown error: Element <span class="text">...</span> is not clickable at point (827, 266). Other element would receive the click: <div class="ui-datepicker-title">...</div>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 42 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir10140_2169}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6bd4d35e780a5b296487188ce93529d5
+2018-02-01 11:46:13,078 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:46:16,226 [main] INFO Credit_Book - Browser Opened
+2018-02-01 11:46:22,806 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:46:34,256 [main] INFO Credit_Book - Login Successful
+2018-02-01 11:46:36,591 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 11:46:36,592 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 11:46:45,126 [main] INFO Credit_Book - unknown error: Element <span class="text">...</span> is not clickable at point (827, 266). Other element would receive the click: <div class="ui-datepicker-title">...</div>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 49 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir23416_16933}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 39cdf876751970e3714d097edfddf23f
+2018-02-01 11:49:51,855 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:49:54,906 [main] INFO Credit_Book - Browser Opened
+2018-02-01 11:50:01,440 [main] INFO Credit_Book - Test Case Started
+2018-02-01 11:50:13,638 [main] INFO Credit_Book - Login Successful
+2018-02-01 11:50:15,979 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 11:50:15,980 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 11:50:31,324 [main] INFO Credit_Book - Hotel Search Complete Credit
+2018-02-01 11:50:31,324 [main] INFO Credit_Book - Starting Hotel Book
+2018-02-01 11:50:31,358 [main] INFO Credit_Book - Selecting Room
+2018-02-01 11:50:31,422 [main] INFO Credit_Book - Room Selected
+2018-02-01 11:50:31,422 [main] INFO Credit_Book - Entering Passenger details
+2018-02-01 11:50:40,509 [main] INFO Credit_Book - Entered Passenger details
+2018-02-01 11:50:46,315 [main] INFO Credit_Book - Entering Payment details
+2018-02-01 11:50:49,098 [main] INFO Credit_Book - Entered Payment details
+2018-02-01 11:51:14,727 [main] INFO Credit_Book - Hotel Booked
+2018-02-01 12:29:54,348 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 12:29:57,573 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 12:30:03,910 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 12:30:19,075 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 12:30:21,414 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 12:30:21,414 [main] INFO Prepay_Book_Same_First_Name_Last_Name - Starting HotelSearch Prepay
+2018-02-01 12:31:04,697 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 12:31:08,064 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 12:31:14,548 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 12:31:27,636 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 12:31:29,974 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 12:31:29,974 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Starting HotelSearch Credit Card
+2018-02-01 12:31:45,028 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Hotel Search Complete Credit Card
+2018-02-01 12:31:45,028 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Starting Hotel Book
+2018-02-01 12:31:45,060 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Selecting Room
+2018-02-01 12:31:45,124 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Room Selected
+2018-02-01 12:31:45,124 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Entering Passenger details
+2018-02-01 12:31:51,899 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Entered Passenger details
+2018-02-01 12:31:58,150 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Entering Payment details
+2018-02-01 12:31:59,492 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Entered Payment details
+2018-02-01 12:32:23,247 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Hotel Booked
+2018-02-01 12:37:54,409 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 12:37:57,512 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 12:38:03,851 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 12:38:18,930 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 12:38:21,268 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 12:38:21,268 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Starting HotelSearch Credit Card
+2018-02-01 12:38:36,017 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Hotel Search Complete Credit Card
+2018-02-01 12:38:36,018 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Starting Hotel Book
+2018-02-01 12:38:36,062 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Selecting Room
+2018-02-01 12:38:36,172 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Room Selected
+2018-02-01 12:38:36,172 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Entering Passenger details
+2018-02-01 12:38:43,712 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Entered Passenger details
+2018-02-01 12:38:49,542 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Entering Payment details
+2018-02-01 12:38:51,033 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Entered Payment details
+2018-02-01 12:39:16,649 [main] INFO Credit_Card_Book_Same_First_Name_Last_Name - Hotel Booked
+2018-02-01 13:01:02,981 [main] INFO Credit_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 13:01:06,284 [main] INFO Credit_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 13:01:12,499 [main] INFO Credit_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 13:01:25,253 [main] INFO Credit_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 13:01:27,615 [main] INFO Credit_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 13:01:27,616 [main] INFO Credit_Book_Same_First_Name_Last_Name - Starting HotelSearch Credit
+2018-02-01 13:02:17,878 [main] INFO Credit_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 13:02:20,990 [main] INFO Credit_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 13:02:27,235 [main] INFO Credit_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 13:02:39,400 [main] INFO Credit_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 13:02:41,749 [main] INFO Credit_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 13:02:41,749 [main] INFO Credit_Book_Same_First_Name_Last_Name - Starting HotelSearch Credit
+2018-02-01 13:02:57,821 [main] INFO Credit_Book_Same_First_Name_Last_Name - Hotel Search Complete Credit
+2018-02-01 13:02:57,821 [main] INFO Credit_Book_Same_First_Name_Last_Name - Starting Hotel Book
+2018-02-01 13:02:57,852 [main] INFO Credit_Book_Same_First_Name_Last_Name - Selecting Room
+2018-02-01 13:02:57,913 [main] INFO Credit_Book_Same_First_Name_Last_Name - Room Selected
+2018-02-01 13:02:57,913 [main] INFO Credit_Book_Same_First_Name_Last_Name - Entering Passenger details
+2018-02-01 13:02:59,874 [main] INFO Credit_Book_Same_First_Name_Last_Name - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //h3[@class='unitName']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir18668_21800}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 746c035c2f1e5ff0769a2bfe468dde47
+2018-02-01 13:03:04,272 [main] INFO Credit_Book_Same_First_Name_Last_Name - Entered Passenger details
+2018-02-01 13:03:10,502 [main] INFO Credit_Book_Same_First_Name_Last_Name - Entering Payment details
+2018-02-01 13:03:13,284 [main] INFO Credit_Book_Same_First_Name_Last_Name - Entered Payment details
+2018-02-01 13:03:41,353 [main] INFO Credit_Book_Same_First_Name_Last_Name - expected [true] but found [false]
+2018-02-01 13:05:48,478 [main] INFO Credit_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 13:05:51,487 [main] INFO Credit_Book_Same_First_Name_Last_Name - Browser Opened
+2018-02-01 13:05:57,810 [main] INFO Credit_Book_Same_First_Name_Last_Name - Test Case Started
+2018-02-01 13:06:10,799 [main] INFO Credit_Book_Same_First_Name_Last_Name - Login Successful
+2018-02-01 13:06:13,168 [main] INFO Credit_Book_Same_First_Name_Last_Name - Applying search Filters
+2018-02-01 13:06:13,168 [main] INFO Credit_Book_Same_First_Name_Last_Name - Starting HotelSearch Credit
+2018-02-01 13:06:28,836 [main] INFO Credit_Book_Same_First_Name_Last_Name - Hotel Search Complete Credit
+2018-02-01 13:06:28,837 [main] INFO Credit_Book_Same_First_Name_Last_Name - Starting Hotel Book
+2018-02-01 13:06:28,865 [main] INFO Credit_Book_Same_First_Name_Last_Name - Selecting Room
+2018-02-01 13:06:28,923 [main] INFO Credit_Book_Same_First_Name_Last_Name - Room Selected
+2018-02-01 13:06:28,923 [main] INFO Credit_Book_Same_First_Name_Last_Name - Entering Passenger details
+2018-02-01 13:06:35,185 [main] INFO Credit_Book_Same_First_Name_Last_Name - Entered Passenger details
+2018-02-01 13:06:40,891 [main] INFO Credit_Book_Same_First_Name_Last_Name - Entering Payment details
+2018-02-01 13:06:43,688 [main] INFO Credit_Book_Same_First_Name_Last_Name - Entered Payment details
+2018-02-01 13:07:12,528 [main] INFO Credit_Book_Same_First_Name_Last_Name - Hotel Booked
+2018-02-01 16:14:04,720 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:14:08,377 [main] INFO Credit_Book - Browser Opened
+2018-02-01 16:14:14,507 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:14:29,860 [main] INFO Credit_Book - Login Successful
+2018-02-01 16:14:32,511 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 16:14:32,511 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 16:14:49,009 [main] INFO Credit_Book - null
+2018-02-01 16:15:15,152 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:15:19,839 [main] INFO Credit_Book - Browser Opened
+2018-02-01 16:15:25,987 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:15:53,513 [main] INFO Credit_Book - Login Successful
+2018-02-01 16:15:55,850 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 16:15:55,850 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 16:17:05,938 [main] INFO Credit_Book - chrome not reachable
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.01 seconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir22288_15025}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 0ef05330aaf191bb6aa9b872be055068
+*** Element info: {Using=xpath, value=//h3[@class='unitName']}
+2018-02-01 16:18:56,578 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:18:59,683 [main] INFO Credit_Book - Browser Opened
+2018-02-01 16:19:06,772 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:19:18,770 [main] INFO Credit_Book - Login Successful
+2018-02-01 16:19:21,135 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 16:19:21,136 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 16:19:26,946 [main] INFO Credit_Book - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="01/02/2018" data-validations="required"> is not clickable at point (538, 233). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 78 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir18604_27392}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ad761989784a3403d41d2bfd3ed92e3f
+2018-02-01 16:20:00,756 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:20:03,916 [main] INFO Credit_Book - Browser Opened
+2018-02-01 16:20:10,007 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:20:22,029 [main] INFO Credit_Book - Login Successful
+2018-02-01 16:20:24,393 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 16:20:24,394 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 16:20:41,596 [main] INFO Credit_Book - expected [true] but found [false]
+2018-02-01 16:21:01,684 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:21:04,719 [main] INFO Credit_Book - Browser Opened
+2018-02-01 16:21:10,862 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:21:22,943 [main] INFO Credit_Book - Login Successful
+2018-02-01 16:21:25,300 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 16:21:25,300 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 16:21:31,142 [main] INFO Credit_Book - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="01/02/2018" data-validations="required"> is not clickable at point (538, 233). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 85 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir15512_10303}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 789b4a4c913f9b4a05f42ca9bd136b8b
+2018-02-01 16:37:14,258 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:37:17,320 [main] INFO Credit_Book - Browser Opened
+2018-02-01 16:37:23,423 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:37:36,522 [main] INFO Credit_Book - Login Successful
+2018-02-01 16:37:38,879 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 16:37:38,880 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 16:37:56,214 [main] INFO Credit_Book - expected [true] but found [false]
+2018-02-01 16:38:48,730 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:38:51,825 [main] INFO Credit_Book - Browser Opened
+2018-02-01 16:38:58,604 [main] INFO Credit_Book - Test Case Started
+2018-02-01 16:39:10,507 [main] INFO Credit_Book - Login Successful
+2018-02-01 16:39:12,853 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 16:39:12,854 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 16:39:29,530 [main] INFO Credit_Book - expected [true] but found [false]
+2018-02-01 16:57:11,854 [main] INFO Credit_Book_NFR - Test Case Started
+2018-02-01 16:57:14,943 [main] INFO Credit_Book_NFR - Browser Opened
+2018-02-01 16:57:21,272 [main] INFO Credit_Book_NFR - Test Case Started
+2018-02-01 16:57:34,416 [main] INFO Credit_Book_NFR - Login Successful
+2018-02-01 16:57:36,742 [main] INFO Credit_Book_NFR - Applying search Filters
+2018-02-01 16:57:36,743 [main] INFO Credit_Book_NFR - Starting HotelSearch Credit
+2018-02-01 16:57:56,602 [main] INFO Credit_Book_NFR - expected [true] but found [false]
+2018-02-01 20:14:57,735 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:15:02,997 [main] INFO Credit_Book - Browser Opened
+2018-02-01 20:15:11,009 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:15:39,254 [main] INFO Credit_Book - Login Successful
+2018-02-01 20:15:41,712 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 20:15:41,722 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 20:17:13,562 [main] INFO Credit_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //h3[@class='unitName']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir21344_19976}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 162b24f4a2854afeca0438420c92b676
+2018-02-01 20:17:16,159 [main] INFO Prepay_Book - Test Case Started
+2018-02-01 20:17:18,809 [main] INFO Prepay_Book - Browser Opened
+2018-02-01 20:17:26,567 [main] INFO Prepay_Book - Test Case Started
+2018-02-01 20:17:38,576 [main] INFO Prepay_Book - Login Successful
+2018-02-01 20:17:40,958 [main] INFO Prepay_Book - Applying search Filters
+2018-02-01 20:17:40,959 [main] INFO Prepay_Book - Starting HotelSearch Prepay
+2018-02-01 20:17:56,467 [main] INFO Prepay_Book - Hotel Search Complete Prepay
+2018-02-01 20:17:56,468 [main] INFO Prepay_Book - Starting Hotel Book
+2018-02-01 20:17:56,499 [main] INFO Prepay_Book - Selecting Room
+2018-02-01 20:17:59,107 [main] INFO Prepay_Book - Room Selected
+2018-02-01 20:17:59,108 [main] INFO Prepay_Book - Entering Passenger details
+2018-02-01 20:18:08,260 [main] INFO Prepay_Book - Entered Passenger details
+2018-02-01 20:18:25,831 [main] INFO Prepay_Book - Hotel Booked
+2018-02-01 20:18:26,090 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:18:28,585 [main] INFO Credit_Book - Browser Opened
+2018-02-01 20:18:34,985 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:18:46,962 [main] INFO Credit_Book - Login Successful
+2018-02-01 20:18:49,270 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 20:18:49,271 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 20:19:42,751 [main] INFO Credit_Book - Hotel Search Complete Credit
+2018-02-01 20:19:42,751 [main] INFO Credit_Book - Starting Hotel Book
+2018-02-01 20:19:42,826 [main] INFO Credit_Book - Selecting Room
+2018-02-01 20:19:45,649 [main] INFO Credit_Book - Room Selected
+2018-02-01 20:19:45,649 [main] INFO Credit_Book - Entering Passenger details
+2018-02-01 20:19:45,676 [main] INFO Credit_Book - null
+2018-02-01 20:20:55,636 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:20:58,759 [main] INFO Credit_Book - Browser Opened
+2018-02-01 20:21:04,962 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:21:16,991 [main] INFO Credit_Book - Login Successful
+2018-02-01 20:21:19,350 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 20:21:19,350 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 20:22:50,724 [main] INFO Credit_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //h3[@class='unitName']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir13844_8394}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: df0c31efed8d85147b1b592417b0ea76
+2018-02-01 20:22:51,051 [main] INFO Prepay_Book - Test Case Started
+2018-02-01 20:22:53,564 [main] INFO Prepay_Book - Browser Opened
+2018-02-01 20:23:00,864 [main] INFO Prepay_Book - Test Case Started
+2018-02-01 20:23:13,965 [main] INFO Prepay_Book - Login Successful
+2018-02-01 20:23:16,305 [main] INFO Prepay_Book - Applying search Filters
+2018-02-01 20:23:16,305 [main] INFO Prepay_Book - Starting HotelSearch Prepay
+2018-02-01 20:23:29,496 [main] INFO Prepay_Book - Hotel Search Complete Prepay
+2018-02-01 20:23:29,497 [main] INFO Prepay_Book - Starting Hotel Book
+2018-02-01 20:23:29,529 [main] INFO Prepay_Book - Selecting Room
+2018-02-01 20:23:32,099 [main] INFO Prepay_Book - Room Selected
+2018-02-01 20:23:32,099 [main] INFO Prepay_Book - Entering Passenger details
+2018-02-01 20:23:41,274 [main] INFO Prepay_Book - Entered Passenger details
+2018-02-01 20:24:00,039 [main] INFO Prepay_Book - Hotel Booked
+2018-02-01 20:24:00,134 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:24:02,633 [main] INFO Credit_Book - Browser Opened
+2018-02-01 20:24:08,787 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:24:20,678 [main] INFO Credit_Book - Login Successful
+2018-02-01 20:24:22,991 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 20:24:22,992 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 20:24:29,100 [main] INFO Credit_Book - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="01/02/2018" data-validations="required"> is not clickable at point (538, 233). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 74 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir23460_21199}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: bbd769a8e9a117b13fd6e8b466ff2e22
+2018-02-01 20:39:23,988 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-01 20:39:27,336 [main] INFO Credit_Card_Book - Browser Opened
+2018-02-01 20:39:33,926 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-01 20:40:22,382 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-01 20:40:25,487 [main] INFO Credit_Card_Book - Browser Opened
+2018-02-01 20:40:32,380 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-01 20:40:47,686 [main] INFO Credit_Card_Book - Login Successful
+2018-02-01 20:40:50,026 [main] INFO Credit_Card_Book - Applying search Filters
+2018-02-01 20:40:50,026 [main] INFO Credit_Card_Book - Starting HotelSearch Credit Card
+2018-02-01 20:41:06,211 [main] INFO Credit_Card_Book - Hotel Search Complete Credit Card
+2018-02-01 20:41:06,211 [main] INFO Credit_Card_Book - Starting Hotel Book
+2018-02-01 20:41:06,243 [main] INFO Credit_Card_Book - Selecting Room
+2018-02-01 20:41:09,347 [main] INFO Credit_Card_Book - Room Selected
+2018-02-01 20:41:09,348 [main] INFO Credit_Card_Book - Entering Passenger details
+2018-02-01 20:42:29,694 [main] INFO Credit_Card_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@id='pbcpFirstName1_0']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir9384_24392}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: c729594eb87b883a3a4eba8481ed3797
+2018-02-01 20:42:30,017 [main] INFO Prepay_Book - Test Case Started
+2018-02-01 20:42:32,462 [main] INFO Prepay_Book - Browser Opened
+2018-02-01 20:42:39,738 [main] INFO Prepay_Book - Test Case Started
+2018-02-01 20:42:55,723 [main] INFO Prepay_Book - Login Successful
+2018-02-01 20:42:58,020 [main] INFO Prepay_Book - Applying search Filters
+2018-02-01 20:42:58,020 [main] INFO Prepay_Book - Starting HotelSearch Prepay
+2018-02-01 20:44:40,412 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-01 20:44:43,517 [main] INFO Credit_Card_Book - Browser Opened
+2018-02-01 20:44:49,899 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-01 20:45:10,255 [main] INFO Credit_Card_Book - Login Successful
+2018-02-01 20:45:12,609 [main] INFO Credit_Card_Book - Applying search Filters
+2018-02-01 20:45:12,609 [main] INFO Credit_Card_Book - Starting HotelSearch Credit Card
+2018-02-01 20:46:43,633 [main] INFO Credit_Card_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //h3[@class='unitName']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir20448_23450}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 361c286cbb2e5e62bda135fc97c404de
+2018-02-01 20:46:43,969 [main] INFO Prepay_Book - Test Case Started
+2018-02-01 20:46:46,440 [main] INFO Prepay_Book - Browser Opened
+2018-02-01 20:46:52,701 [main] INFO Prepay_Book - Test Case Started
+2018-02-01 20:47:03,841 [main] INFO Prepay_Book - Login Successful
+2018-02-01 20:47:06,157 [main] INFO Prepay_Book - Applying search Filters
+2018-02-01 20:47:06,158 [main] INFO Prepay_Book - Starting HotelSearch Prepay
+2018-02-01 20:47:46,969 [main] INFO Prepay_Book - Timed out after 30 seconds waiting for visibility of element located by By.xpath: //h3[@class='unitName']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir10404_7842}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 202910a3c5df11bfef2b608f10b9c415
+2018-02-01 20:47:47,095 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:47:49,548 [main] INFO Credit_Book - Browser Opened
+2018-02-01 20:47:55,806 [main] INFO Credit_Book - Test Case Started
+2018-02-01 20:48:10,043 [main] INFO Credit_Book - Login Successful
+2018-02-01 20:48:12,363 [main] INFO Credit_Book - Applying search Filters
+2018-02-01 20:48:12,363 [main] INFO Credit_Book - Starting HotelSearch Credit
+2018-02-01 20:49:45,409 [main] INFO Credit_Book - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //h3[@class='unitName']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir22896_16070}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: f8aa662ef40ffd16eb24ddb0395cb692
+2018-02-02 11:14:22,341 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-02 11:14:28,325 [main] INFO Credit_Card_Book - Browser Opened
+2018-02-02 11:14:36,239 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-02 11:14:49,358 [main] INFO Credit_Card_Book - Login Successful
+2018-02-02 11:14:51,825 [main] INFO Credit_Card_Book - Applying search Filters
+2018-02-02 11:14:51,825 [main] INFO Credit_Card_Book - Starting HotelSearch Credit Card
+2018-02-02 11:14:58,065 [main] INFO Credit_Card_Book - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="02/02/2018" data-validations="required"> is not clickable at point (538, 233). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 78 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir22164_27206}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ecec690b5581839052d171fa717d38ae
+2018-02-02 11:15:33,669 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-02 11:15:36,778 [main] INFO Credit_Card_Book - Browser Opened
+2018-02-02 11:15:43,087 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-02 11:15:54,905 [main] INFO Credit_Card_Book - Login Successful
+2018-02-02 11:15:57,275 [main] INFO Credit_Card_Book - Applying search Filters
+2018-02-02 11:15:57,276 [main] INFO Credit_Card_Book - Starting HotelSearch Credit Card
+2018-02-02 11:16:11,932 [main] INFO Credit_Card_Book - Hotel Search Complete Credit Card
+2018-02-02 11:16:11,933 [main] INFO Credit_Card_Book - Starting Hotel Book
+2018-02-02 11:16:11,965 [main] INFO Credit_Card_Book - Selecting Room
+2018-02-02 11:16:12,032 [main] INFO Credit_Card_Book - Room Selected
+2018-02-02 11:16:12,032 [main] INFO Credit_Card_Book - Entering Passenger details
+2018-02-02 11:16:18,896 [main] INFO Credit_Card_Book - Entered Passenger details
+2018-02-02 11:16:24,611 [main] INFO Credit_Card_Book - Entering Payment details
+2018-02-02 11:16:25,935 [main] INFO Credit_Card_Book - Entered Payment details
+2018-02-02 11:16:55,620 [main] INFO Credit_Card_Book - null
+2018-02-02 11:17:12,812 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-02 11:17:15,912 [main] INFO Credit_Card_Book - Browser Opened
+2018-02-02 11:17:22,097 [main] INFO Credit_Card_Book - Test Case Started
+2018-02-02 11:17:34,048 [main] INFO Credit_Card_Book - Login Successful
+2018-02-02 11:17:36,401 [main] INFO Credit_Card_Book - Applying search Filters
+2018-02-02 11:17:36,401 [main] INFO Credit_Card_Book - Starting HotelSearch Credit Card
+2018-02-02 11:17:49,981 [main] INFO Credit_Card_Book - Hotel Search Complete Credit Card
+2018-02-02 11:17:49,984 [main] INFO Credit_Card_Book - Starting Hotel Book
+2018-02-02 11:17:50,017 [main] INFO Credit_Card_Book - Selecting Room
+2018-02-02 11:17:50,098 [main] INFO Credit_Card_Book - Room Selected
+2018-02-02 11:17:50,098 [main] INFO Credit_Card_Book - Entering Passenger details
+2018-02-02 11:17:56,882 [main] INFO Credit_Card_Book - Entered Passenger details
+2018-02-02 11:18:03,151 [main] INFO Credit_Card_Book - Entering Payment details
+2018-02-02 11:18:04,469 [main] INFO Credit_Card_Book - Entered Payment details
+2018-02-02 11:18:32,131 [main] INFO Credit_Card_Book - expected [true] but found [false]

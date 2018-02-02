@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +26,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import ObjectRepository.Booking;
 import ObjectRepository.LoginPage;
-//import ObjectRepository.NewAccoBooking;
 import ObjectRepository.PaymentPage;
 import ObjectRepository.Search;
 import Utility.Configuration;
@@ -37,10 +35,7 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
-/* #######  Test for accommodation booking for Credit user #########
-######  Scenario Logs In, Books a specified hotel   ##### */
-
-public class Credit_Book {
+public class Credit_Card_Book_NFR {
 	public WebDriver driverqa;
 	ExtentTest test;
 	String errorpath;
@@ -50,14 +45,14 @@ public class Credit_Book {
 	Takescreenshot obj = new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
 	LoginPage login = new LoginPage();
-	Logger logger = Logger.getLogger("Credit_Book");
+	Logger logger = Logger.getLogger("Credit_Card_Book_NFR");
 
 	/* ####### Passing browser as parameters in test ######### **/
 
 	@Test
 	@Parameters({ "browsername" })
-	public void CreditBook(String browsername) throws Exception {
-		test = rep.startTest("Credit Book");
+	public void CreditCardBookNFR(String browsername) throws Exception {
+		test = rep.startTest("Credit Card Book NFR");
 		excel = new ExcelDataConfig(Config.getExcelPathBook());
 		PropertyConfigurator.configure("Log4j.properties");
 		logger.info("Test Case Started");
@@ -109,13 +104,13 @@ public class Credit_Book {
 			// driverqa.findElement(LoginPage.Closetuto).click();
 			action.sendKeys(Keys.ESCAPE).build().perform();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Log-In.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Log-In.jpg");
 
 		} catch (Throwable e) {
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Log-In.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_Card_NFR/Log-In.jpg");
 			test.log(LogStatus.FAIL, "Login");
-			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Log-In.jpg";
+			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_Card_NFR/Log-In.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -128,12 +123,12 @@ public class Credit_Book {
 
 		try {
 			logger.info("Applying search Filters");
-			logger.info("Starting HotelSearch Credit");
-			test.log(LogStatus.INFO, "Starting HotelSearch Credit");
+			logger.info("Starting HotelSearch Credit Card");
+			test.log(LogStatus.INFO, "Starting HotelSearch Credit Card");
 			Thread.sleep(2000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.dest));
 			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
-			Thread.sleep(4000);
+			Thread.sleep(3000);
 			action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			// action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action.sendKeys(Keys.ENTER).build().perform();
@@ -170,34 +165,30 @@ public class Credit_Book {
 
 			}
 			test.log(LogStatus.PASS, "Selection of Dates");
-			WebElement Noofchilds = driverqa.findElement(Search.NoOfChilds);
-			Noofchilds.clear();
-			Noofchilds.sendKeys("01");
-			driverqa.findElement(Search.PaymentOption).click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.NetPay));
-			Thread.sleep(1000);
-			WebElement element = driverqa.findElement(Search.NetPay);
-
-			Actions actions = new Actions(driverqa);
-
-			actions.moveToElement(element).click().perform();
+			WebElement Noofadults = driverqa.findElement(Search.NoOfAdults);
+			Noofadults.clear();
+			Noofadults.sendKeys("01");
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Filters.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Filters.jpg");
 			String expectedresult = excel.getData(0, 9, 1);
 			driverqa.findElement(Search.SearchBtn).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Search-Result.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
+			String expectedNFR=excel.getData(0, 32, 1);
+			String ActualNFR = driverqa.findElement(Search.Deadlinetext).getText();
+			Assert.assertTrue(ActualNFR.contains(expectedNFR));
 			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
-			test.log(LogStatus.INFO, "Ending HotelSearch Credit");
-			test.log(LogStatus.PASS, "PASSED HotelSearch Credit");
-			logger.info("Hotel Search Complete Credit");
+			test.log(LogStatus.INFO, "Ending HotelSearch Credit Card");
+			test.log(LogStatus.PASS, "PASSED HotelSearch Credit Card");
+			logger.info("Hotel Search Complete Credit Card");
 		} catch (Throwable e) {
-			test.log(LogStatus.FAIL, "Hotel Search Credit");
+			test.log(LogStatus.FAIL, "Hotel Search Credit Card");
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Search-Result.jpg");
-			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Search-Result.jpg";
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_Card_NFR/Search-Result.jpg");
+			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_Card_NFR/Search-Result.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -231,57 +222,48 @@ public class Credit_Book {
 				Select passengertitle2 = new Select(driverqa.findElement(Booking.TwoPaxTitle));
 				passengertitle2.selectByIndex(1);
 			}
-			if (driverqa.findElements(Booking.ThirdPaxFirstName).size() != 0) {
-				driverqa.findElement(Booking.ThirdPaxFirstName).sendKeys(excel.getData(0, 22, 1));
-				Thread.sleep(2000);
-				driverqa.findElement(Booking.ThirdPaxLastName).sendKeys(excel.getData(0, 22, 2));
-				Select passengertitle3 = new Select(driverqa.findElement(Booking.ThirdPaxTitle));
-				passengertitle3.selectByIndex(1);
-			}
 			driverqa.findElement(Booking.PrcdToBookChckBox).click();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Passenger-Details.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Passenger-Details.jpg");
 			logger.info("Entered Passenger details");
 			test.log(LogStatus.INFO, "Entered Passenger details");
 			test.log(LogStatus.PASS, "Passenger details");
 			driverqa.findElement(Booking.ConfirmBook).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ProccedToBook));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Confirm-Booking.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Confirm-Booking.jpg");
 			driverqa.findElement(Booking.ProccedToBook).click();
 			logger.info("Entering Payment details");
 			test.log(LogStatus.INFO, "Entering Payment details");
-			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingCost));
-			/*
-			 * String HotelCost =
-			 * driverqa.findElement(Booking.BookingCost).getText();
-			 * System.out.println(HotelCost); Thread.sleep(2000);
-			 * driverqa.findElement(Booking.CreditCost).sendKeys(HotelCost);
-			 */
-			// or any locator strategy that you find suitable
-			WebElement locOfOrder = driverqa.findElement(Booking.BookingCost);
-			Actions act = new Actions(driverqa);
-			act.moveToElement(locOfOrder).doubleClick().build().perform();
-			// catch here is double click on the text will by default select the
-			// text
-			// now apply copy command
-			driverqa.findElement(Booking.BookingCost).sendKeys(Keys.chord(Keys.CONTROL, "c"));
-			Thread.sleep(2000);
-			// now apply the command to paste
-			driverqa.findElement(Booking.CreditCost).sendKeys(Keys.chord(Keys.CONTROL, "v"));
+			wait.until(ExpectedConditions.visibilityOfElementLocated(PaymentPage.FirstName));
+			WebElement FirstName = driverqa.findElement(PaymentPage.FirstName);
+			FirstName.clear();
+			FirstName.sendKeys(excel.getData(0, 22, 1));
+			WebElement LastName = driverqa.findElement(PaymentPage.LastName);
+			LastName.clear();
+			LastName.sendKeys(excel.getData(0, 22, 2));
+			WebElement Address = driverqa.findElement(PaymentPage.Address);
+			Address.clear();
+			Address.sendKeys("Kolkata1234");
+			WebElement CardNo = driverqa.findElement(PaymentPage.CardNumber);
+			CardNo.clear();
+			CardNo.sendKeys(excel.getData(0, 42, 1));
+			WebElement CVVNo = driverqa.findElement(PaymentPage.CVVNumber);
+			CVVNo.clear();
+			CVVNo.sendKeys(excel.getData(0, 43, 1));
+			driverqa.findElement(PaymentPage.AcceptTerms).click();
 			logger.info("Entered Payment details");
 			test.log(LogStatus.INFO, "Entered Payment details");
 			test.log(LogStatus.PASS, "Payment details");
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Payment-Details.jpg");
-			driverqa.findElement(PaymentPage.AcceptTerms).click();
-			Thread.sleep(3000);
-			driverqa.findElement(PaymentPage.AcceptTerms).click();
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Payment-Details.jpg");
 			driverqa.findElement(PaymentPage.Acceptpayment).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ViewBooking));
 			JavascriptExecutor js = (JavascriptExecutor) driverqa;
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Search-Booking-Page.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Search-Booking-Page.jpg");
 			// WebElement Element = driverqa.findElement(Booking.Invoice);
 			// This will scroll the page till the element is found
 			/*
@@ -291,28 +273,26 @@ public class Credit_Book {
 			 */
 			driverqa.findElement(Booking.ViewBooking).click();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Booking-Details1.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Booking-Details1.jpg");
 			// This will scroll the page till the element is found
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Booking-Details2.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_NFR/Booking-Details2.jpg");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingStatusPrepay));
 			String ExpectedStatus = "Confirmed";
-			String ExpectedNoOfAdults = "2 Adults";
-			String ExpectedNoOfChild = "1 Child";
+			String ExpectedNoOfAdults = "01 Adults";
 			String ActualNoOfAdults = driverqa.findElement(Booking.noOfAdultsPrepay).getText();
 			String ActualStatus = driverqa.findElement(Booking.BookingStatusPrepay).getText();
 			Assert.assertTrue(ActualStatus.equalsIgnoreCase(ExpectedStatus));
-			Assert.assertTrue(ActualNoOfAdults.contains(ExpectedNoOfAdults));
-			Assert.assertTrue(ActualNoOfAdults.contains(ExpectedNoOfChild));
+			Assert.assertTrue(ActualNoOfAdults.equalsIgnoreCase(ExpectedNoOfAdults));
 			test.log(LogStatus.INFO, "Ending Hotel Book");
 			test.log(LogStatus.PASS, "Hotel Book");
 			logger.info("Hotel Booked");
 
 		} catch (Throwable e) {
 			test.log(LogStatus.FAIL, "Hotel Book Prepay");
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Booking.jpg");
-			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Booking.jpg";
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_Card_NFR/Booking.jpg");
+			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_Card_NFR/Booking.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -340,6 +320,6 @@ public class Credit_Book {
 
 		rep.endTest(test);
 		rep.flush();
-		//driverqa.close();
+		driverqa.close();
 	}
 }

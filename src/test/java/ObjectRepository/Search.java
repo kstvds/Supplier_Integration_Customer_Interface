@@ -15,6 +15,8 @@ public class Search {
     public static final By NoOfChilds = By.xpath("//*[@id='search_row1']/div[2]/span[1]/input//following::input[2]");
     public static final By PaymentOption = By.xpath("//*[@id='searchFieldsContainer']/div[6]/div[2]/button");
     public static final By NetPay = By.xpath("//*[@id='searchFieldsContainer']/div[6]/div[2]/div/ul/li[1]/a/span[1]");
+    public static final By DeadLine = By.xpath("//*[@class='icon-cancel cancelInfoIcon infoBoxTrigger']");
+    public static final By NFR = By.xpath("//*[@name='cancellationRulesJson']");
     //public static final By Submit = By.xpath("//*[@id='button']");
     // static final By Closetuto = By.xpath("/html/body/div[13]");
 }
