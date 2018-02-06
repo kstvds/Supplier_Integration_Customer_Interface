@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Search.Search_Credit_Card">
+      <class name="Booking.Credit_Book_Within_DeadLine">
         <methods>
+          <include name="CreditBookWithinDeadline"/>
           <include name="afterTest"/>
-          <include name="SearchCreditCard"/>
         </methods>
-      </class> <!-- Search.Search_Credit_Card -->
+      </class> <!-- Booking.Credit_Book_Within_DeadLine -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

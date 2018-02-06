@@ -34,6 +34,9 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
+/* #######  Test for accommodation booking for Prepay user #########
+######  Scenario Logs In, Books a specified hotel ##### */
+
 public class Prepay_Book {
 	public WebDriver driverqa;
 	Configuration Config = new Configuration();
@@ -164,6 +167,7 @@ public class Prepay_Book {
 							
 						}
 						test.log(LogStatus.PASS, "Selection of Dates");
+						
 						Thread.sleep(2000);
 						obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Prepay/Filters.jpg");
 					    String expectedresult=excel.getData(0, 9, 1);

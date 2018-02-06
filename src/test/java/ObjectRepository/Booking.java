@@ -31,4 +31,6 @@ public class Booking {
 	public static final By BookingCost = By.xpath("//*[@id='creditCardDetailsForm']/div[1]/div/input");
 	public static final By CreditCost = By.xpath("//*[@name='useCredit']");
 	public static final By AcceptpaymentCredit = By.xpath("//*[@id='creditCardDetailsForm']/div[6]/label/input");
+	public static final By BookMultiRoom = By.xpath("//input[@value='Book Now']");
+	public static final By Unabletoblockmultiroom = By.xpath("//*[@id='modalBody']/div/ul/li[1]");
 }

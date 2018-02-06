@@ -20,6 +20,7 @@ public class Search {
     public static final By NoOfRoomList = By.xpath("//*[@class='btn dropdown-toggle selectpicker btn-search']");
     public static final By NoOfRooms = By.xpath("//*[@id='searchFieldsContainer']/div[4]/div[2]/div/ul/li[2]/a");
     public static final By NoRoomsAvailable = By.xpath("//*[@id='noResultsFoundErrorMessage']/h4");
+    public static final By MultiRoomNoSelection = By.xpath("//select[@class='multipleRoomsSelect']");
     //public static final By Submit = By.xpath("//*[@id='button']");
     // static final By Closetuto = By.xpath("/html/body/div[13]");
 }

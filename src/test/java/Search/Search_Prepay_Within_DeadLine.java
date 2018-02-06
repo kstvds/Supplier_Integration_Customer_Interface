@@ -121,7 +121,7 @@ public class Search_Prepay_Within_DeadLine {
 				   test.log(LogStatus.INFO, "Starting HotelSearch Prepay Within DeadLine");
 				   wait.until(ExpectedConditions.visibilityOfElementLocated(Search.dest));
 				   driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
-				   Thread.sleep(2000);
+				   Thread.sleep(4000);
 				   action.sendKeys(Keys.ARROW_DOWN).build().perform();
 				   action.sendKeys(Keys.ENTER).build().perform();
 				   /*test.log(LogStatus.INFO, "Selecting dates");
@@ -167,11 +167,15 @@ public class Search_Prepay_Within_DeadLine {
 						 String expectedDaedline=excel.getData(0, 30, 1);
 						 driverqa.findElement(Search.SearchBtn).click();
 						 wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
+						 if (driverqa.findElements(Booking.ClickDeadline).size() != 0)
+							{
 						 WebElement element = driverqa.findElement(Booking.ClickDeadline);
 						 JavascriptExecutor js = (JavascriptExecutor) driverqa;
 						 js.executeScript("var evt = document.createEvent('MouseEvents');" + "evt.initMouseEvent('click',true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0,null);" + "arguments[0].dispatchEvent(evt);", element); 
+						 Thread.sleep(2000);
 						 wait.until(ExpectedConditions.visibilityOfElementLocated(Search.Deadlinetext));
-
+							}
+						 
 						 Thread.sleep(2000);
 						 obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Prepay_Within_DeadLine/Search-Result.jpg");
                          String actualresult= driverqa.findElement(Search.HotelTitle).getText();
@@ -209,7 +213,7 @@ public class Search_Prepay_Within_DeadLine {
 
 			rep.endTest(test);
 			rep.flush();
-			driverqa.close();
+			//driverqa.close();
 		}
 	 }
 

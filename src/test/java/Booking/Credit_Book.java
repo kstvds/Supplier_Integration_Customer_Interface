@@ -133,7 +133,7 @@ public class Credit_Book {
 			Thread.sleep(2000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.dest));
 			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
-			Thread.sleep(4000);
+			Thread.sleep(3000);
 			action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			// action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action.sendKeys(Keys.ENTER).build().perform();
@@ -172,7 +172,7 @@ public class Credit_Book {
 			test.log(LogStatus.PASS, "Selection of Dates");
 			WebElement Noofchilds = driverqa.findElement(Search.NoOfChilds);
 			Noofchilds.clear();
-			Noofchilds.sendKeys("01");
+			Noofchilds.sendKeys("1");
 			driverqa.findElement(Search.PaymentOption).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.NetPay));
 			Thread.sleep(1000);
@@ -340,6 +340,6 @@ public class Credit_Book {
 
 		rep.endTest(test);
 		rep.flush();
-		//driverqa.close();
+		driverqa.close();
 	}
 }

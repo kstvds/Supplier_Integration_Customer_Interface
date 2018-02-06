@@ -54,7 +54,7 @@ public class Credit_NFR_Multi_Room {
 
 	@Test
 	@Parameters({ "browsername" })
-	public void CreditBook(String browsername) throws Exception {
+	public void CreditBookNFRMultiRoom(String browsername) throws Exception {
 		test = rep.startTest("Credit NFR Multi Room");
 		excel = new ExcelDataConfig(Config.getExcelPathBook());
 		PropertyConfigurator.configure("Log4j.properties");
@@ -107,13 +107,13 @@ public class Credit_NFR_Multi_Room {
 			// driverqa.findElement(LoginPage.Closetuto).click();
 			action.sendKeys(Keys.ESCAPE).build().perform();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Log-In.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR_Multi_Room/Log-In.jpg");
 
 		} catch (Throwable e) {
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Log-In.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR_Multi_Room/Log-In.jpg");
 			test.log(LogStatus.FAIL, "Login");
-			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Log-In.jpg";
+			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR_Multi_Room/Log-In.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -126,8 +126,8 @@ public class Credit_NFR_Multi_Room {
 
 		try {
 			logger.info("Applying search Filters");
-			logger.info("Starting HotelSearch Credit");
-			test.log(LogStatus.INFO, "Starting HotelSearch Credit");
+			logger.info("Starting HotelSearch Credit NFR Multi Room");
+			test.log(LogStatus.INFO, "Starting HotelSearch Credit NFR Multi Room");
 			Thread.sleep(2000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.dest));
 			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
@@ -183,22 +183,22 @@ public class Credit_NFR_Multi_Room {
 
 			actions.moveToElement(element).click().perform();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Filters.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR_Multi_Room/Filters.jpg");
 			String expectedresult = "Sorry, no results found. Please modify your search criteria";
 			driverqa.findElement(Search.SearchBtn).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.NoRoomsAvailable));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit/Search-Result.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_NFR_Multi_Room/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.NoRoomsAvailable).getText();
 			Assert.assertTrue(actualresult.contains(expectedresult));
-			test.log(LogStatus.INFO, "Ending HotelSearch Credit");
-			test.log(LogStatus.PASS, "PASSED HotelSearch Credit");
-			logger.info("Hotel Search Complete Credit");
+			test.log(LogStatus.INFO, "Ending HotelSearch Credit NFR Multi Room");
+			test.log(LogStatus.PASS, "PASSED HotelSearch Credit NFR Multi Room");
+			logger.info("Hotel Search Complete Credit NFR Multi Room");
 		} catch (Throwable e) {
-			test.log(LogStatus.FAIL, "Hotel Search Credit");
+			test.log(LogStatus.FAIL, "Hotel Search Credit NFR Multi Room");
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Search-Result.jpg");
-			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Search-Result.jpg";
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR_Multi_Room/Search-Result.jpg");
+			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit_NFR_Multi_Room/Search-Result.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -227,7 +227,7 @@ public class Credit_NFR_Multi_Room {
 
 		rep.endTest(test);
 		rep.flush();
-		//driverqa.close();
+		driverqa.close();
 	}
 }
 
