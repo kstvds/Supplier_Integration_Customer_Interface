@@ -4302,3 +4302,283 @@ Session ID: 619cd4b25b9ae0a3afc9aae1782dd88e
 2018-02-06 19:51:46,864 - Credit_Book -INFO - Entered Payment details
 2018-02-06 19:52:17,580 - Credit_Book -INFO - Hotel Booked
 2018-02-06 19:52:17,580 - Credit_Book -INFO - Starting Hotel Amend
+2018-02-07 12:14:48,657 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:14:56,618 - Amend_Credit_Within_DeadLine -INFO - Browser Opened
+2018-02-07 12:15:03,149 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:15:18,988 - Amend_Credit_Within_DeadLine -INFO - Login Successful
+2018-02-07 12:15:21,555 - Amend_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-02-07 12:15:21,556 - Amend_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-02-07 12:15:50,259 - Amend_Credit_Within_DeadLine -INFO - Hotel Search Complete Credit Within DeadLine
+2018-02-07 12:15:50,259 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Book
+2018-02-07 12:15:50,365 - Amend_Credit_Within_DeadLine -INFO - Selecting Room
+2018-02-07 12:15:50,654 - Amend_Credit_Within_DeadLine -INFO - Room Selected
+2018-02-07 12:15:50,655 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 12:16:04,116 - Amend_Credit_Within_DeadLine -INFO - Entered Passenger details
+2018-02-07 12:16:12,466 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 12:16:15,378 - Amend_Credit_Within_DeadLine -INFO - Entered Payment details
+2018-02-07 12:16:46,353 - Amend_Credit_Within_DeadLine -INFO - expected [true] but found [false]
+2018-02-07 12:20:14,051 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:20:18,864 - Amend_Credit_Within_DeadLine -INFO - Browser Opened
+2018-02-07 12:20:25,496 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:20:38,366 - Amend_Credit_Within_DeadLine -INFO - Login Successful
+2018-02-07 12:20:40,868 - Amend_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-02-07 12:20:40,869 - Amend_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-02-07 12:21:04,788 - Amend_Credit_Within_DeadLine -INFO - Hotel Search Complete Credit Within DeadLine
+2018-02-07 12:21:04,789 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Book
+2018-02-07 12:21:04,888 - Amend_Credit_Within_DeadLine -INFO - Selecting Room
+2018-02-07 12:21:05,181 - Amend_Credit_Within_DeadLine -INFO - Room Selected
+2018-02-07 12:21:05,181 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 12:21:17,410 - Amend_Credit_Within_DeadLine -INFO - Entered Passenger details
+2018-02-07 12:21:25,950 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 12:21:28,837 - Amend_Credit_Within_DeadLine -INFO - Entered Payment details
+2018-02-07 12:21:59,851 - Amend_Credit_Within_DeadLine -INFO - Hotel Booked
+2018-02-07 12:21:59,851 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Amend
+2018-02-07 12:22:17,238 - Amend_Credit_Within_DeadLine -INFO - Confirming Changes
+2018-02-07 12:23:37,967 - Amend_Credit_Within_DeadLine -INFO - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[contains(text(),'Successfully amended')]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir13480_22997}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 5cfd4a719cd10659d3cf7347e0cd85d3
+2018-02-07 12:26:35,899 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:29:16,555 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:30:55,320 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:30:59,682 - Amend_Credit_Within_DeadLine -INFO - Browser Opened
+2018-02-07 12:31:06,739 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:31:20,536 - Amend_Credit_Within_DeadLine -INFO - Login Successful
+2018-02-07 12:31:23,040 - Amend_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-02-07 12:31:23,040 - Amend_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-02-07 12:31:47,812 - Amend_Credit_Within_DeadLine -INFO - Hotel Search Complete Credit Within DeadLine
+2018-02-07 12:31:47,813 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Book
+2018-02-07 12:31:47,933 - Amend_Credit_Within_DeadLine -INFO - Selecting Room
+2018-02-07 12:31:48,314 - Amend_Credit_Within_DeadLine -INFO - Room Selected
+2018-02-07 12:31:48,314 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 12:32:01,501 - Amend_Credit_Within_DeadLine -INFO - Entered Passenger details
+2018-02-07 12:32:10,139 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 12:32:13,265 - Amend_Credit_Within_DeadLine -INFO - Entered Payment details
+2018-02-07 12:32:46,263 - Amend_Credit_Within_DeadLine -INFO - Hotel Booked
+2018-02-07 12:32:46,263 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Amend
+2018-02-07 12:33:06,529 - Amend_Credit_Within_DeadLine -INFO - Confirming Changes
+2018-02-07 12:33:10,048 - Amend_Credit_Within_DeadLine -INFO - Entered Payment details
+2018-02-07 12:33:12,909 - Amend_Credit_Within_DeadLine -INFO - element not visible
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 123 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir13880_27513}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d0ffbf1f2432be846577f485bb9e3558
+2018-02-07 12:37:01,432 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:37:06,864 - Amend_Credit_Within_DeadLine -INFO - Browser Opened
+2018-02-07 12:37:14,293 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 12:37:31,932 - Amend_Credit_Within_DeadLine -INFO - Login Successful
+2018-02-07 12:37:34,483 - Amend_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-02-07 12:37:34,483 - Amend_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-02-07 12:38:11,624 - Amend_Credit_Within_DeadLine -INFO - Hotel Search Complete Credit Within DeadLine
+2018-02-07 12:38:11,625 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Book
+2018-02-07 12:38:11,767 - Amend_Credit_Within_DeadLine -INFO - Selecting Room
+2018-02-07 12:38:12,137 - Amend_Credit_Within_DeadLine -INFO - Room Selected
+2018-02-07 12:38:12,137 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 12:38:25,328 - Amend_Credit_Within_DeadLine -INFO - Entered Passenger details
+2018-02-07 12:38:33,425 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 12:38:36,541 - Amend_Credit_Within_DeadLine -INFO - Entered Payment details
+2018-02-07 12:39:12,312 - Amend_Credit_Within_DeadLine -INFO - Hotel Booked
+2018-02-07 12:39:12,313 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Amend
+2018-02-07 12:39:32,626 - Amend_Credit_Within_DeadLine -INFO - Confirming Changes
+2018-02-07 12:39:36,125 - Amend_Credit_Within_DeadLine -INFO - Entered Payment details
+2018-02-07 12:39:59,020 - Amend_Credit_Within_DeadLine -INFO - Confirmed Changes
+2018-02-07 12:39:59,021 - Amend_Credit_Within_DeadLine -INFO - Hotel Amended
+2018-02-07 12:44:26,044 - Credit_Amend -INFO - Test Case Started
+2018-02-07 12:44:31,159 - Credit_Amend -INFO - Browser Opened
+2018-02-07 12:44:38,725 - Credit_Amend -INFO - Test Case Started
+2018-02-07 12:44:55,492 - Credit_Amend -INFO - Login Successful
+2018-02-07 12:44:58,040 - Credit_Amend -INFO - Applying search Filters
+2018-02-07 12:44:58,041 - Credit_Amend -INFO - Starting HotelSearch Credit
+2018-02-07 12:45:21,408 - Credit_Amend -INFO - Hotel Search Complete Credit
+2018-02-07 12:45:21,408 - Credit_Amend -INFO - Starting Hotel Book
+2018-02-07 12:45:21,548 - Credit_Amend -INFO - Selecting Room
+2018-02-07 12:45:24,441 - Credit_Amend -INFO - Room Selected
+2018-02-07 12:45:24,442 - Credit_Amend -INFO - Entering Passenger details
+2018-02-07 12:45:37,527 - Credit_Amend -INFO - Entered Passenger details
+2018-02-07 12:45:46,222 - Credit_Amend -INFO - Entering Payment details
+2018-02-07 12:45:49,336 - Credit_Amend -INFO - Entered Payment details
+2018-02-07 12:46:21,670 - Credit_Amend -INFO - Hotel Booked
+2018-02-07 12:46:21,670 - Credit_Amend -INFO - Starting Hotel Amend
+2018-02-07 12:47:50,394 - Credit_Amend -INFO - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@id='bookingAmendForm']/div[1]/table/tbody/tr[3]/td[2]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir13916_14928}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 45ae22233814bb52088895a180a0c996
+2018-02-07 12:51:39,228 - Credit_Amend -INFO - Test Case Started
+2018-02-07 12:52:07,183 - Credit_Amend -INFO - Test Case Started
+2018-02-07 12:52:34,679 - Credit_Amend -INFO - Test Case Started
+2018-02-07 12:52:45,306 - Credit_Amend -INFO - Test Case Started
+2018-02-07 12:52:49,856 - Credit_Amend -INFO - Browser Opened
+2018-02-07 12:52:56,415 - Credit_Amend -INFO - Test Case Started
+2018-02-07 12:53:12,260 - Credit_Amend -INFO - Login Successful
+2018-02-07 12:53:14,738 - Credit_Amend -INFO - Applying search Filters
+2018-02-07 12:53:14,739 - Credit_Amend -INFO - Starting HotelSearch Credit
+2018-02-07 12:53:33,736 - Credit_Amend -INFO - Hotel Search Complete Credit
+2018-02-07 12:53:33,737 - Credit_Amend -INFO - Starting Hotel Book
+2018-02-07 12:53:33,848 - Credit_Amend -INFO - Selecting Room
+2018-02-07 12:53:36,746 - Credit_Amend -INFO - Room Selected
+2018-02-07 12:53:36,746 - Credit_Amend -INFO - Entering Passenger details
+2018-02-07 12:53:48,907 - Credit_Amend -INFO - Entered Passenger details
+2018-02-07 12:53:57,174 - Credit_Amend -INFO - Entering Payment details
+2018-02-07 12:54:00,085 - Credit_Amend -INFO - Entered Payment details
+2018-02-07 12:54:31,513 - Credit_Amend -INFO - Hotel Booked
+2018-02-07 12:54:31,514 - Credit_Amend -INFO - Starting Hotel Amend
+2018-02-07 12:55:59,878 - Credit_Amend -INFO - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@id='bookingAmendForm']/div[1]/table/tbody/tr[3]/td[2]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir3208_27075}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b5713465d79fb022be8dca0ca49d601e
+2018-02-07 13:54:15,847 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:54:20,520 - Amend_Credit_Within_DeadLine -INFO - Browser Opened
+2018-02-07 13:54:27,118 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:54:56,125 - Amend_Credit_Within_DeadLine -INFO - Login Successful
+2018-02-07 13:54:58,618 - Amend_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-02-07 13:54:58,619 - Amend_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-02-07 13:56:23,815 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:56:58,029 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:57:08,397 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:57:19,239 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:57:33,262 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:57:48,253 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:57:53,031 - Amend_Credit_Within_DeadLine -INFO - Browser Opened
+2018-02-07 13:57:59,649 - Amend_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-07 13:58:28,662 - Amend_Credit_Within_DeadLine -INFO - Login Successful
+2018-02-07 13:58:31,153 - Amend_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-02-07 13:58:31,168 - Amend_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-02-07 13:58:52,935 - Amend_Credit_Within_DeadLine -INFO - Hotel Search Complete Credit Within DeadLine
+2018-02-07 13:58:52,936 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Book
+2018-02-07 13:58:53,063 - Amend_Credit_Within_DeadLine -INFO - Selecting Room
+2018-02-07 13:58:53,361 - Amend_Credit_Within_DeadLine -INFO - Room Selected
+2018-02-07 13:58:53,361 - Amend_Credit_Within_DeadLine -INFO - Entering Passenger details
+2018-02-07 13:59:06,184 - Amend_Credit_Within_DeadLine -INFO - Entered Passenger details
+2018-02-07 13:59:14,586 - Amend_Credit_Within_DeadLine -INFO - Entering Payment details
+2018-02-07 13:59:18,079 - Amend_Credit_Within_DeadLine -INFO - Entered Payment details
+2018-02-07 13:59:46,268 - Amend_Credit_Within_DeadLine -INFO - Hotel Booked
+2018-02-07 13:59:46,268 - Amend_Credit_Within_DeadLine -INFO - Starting Hotel Amend
+2018-02-07 14:00:03,627 - Amend_Credit_Within_DeadLine -INFO - Confirming Changes
+2018-02-07 14:00:04,903 - Amend_Credit_Within_DeadLine -INFO - Entered Payment details for amendment
+2018-02-07 14:01:18,678 - Amend_Credit_Within_DeadLine -INFO - Confirmed Changes
+2018-02-07 14:01:18,688 - Amend_Credit_Within_DeadLine -INFO - Hotel Amended
+2018-02-07 18:10:22,841 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:10:46,185 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:10:56,873 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:11:10,320 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:11:24,785 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:11:29,196 - Credit_Amend_NFR -INFO - Browser Opened
+2018-02-07 18:11:36,714 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:11:52,121 - Credit_Amend_NFR -INFO - Login Successful
+2018-02-07 18:11:54,889 - Credit_Amend_NFR -INFO - Applying search Filters
+2018-02-07 18:11:54,897 - Credit_Amend_NFR -INFO - Starting HotelSearch Credit NFR
+2018-02-07 18:12:43,492 - Credit_Amend_NFR -INFO - expected [true] but found [false]
+2018-02-07 18:15:36,192 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:15:49,798 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:16:08,519 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:16:18,566 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:16:22,566 - Credit_Amend_NFR -INFO - Browser Opened
+2018-02-07 18:16:29,886 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:16:59,817 - Credit_Amend_NFR -INFO - Login Successful
+2018-02-07 18:17:02,329 - Credit_Amend_NFR -INFO - Applying search Filters
+2018-02-07 18:17:02,344 - Credit_Amend_NFR -INFO - Starting HotelSearch Credit NFR
+2018-02-07 18:17:43,644 - Credit_Amend_NFR -INFO - expected [true] but found [false]
+2018-02-07 18:18:31,739 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:18:42,000 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:19:04,090 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:19:08,141 - Credit_Amend_NFR -INFO - Browser Opened
+2018-02-07 18:19:15,227 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:19:44,764 - Credit_Amend_NFR -INFO - Login Successful
+2018-02-07 18:19:47,271 - Credit_Amend_NFR -INFO - Applying search Filters
+2018-02-07 18:19:47,285 - Credit_Amend_NFR -INFO - Starting HotelSearch Credit NFR
+2018-02-07 18:20:06,806 - Credit_Amend_NFR -INFO - Hotel Search Complete Credit NFR
+2018-02-07 18:20:06,807 - Credit_Amend_NFR -INFO - Starting Hotel Book
+2018-02-07 18:20:06,933 - Credit_Amend_NFR -INFO - Selecting Room
+2018-02-07 18:20:07,315 - Credit_Amend_NFR -INFO - Room Selected
+2018-02-07 18:20:07,315 - Credit_Amend_NFR -INFO - Entering Passenger details
+2018-02-07 18:20:40,892 - Credit_Amend_NFR -INFO - Entered Passenger details
+2018-02-07 18:20:48,829 - Credit_Amend_NFR -INFO - Entering Payment details
+2018-02-07 18:20:51,942 - Credit_Amend_NFR -INFO - Entered Payment details
+2018-02-07 18:21:24,824 - Credit_Amend_NFR -INFO - expected [true] but found [false]
+2018-02-07 18:22:11,611 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:22:45,006 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:22:55,503 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:23:00,031 - Credit_Amend_NFR -INFO - Browser Opened
+2018-02-07 18:23:06,626 - Credit_Amend_NFR -INFO - Test Case Started
+2018-02-07 18:23:38,727 - Credit_Amend_NFR -INFO - Login Successful
+2018-02-07 18:23:41,258 - Credit_Amend_NFR -INFO - Applying search Filters
+2018-02-07 18:23:41,263 - Credit_Amend_NFR -INFO - Starting HotelSearch Credit NFR
+2018-02-07 18:23:59,460 - Credit_Amend_NFR -INFO - Hotel Search Complete Credit NFR
+2018-02-07 18:23:59,460 - Credit_Amend_NFR -INFO - Starting Hotel Book
+2018-02-07 18:23:59,676 - Credit_Amend_NFR -INFO - Selecting Room
+2018-02-07 18:24:00,111 - Credit_Amend_NFR -INFO - Room Selected
+2018-02-07 18:24:00,112 - Credit_Amend_NFR -INFO - Entering Passenger details
+2018-02-07 18:24:13,668 - Credit_Amend_NFR -INFO - Entered Passenger details
+2018-02-07 18:24:21,068 - Credit_Amend_NFR -INFO - Entering Payment details
+2018-02-07 18:24:24,144 - Credit_Amend_NFR -INFO - Entered Payment details
+2018-02-07 18:24:57,025 - Credit_Amend_NFR -INFO - Hotel Booked
+2018-02-07 18:24:57,025 - Credit_Amend_NFR -INFO - Verifying Non-Clickable Amend Button
+2018-02-07 18:24:57,367 - Credit_Amend_NFR -INFO - Verified of Non-Clickable Amend Button
+2018-02-07 18:24:57,711 - Credit_Amend_NFR -INFO - expected [true] but found [false]
+2018-02-07 18:36:59,124 - Credit_Amend -INFO - Test Case Started
+2018-02-07 18:37:17,701 - Credit_Amend -INFO - Test Case Started
+2018-02-07 18:37:48,097 - Credit_Amend -INFO - Test Case Started
+2018-02-07 18:37:58,415 - Credit_Amend -INFO - Test Case Started
+2018-02-07 18:38:35,491 - Credit_Amend -INFO - Test Case Started
+2018-02-07 18:38:55,666 - Credit_Amend -INFO - Test Case Started
+2018-02-07 18:38:59,748 - Credit_Amend -INFO - Browser Opened
+2018-02-07 18:39:06,767 - Credit_Amend -INFO - Test Case Started
+2018-02-07 18:39:24,391 - Credit_Amend -INFO - Login Successful
+2018-02-07 18:39:26,955 - Credit_Amend -INFO - Applying search Filters
+2018-02-07 18:39:26,966 - Credit_Amend -INFO - Starting HotelSearch Credit
+2018-02-07 18:39:59,466 - Credit_Amend -INFO - expected [true] but found [false]
+2018-02-07 18:41:13,828 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:41:35,473 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:41:47,648 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:42:05,501 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:42:18,957 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:42:30,226 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:42:35,371 - Amend_Credit_NFR -INFO - Browser Opened
+2018-02-07 18:42:42,728 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:43:13,422 - Amend_Credit_NFR -INFO - Login Successful
+2018-02-07 18:43:15,976 - Amend_Credit_NFR -INFO - Applying search Filters
+2018-02-07 18:43:15,977 - Amend_Credit_NFR -INFO - Starting HotelSearch Credit NFR
+2018-02-07 18:43:56,605 - Amend_Credit_NFR -INFO - Hotel Search Complete Credit NFR
+2018-02-07 18:43:56,605 - Amend_Credit_NFR -INFO - Starting Hotel Book
+2018-02-07 18:43:56,790 - Amend_Credit_NFR -INFO - Selecting Room
+2018-02-07 18:43:57,337 - Amend_Credit_NFR -INFO - Room Selected
+2018-02-07 18:43:57,337 - Amend_Credit_NFR -INFO - Entering Passenger details
+2018-02-07 18:44:18,797 - Amend_Credit_NFR -INFO - Entered Passenger details
+2018-02-07 18:44:26,319 - Amend_Credit_NFR -INFO - Entering Payment details
+2018-02-07 18:44:29,347 - Amend_Credit_NFR -INFO - Entered Payment details
+2018-02-07 18:45:02,172 - Amend_Credit_NFR -INFO - Hotel Booked
+2018-02-07 18:45:02,178 - Amend_Credit_NFR -INFO - Verifying Non-Clickable Amend Button
+2018-02-07 18:45:05,493 - Amend_Credit_NFR -INFO - expected [true] but found [false]
+2018-02-07 18:48:25,890 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:49:30,659 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:50:55,441 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:51:15,178 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:51:27,443 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:52:11,875 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:52:33,394 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:52:37,497 - Amend_Credit_NFR -INFO - Browser Opened
+2018-02-07 18:52:44,645 - Amend_Credit_NFR -INFO - Test Case Started
+2018-02-07 18:53:14,038 - Amend_Credit_NFR -INFO - Login Successful
+2018-02-07 18:53:16,532 - Amend_Credit_NFR -INFO - Applying search Filters
+2018-02-07 18:53:16,544 - Amend_Credit_NFR -INFO - Starting HotelSearch Credit NFR
+2018-02-07 18:53:34,921 - Amend_Credit_NFR -INFO - Hotel Search Complete Credit NFR
+2018-02-07 18:53:34,921 - Amend_Credit_NFR -INFO - Starting Hotel Book
+2018-02-07 18:53:35,054 - Amend_Credit_NFR -INFO - Selecting Room
+2018-02-07 18:53:35,478 - Amend_Credit_NFR -INFO - Room Selected
+2018-02-07 18:53:35,479 - Amend_Credit_NFR -INFO - Entering Passenger details
+2018-02-07 18:53:49,540 - Amend_Credit_NFR -INFO - Entered Passenger details
+2018-02-07 18:53:57,474 - Amend_Credit_NFR -INFO - Entering Payment details
+2018-02-07 18:54:00,539 - Amend_Credit_NFR -INFO - Entered Payment details
+2018-02-07 18:54:33,627 - Amend_Credit_NFR -INFO - Hotel Booked
+2018-02-07 18:54:33,630 - Amend_Credit_NFR -INFO - Verifying Non-Clickable Amend Button
+2018-02-07 18:54:36,665 - Amend_Credit_NFR -INFO - Verifed Non-Clickable Amend Button

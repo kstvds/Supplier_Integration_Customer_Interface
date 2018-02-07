@@ -3,7 +3,7 @@
 <test name="SupplierTestone" >
 <parameter name="browsername" value="CH"/>
 <classes> 
-<class name="Amend.Amend_Credit" />
+<class name="Amend.Amend_Credit_NFR" />
 </classes> 
 </test>
 <!-- <test name="SupplierTesttwo" >

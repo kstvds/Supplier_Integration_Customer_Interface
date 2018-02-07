@@ -5,13 +5,12 @@
   <test name="SupplierTestone(failed)">
     <parameter name="browsername" value="CH"/>
     <classes>
-      <class name="Amend.Amend_Credit">
+      <class name="Amend.Amend_Credit_NFR">
         <methods>
-          <include name="CreditBook" invocation-numbers="0"/>
+          <include name="CreditAmendNFR" invocation-numbers="0"/>
           <include name="getResult"/>
-          <include name="afterTest"/>
         </methods>
-      </class> <!-- Amend.Amend_Credit -->
+      </class> <!-- Amend.Amend_Credit_NFR -->
     </classes>
   </test> <!-- SupplierTestone(failed) -->
 </suite> <!-- Failed suite [SupplierSuite] -->

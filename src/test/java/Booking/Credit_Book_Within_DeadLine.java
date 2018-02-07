@@ -277,8 +277,8 @@ public class Credit_Book_Within_DeadLine {
 			// now apply the command to paste
 			driverqa.findElement(Booking.CreditCost).sendKeys(Keys.chord(Keys.CONTROL, "v"));
 			logger.info("Entered Payment details");
-			test.log(LogStatus.INFO, "Entered Payment details");
-			test.log(LogStatus.PASS, "Payment details");
+			test.log(LogStatus.INFO, "Entered Passenger details");
+			test.log(LogStatus.PASS, "Passenger details");
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Within_DeadLine/Payment-Details.jpg");
 			driverqa.findElement(PaymentPage.AcceptTerms).click();

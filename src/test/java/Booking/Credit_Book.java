@@ -310,7 +310,7 @@ public class Credit_Book {
 			logger.info("Hotel Booked");
 
 		} catch (Throwable e) {
-			test.log(LogStatus.FAIL, "Hotel Book Prepay");
+			test.log(LogStatus.FAIL, "Hotel Book Credit");
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Booking.jpg");
 			errorpath = Config.SnapShotPath() + "/Book/Error/Accommodation_Book_Credit/Booking.jpg";
 			logger.info(e.getMessage());

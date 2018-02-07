@@ -58,14 +58,14 @@ public class Amend_Credit {
 	Takescreenshot obj = new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
 	LoginPage login = new LoginPage();
-	Logger logger = Logger.getLogger("Credit_Book");
+	Logger logger = Logger.getLogger("Credit_Amend");
 
 	/* ####### Passing browser as parameters in test ######### **/
 
 	@Test
 	@Parameters({ "browsername" })
-	public void CreditBook(String browsername) throws Exception {
-		test = rep.startTest("Credit Book");
+	public void CreditAmend(String browsername) throws Exception {
+		test = rep.startTest("Credit Amend");
 		excel = new ExcelDataConfig(Config.getExcelPathBook());
 		PropertyConfigurator.configure("Log4j.properties");
 		logger.info("Test Case Started");
@@ -178,9 +178,9 @@ public class Amend_Credit {
 
 			}
 			test.log(LogStatus.PASS, "Selection of Dates");
-			/*WebElement Noofchilds = driverqa.findElement(Search.NoOfChilds);
+			WebElement Noofchilds = driverqa.findElement(Search.NoOfChilds);
 			Noofchilds.clear();
-			Noofchilds.sendKeys("1");*/
+			Noofchilds.sendKeys("1");
 			driverqa.findElement(Search.PaymentOption).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.NetPay));
 			Thread.sleep(1000);
@@ -239,7 +239,13 @@ public class Amend_Credit {
 				Select passengertitle2 = new Select(driverqa.findElement(Booking.TwoPaxTitle));
 				passengertitle2.selectByIndex(1);
 			}
-			
+			if (driverqa.findElements(Booking.ThirdPaxFirstName).size() != 0) {
+				driverqa.findElement(Booking.ThirdPaxFirstName).sendKeys(excel.getData(0, 22, 1));
+				Thread.sleep(2000);
+				driverqa.findElement(Booking.ThirdPaxLastName).sendKeys(excel.getData(0, 22, 2));
+				Select passengertitle3 = new Select(driverqa.findElement(Booking.ThirdPaxTitle));
+				passengertitle3.selectByIndex(1);
+			}
 			driverqa.findElement(Booking.PrcdToBookChckBox).click();
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit/Passenger-Details.jpg");
@@ -301,12 +307,12 @@ public class Amend_Credit {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingStatusPrepay));
 			String ExpectedStatus = "Confirmed";
 			String ExpectedNoOfAdults = "2 Adults";
-			//String ExpectedNoOfChild = "1 Child";
+			String ExpectedNoOfChild = "1 Child";
 			String ActualNoOfAdults = driverqa.findElement(Booking.noOfAdultsPrepay).getText();
 			String ActualStatus = driverqa.findElement(Booking.BookingStatusPrepay).getText();
 			Assert.assertTrue(ActualStatus.equalsIgnoreCase(ExpectedStatus));
 			Assert.assertTrue(ActualNoOfAdults.contains(ExpectedNoOfAdults));
-			//Assert.assertTrue(ActualNoOfAdults.contains(ExpectedNoOfChild));
+			Assert.assertTrue(ActualNoOfAdults.contains(ExpectedNoOfChild));
 			test.log(LogStatus.INFO, "Ending Hotel Book");
 			test.log(LogStatus.PASS, "Hotel Book");
 			logger.info("Hotel Booked");
@@ -329,9 +335,9 @@ public class Amend_Credit {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.VerifyAmendPage));
 			test.log(LogStatus.INFO, "Changing No Of Passengers");
 			Select Adults = new Select(driverqa.findElement(Amend.Adults));
-			Adults.selectByIndex(0);
+			Adults.selectByIndex(2);
 			Select Child = new Select(driverqa.findElement(Amend.Children));
-			Child.selectByIndex(1);
+			Child.selectByIndex(0);
 			
 			test.log(LogStatus.PASS, "Changing No Of Passengers");
 
@@ -409,7 +415,7 @@ public class Amend_Credit {
 
 		rep.endTest(test);
 		rep.flush();
-		//driverqa.close();
+		driverqa.close();
 	}
 }
 

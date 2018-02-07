@@ -18,4 +18,6 @@ public class Amend {
 	public static final By Adults = By.xpath("//*[@id='Adults']");
 	public static final By Children = By.xpath("//*[@id='Children']");
 	public static final By AfterAmendNoOfPassengers = By.xpath("//*[@id='bookingDetailsContainer']/div[1]/div[6]/table/tbody/tr[3]/td[2]");
+	public static final By AcceptAmendCharge = By.xpath("//*[@id='agreeCancellation_0']");
+	public static final By UnableToAmendNFR = By.xpath("//*[contains(text(),'Amend is not allowed')]");
 }
