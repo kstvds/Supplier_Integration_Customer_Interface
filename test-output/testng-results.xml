@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SupplierSuite" duration-ms="123998" started-at="2018-02-07T13:22:32Z" finished-at="2018-02-07T13:24:36Z">
+  <suite name="SupplierSuite" duration-ms="105251" started-at="2018-02-09T08:43:41Z" finished-at="2018-02-09T08:45:26Z">
     <groups>
     </groups>
-    <test name="SupplierTestone" duration-ms="123998" started-at="2018-02-07T13:22:32Z" finished-at="2018-02-07T13:24:36Z">
-      <class name="Amend.Amend_Credit_NFR">
-        <test-method status="PASS" signature="CreditAmendNFR(java.lang.String)[pri:0, instance:Amend.Amend_Credit_NFR@3d921e20]" name="CreditAmendNFR" duration-ms="123788" started-at="2018-02-07T18:52:32Z" finished-at="2018-02-07T18:54:36Z">
+    <test name="SupplierTestone" duration-ms="105251" started-at="2018-02-09T08:43:41Z" finished-at="2018-02-09T08:45:26Z">
+      <class name="Cancel.Cancel_Credit_NFR">
+        <test-method status="PASS" signature="CreditCancelNFR(java.lang.String)[pri:0, instance:Cancel.Cancel_Credit_NFR@3d921e20]" name="CreditCancelNFR" duration-ms="105052" started-at="2018-02-09T14:13:41Z" finished-at="2018-02-09T14:15:26Z">
           <params>
             <param index="0">
               <value>
@@ -17,23 +17,23 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreditAmendNFR -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Amend.Amend_Credit_NFR@3d921e20]" name="getResult" is-config="true" duration-ms="2" started-at="2018-02-07T18:54:36Z" finished-at="2018-02-07T18:54:36Z">
+        </test-method> <!-- CreditCancelNFR -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Cancel.Cancel_Credit_NFR@3d921e20]" name="afterTest" is-config="true" duration-ms="183" started-at="2018-02-09T14:15:26Z" finished-at="2018-02-09T14:15:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Cancel.Cancel_Credit_NFR@3d921e20]" name="getResult" is-config="true" duration-ms="0" started-at="2018-02-09T14:15:26Z" finished-at="2018-02-09T14:15:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CreditAmendNFR status=SUCCESS method=Amend_Credit_NFR.CreditAmendNFR(java.lang.String)[pri:0, instance:Amend.Amend_Credit_NFR@3d921e20] output={null}]]]>
+                <![CDATA[[TestResult name=CreditCancelNFR status=SUCCESS method=Cancel_Credit_NFR.CreditCancelNFR(java.lang.String)[pri:0, instance:Cancel.Cancel_Credit_NFR@3d921e20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Amend.Amend_Credit_NFR@3d921e20]" name="afterTest" is-config="true" duration-ms="190" started-at="2018-02-07T18:54:36Z" finished-at="2018-02-07T18:54:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- Amend.Amend_Credit_NFR -->
+      </class> <!-- Cancel.Cancel_Credit_NFR -->
     </test> <!-- SupplierTestone -->
   </suite> <!-- SupplierSuite -->
 </testng-results>

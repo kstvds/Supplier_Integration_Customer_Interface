@@ -4582,3 +4582,48 @@ Session ID: b5713465d79fb022be8dca0ca49d601e
 2018-02-07 18:54:33,627 - Amend_Credit_NFR -INFO - Hotel Booked
 2018-02-07 18:54:33,630 - Amend_Credit_NFR -INFO - Verifying Non-Clickable Amend Button
 2018-02-07 18:54:36,665 - Amend_Credit_NFR -INFO - Verifed Non-Clickable Amend Button
+2018-02-09 14:08:14,642 - Cancel_Credit_NFR -INFO - Test Case Started
+2018-02-09 14:08:20,391 - Cancel_Credit_NFR -INFO - Browser Opened
+2018-02-09 14:08:27,255 - Cancel_Credit_NFR -INFO - Test Case Started
+2018-02-09 14:08:42,498 - Cancel_Credit_NFR -INFO - Login Successful
+2018-02-09 14:08:45,169 - Cancel_Credit_NFR -INFO - Applying search Filters
+2018-02-09 14:08:45,184 - Cancel_Credit_NFR -INFO - Starting HotelSearch Credit NFR
+2018-02-09 14:09:26,663 - Cancel_Credit_NFR -INFO - Hotel Search Complete Credit NFR
+2018-02-09 14:09:26,670 - Cancel_Credit_NFR -INFO - Starting Hotel Book
+2018-02-09 14:09:26,792 - Cancel_Credit_NFR -INFO - Selecting Room
+2018-02-09 14:09:27,068 - Cancel_Credit_NFR -INFO - Room Selected
+2018-02-09 14:09:27,068 - Cancel_Credit_NFR -INFO - Entering Passenger details
+2018-02-09 14:09:39,054 - Cancel_Credit_NFR -INFO - Entered Passenger details
+2018-02-09 14:09:46,468 - Cancel_Credit_NFR -INFO - Entering Payment details
+2018-02-09 14:09:49,494 - Cancel_Credit_NFR -INFO - Entered Payment details
+2018-02-09 14:10:23,691 - Cancel_Credit_NFR -INFO - Hotel Booked
+2018-02-09 14:10:23,694 - Cancel_Credit_NFR -INFO - Verifying Non-Clickable Amend Button
+2018-02-09 14:10:26,963 - Cancel_Credit_NFR -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Amend is not allowed')]"}
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 48 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir28444_27404}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2e45daa971cc5b29f34eeb2bb8b562e2
+*** Element info: {Using=xpath, value=//*[contains(text(),'Amend is not allowed')]}
+2018-02-09 14:12:34,405 - Cancel_Credit_NFR -INFO - Test Case Started
+2018-02-09 14:13:42,079 - Cancel_Credit_NFR -INFO - Test Case Started
+2018-02-09 14:13:46,887 - Cancel_Credit_NFR -INFO - Browser Opened
+2018-02-09 14:13:53,702 - Cancel_Credit_NFR -INFO - Test Case Started
+2018-02-09 14:14:09,803 - Cancel_Credit_NFR -INFO - Login Successful
+2018-02-09 14:14:12,323 - Cancel_Credit_NFR -INFO - Applying search Filters
+2018-02-09 14:14:12,336 - Cancel_Credit_NFR -INFO - Starting HotelSearch Credit NFR
+2018-02-09 14:14:31,081 - Cancel_Credit_NFR -INFO - Hotel Search Complete Credit NFR
+2018-02-09 14:14:31,081 - Cancel_Credit_NFR -INFO - Starting Hotel Book
+2018-02-09 14:14:31,232 - Cancel_Credit_NFR -INFO - Selecting Room
+2018-02-09 14:14:31,577 - Cancel_Credit_NFR -INFO - Room Selected
+2018-02-09 14:14:31,577 - Cancel_Credit_NFR -INFO - Entering Passenger details
+2018-02-09 14:14:40,599 - Cancel_Credit_NFR -INFO - Entered Passenger details
+2018-02-09 14:14:47,462 - Cancel_Credit_NFR -INFO - Entering Payment details
+2018-02-09 14:14:50,420 - Cancel_Credit_NFR -INFO - Entered Payment details
+2018-02-09 14:15:23,614 - Cancel_Credit_NFR -INFO - Hotel Booked
+2018-02-09 14:15:23,625 - Cancel_Credit_NFR -INFO - Verifying Non-Clickable Amend Button
+2018-02-09 14:15:26,615 - Cancel_Credit_NFR -INFO - Verifed Non-Clickable Amend Button

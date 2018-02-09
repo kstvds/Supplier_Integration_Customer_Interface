@@ -101,7 +101,7 @@
                     <div class="method-list-content passed suite-SupplierSuite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SupplierSuite" title="Amend.Amend_Credit_NFR" hash-for-method="CreditAmendNFR(CH)">CreditAmendNFR(CH)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-SupplierSuite" title="Cancel.Cancel_Credit_NFR" hash-for-method="CreditCancelNFR(CH)">CreditCancelNFR(CH)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-SupplierSuite -->
@@ -119,14 +119,14 @@
           <div class="suite-SupplierSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Amend.Amend_Credit_NFR</span>
+              <span class="class-name">Cancel.Cancel_Credit_NFR</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreditAmendNFR(CH)">
-                  </a> <!-- CreditAmendNFR(CH) -->
-                  <span class="method-name">CreditAmendNFR</span>
+                  <a name="CreditCancelNFR(CH)">
+                  </a> <!-- CreditCancelNFR(CH) -->
+                  <span class="method-name">CreditCancelNFR</span>
                   <span class="parameters">(CH)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -145,7 +145,7 @@
   &lt;test name=&quot;SupplierTestone&quot;&gt;
     &lt;parameter name=&quot;browsername&quot; value=&quot;CH&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Amend.Amend_Credit_NFR&quot;/&gt;
+      &lt;class name=&quot;Cancel.Cancel_Credit_NFR&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SupplierTestone --&gt;
 &lt;/suite&gt; &lt;!-- SupplierSuite --&gt;
@@ -187,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CreditAmendNFR')
-data.setCell(0, 2, 'Amend.Amend_Credit_NFR')
-data.setCell(0, 3, 123788);
+data.setCell(0, 1, 'CreditCancelNFR')
+data.setCell(0, 2, 'Cancel.Cancel_Credit_NFR')
+data.setCell(0, 3, 105052);
 window.suiteTableData['SupplierSuite']= { tableData: data, tableDiv: 'times-div-SupplierSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-SupplierSuite">
               </div> <!-- times-div-SupplierSuite -->
             </div> <!-- times-div -->
@@ -220,19 +220,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Amend.Amend_Credit_NFR</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Cancel.Cancel_Credit_NFR</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">CreditAmendNFR(CH)</span>
+                <span class="method-name">CreditCancelNFR(CH)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=CreditAmendNFR status=SUCCESS method=Amend_Credit_NFR.CreditAmendNFR(java.lang.Stri...)</span>
-                <span class="method-start">123789 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">123792 ms</span>
+                <span class="method-start">105052 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=CreditCancelNFR status=SUCCESS method=Cancel_Credit_NFR.CreditCancelNFR(java.lang.S...)</span>
+                <span class="method-start">105052 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

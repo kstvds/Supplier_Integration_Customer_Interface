@@ -36,6 +36,9 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
+/* #######  Test for accommodation booking and amend for Credit user #########
+######  Scenario Logs In, Books a specified hotel and amends the booking ##### */
+
 public class Amend_Credit {
 	public WebDriver driverqa;
 	ExtentTest test;
