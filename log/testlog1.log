@@ -4627,3 +4627,303 @@ Session ID: 2e45daa971cc5b29f34eeb2bb8b562e2
 2018-02-09 14:15:23,614 [main] INFO Cancel_Credit_NFR - Hotel Booked
 2018-02-09 14:15:23,625 [main] INFO Cancel_Credit_NFR - Verifying Non-Clickable Amend Button
 2018-02-09 14:15:26,615 [main] INFO Cancel_Credit_NFR - Verifed Non-Clickable Amend Button
+2018-02-12 15:06:05,057 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:06:12,639 [main] INFO Prepay_Cancel - Browser Opened
+2018-02-12 15:06:18,078 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:06:33,970 [main] INFO Prepay_Cancel - Login Successful
+2018-02-12 15:06:36,751 [main] INFO Prepay_Cancel - Applying search Filters
+2018-02-12 15:06:36,761 [main] INFO Prepay_Cancel - Starting HotelSearch Prepay
+2018-02-12 15:07:02,042 [main] INFO Prepay_Cancel - Hotel Search Complete Prepay
+2018-02-12 15:07:02,056 [main] INFO Prepay_Cancel - Starting Hotel Book
+2018-02-12 15:07:02,183 [main] INFO Prepay_Cancel - Selecting Room
+2018-02-12 15:07:02,641 [main] INFO Prepay_Cancel - Room Selected
+2018-02-12 15:07:02,642 [main] INFO Prepay_Cancel - Entering Passenger details
+2018-02-12 15:07:11,287 [main] INFO Prepay_Cancel - element not visible
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 140 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir2556_640}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ea3e6187f0ec517e826460ebd478e306
+2018-02-12 15:08:13,513 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:08:18,429 [main] INFO Prepay_Cancel - Browser Opened
+2018-02-12 15:08:23,032 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:08:38,498 [main] INFO Prepay_Cancel - Login Successful
+2018-02-12 15:08:41,163 [main] INFO Prepay_Cancel - Applying search Filters
+2018-02-12 15:08:41,176 [main] INFO Prepay_Cancel - Starting HotelSearch Prepay
+2018-02-12 15:09:04,387 [main] INFO Prepay_Cancel - Hotel Search Complete Prepay
+2018-02-12 15:09:04,401 [main] INFO Prepay_Cancel - Starting Hotel Book
+2018-02-12 15:09:04,541 [main] INFO Prepay_Cancel - Selecting Room
+2018-02-12 15:09:04,892 [main] INFO Prepay_Cancel - Room Selected
+2018-02-12 15:09:04,892 [main] INFO Prepay_Cancel - Entering Passenger details
+2018-02-12 15:09:15,682 [main] INFO Prepay_Cancel - Entered Passenger details
+2018-02-12 15:09:29,254 [main] INFO Prepay_Cancel - Hotel Booked
+2018-02-12 15:09:29,266 [main] INFO Prepay_Cancel - Starting Hotel Cancel
+2018-02-12 15:09:42,782 [main] INFO Prepay_Cancel - expected [true] but found [false]
+2018-02-12 15:11:41,235 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:12:01,357 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:12:05,746 [main] INFO Prepay_Cancel - Browser Opened
+2018-02-12 15:12:10,583 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:12:26,845 [main] INFO Prepay_Cancel - Login Successful
+2018-02-12 15:12:29,502 [main] INFO Prepay_Cancel - Applying search Filters
+2018-02-12 15:12:29,518 [main] INFO Prepay_Cancel - Starting HotelSearch Prepay
+2018-02-12 15:12:52,925 [main] INFO Prepay_Cancel - Hotel Search Complete Prepay
+2018-02-12 15:12:52,937 [main] INFO Prepay_Cancel - Starting Hotel Book
+2018-02-12 15:12:53,079 [main] INFO Prepay_Cancel - Selecting Room
+2018-02-12 15:12:53,440 [main] INFO Prepay_Cancel - Room Selected
+2018-02-12 15:12:53,441 [main] INFO Prepay_Cancel - Entering Passenger details
+2018-02-12 15:13:04,042 [main] INFO Prepay_Cancel - Entered Passenger details
+2018-02-12 15:13:17,787 [main] INFO Prepay_Cancel - Hotel Booked
+2018-02-12 15:13:17,798 [main] INFO Prepay_Cancel - Starting Hotel Cancel
+2018-02-12 15:13:31,254 [main] INFO Prepay_Cancel - expected [true] but found [false]
+2018-02-12 15:14:26,501 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:14:46,956 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:14:56,814 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:15:01,212 [main] INFO Prepay_Cancel - Browser Opened
+2018-02-12 15:15:06,111 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:15:20,403 [main] INFO Prepay_Cancel - Login Successful
+2018-02-12 15:15:23,112 [main] INFO Prepay_Cancel - Applying search Filters
+2018-02-12 15:15:23,115 [main] INFO Prepay_Cancel - Starting HotelSearch Prepay
+2018-02-12 15:15:46,592 [main] INFO Prepay_Cancel - Hotel Search Complete Prepay
+2018-02-12 15:15:46,598 [main] INFO Prepay_Cancel - Starting Hotel Book
+2018-02-12 15:15:46,740 [main] INFO Prepay_Cancel - Selecting Room
+2018-02-12 15:15:47,101 [main] INFO Prepay_Cancel - Room Selected
+2018-02-12 15:15:47,101 [main] INFO Prepay_Cancel - Entering Passenger details
+2018-02-12 15:15:57,725 [main] INFO Prepay_Cancel - Entered Passenger details
+2018-02-12 15:16:11,364 [main] INFO Prepay_Cancel - Hotel Booked
+2018-02-12 15:16:11,376 [main] INFO Prepay_Cancel - Starting Hotel Cancel
+2018-02-12 15:16:24,790 [main] INFO Prepay_Cancel - expected [true] but found [false]
+2018-02-12 15:16:58,623 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:17:03,170 [main] INFO Prepay_Cancel - Browser Opened
+2018-02-12 15:17:08,082 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:17:22,277 [main] INFO Prepay_Cancel - Login Successful
+2018-02-12 15:17:24,890 [main] INFO Prepay_Cancel - Applying search Filters
+2018-02-12 15:17:24,891 [main] INFO Prepay_Cancel - Starting HotelSearch Prepay
+2018-02-12 15:17:48,520 [main] INFO Prepay_Cancel - Hotel Search Complete Prepay
+2018-02-12 15:17:48,531 [main] INFO Prepay_Cancel - Starting Hotel Book
+2018-02-12 15:17:48,704 [main] INFO Prepay_Cancel - Selecting Room
+2018-02-12 15:17:49,216 [main] INFO Prepay_Cancel - Room Selected
+2018-02-12 15:17:49,217 [main] INFO Prepay_Cancel - Entering Passenger details
+2018-02-12 15:17:59,872 [main] INFO Prepay_Cancel - Entered Passenger details
+2018-02-12 15:18:13,378 [main] INFO Prepay_Cancel - Hotel Booked
+2018-02-12 15:18:13,390 [main] INFO Prepay_Cancel - Starting Hotel Cancel
+2018-02-12 15:18:29,120 [main] INFO Prepay_Cancel - Hotel Cancelled
+2018-02-12 15:20:41,669 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:20:46,383 [main] INFO Prepay_Cancel - Browser Opened
+2018-02-12 15:20:51,489 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:21:05,712 [main] INFO Prepay_Cancel - Login Successful
+2018-02-12 15:21:08,368 [main] INFO Prepay_Cancel - Applying search Filters
+2018-02-12 15:21:08,369 [main] INFO Prepay_Cancel - Starting HotelSearch Prepay
+2018-02-12 15:21:31,901 [main] INFO Prepay_Cancel - Hotel Search Complete Prepay
+2018-02-12 15:21:31,909 [main] INFO Prepay_Cancel - Starting Hotel Book
+2018-02-12 15:21:32,035 [main] INFO Prepay_Cancel - Selecting Room
+2018-02-12 15:21:32,393 [main] INFO Prepay_Cancel - Room Selected
+2018-02-12 15:21:32,393 [main] INFO Prepay_Cancel - Entering Passenger details
+2018-02-12 15:21:43,087 [main] INFO Prepay_Cancel - Entered Passenger details
+2018-02-12 15:21:56,962 [main] INFO Prepay_Cancel - Hotel Booked
+2018-02-12 15:21:56,975 [main] INFO Prepay_Cancel - Starting Hotel Cancel
+2018-02-12 15:22:12,655 [main] INFO Prepay_Cancel - Hotel Cancelled
+2018-02-12 15:29:50,103 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:31:14,331 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:31:43,333 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:31:47,713 [main] INFO Prepay_Cancel - Browser Opened
+2018-02-12 15:31:52,611 [main] INFO Prepay_Cancel - Test Case Started
+2018-02-12 15:32:09,181 [main] INFO Prepay_Cancel - Login Successful
+2018-02-12 15:32:11,864 [main] INFO Prepay_Cancel - Applying search Filters
+2018-02-12 15:32:11,865 [main] INFO Prepay_Cancel - Starting HotelSearch Prepay
+2018-02-12 15:32:35,092 [main] INFO Prepay_Cancel - Hotel Search Complete Prepay
+2018-02-12 15:32:35,107 [main] INFO Prepay_Cancel - Starting Hotel Book
+2018-02-12 15:32:35,248 [main] INFO Prepay_Cancel - Selecting Room
+2018-02-12 15:32:35,617 [main] INFO Prepay_Cancel - Room Selected
+2018-02-12 15:32:35,618 [main] INFO Prepay_Cancel - Entering Passenger details
+2018-02-12 15:32:46,348 [main] INFO Prepay_Cancel - Entered Passenger details
+2018-02-12 15:32:59,953 [main] INFO Prepay_Cancel - Hotel Booked
+2018-02-12 15:32:59,954 [main] INFO Prepay_Cancel - Starting Hotel Cancel
+2018-02-12 15:33:15,871 [main] INFO Prepay_Cancel - Hotel Cancelled
+2018-02-12 18:27:16,166 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:27:21,385 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 18:27:26,258 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:27:40,940 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 18:27:43,699 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 18:27:43,711 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 18:28:07,685 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Search Complete Credit Card
+2018-02-12 18:28:07,700 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting Hotel Book
+2018-02-12 18:28:07,810 [main] INFO Credit_Card_Cancel_Within_DeadLine - Selecting Room
+2018-02-12 18:28:08,155 [main] INFO Credit_Card_Cancel_Within_DeadLine - Room Selected
+2018-02-12 18:28:08,155 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entering Passenger details
+2018-02-12 18:28:17,349 [main] INFO Credit_Card_Cancel_Within_DeadLine - element not visible
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 144 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir8956_7014}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 39704bf709aa7f4d401af1727a20cb8b
+2018-02-12 18:33:20,310 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:35:37,223 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:35:42,489 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 18:35:47,054 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:36:04,328 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 18:36:07,019 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 18:36:07,022 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 18:36:30,084 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Search Complete Credit Card
+2018-02-12 18:36:30,089 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting Hotel Book
+2018-02-12 18:36:30,231 [main] INFO Credit_Card_Cancel_Within_DeadLine - Selecting Room
+2018-02-12 18:36:30,584 [main] INFO Credit_Card_Cancel_Within_DeadLine - Room Selected
+2018-02-12 18:36:30,584 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entering Passenger details
+2018-02-12 18:36:42,953 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entered Passenger details
+2018-02-12 18:36:49,983 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entering Payment details
+2018-02-12 18:36:54,281 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entered Payment details
+2018-02-12 18:37:21,520 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Booked
+2018-02-12 18:37:21,534 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting Hotel Cancel
+2018-02-12 18:38:46,853 [main] INFO Credit_Card_Cancel_Within_DeadLine - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@class ='btn btn-primary']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir28964_27905}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: f32e3fdd2dc61575a6b8e7d24afd575e
+2018-02-12 18:40:54,265 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:40:59,058 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 18:41:03,693 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:41:18,058 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 18:41:20,717 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 18:41:20,720 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 18:41:43,381 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Search Complete Credit Card
+2018-02-12 18:41:43,388 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting Hotel Book
+2018-02-12 18:41:43,592 [main] INFO Credit_Card_Cancel_Within_DeadLine - Selecting Room
+2018-02-12 18:41:44,092 [main] INFO Credit_Card_Cancel_Within_DeadLine - Room Selected
+2018-02-12 18:41:44,093 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entering Passenger details
+2018-02-12 18:41:55,379 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entered Passenger details
+2018-02-12 18:42:32,519 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:43:05,555 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:43:34,689 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:43:59,121 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:44:16,469 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:44:21,193 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 18:44:25,919 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:44:42,248 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 18:44:44,911 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 18:44:44,912 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 18:45:06,688 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Search Complete Credit Card
+2018-02-12 18:45:06,702 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting Hotel Book
+2018-02-12 18:45:06,828 [main] INFO Credit_Card_Cancel_Within_DeadLine - Selecting Room
+2018-02-12 18:45:07,167 [main] INFO Credit_Card_Cancel_Within_DeadLine - Room Selected
+2018-02-12 18:45:07,167 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entering Passenger details
+2018-02-12 18:45:20,729 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entered Passenger details
+2018-02-12 18:45:27,440 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entering Payment details
+2018-02-12 18:45:31,821 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entered Payment details
+2018-02-12 18:45:58,753 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Booked
+2018-02-12 18:45:58,768 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting Hotel Cancel
+2018-02-12 18:46:17,253 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Cancelled
+2018-02-12 18:57:11,467 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:57:15,831 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 18:57:21,483 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:57:38,062 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 18:57:40,738 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 18:57:40,741 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 18:58:04,929 [main] INFO Credit_Card_Cancel_Within_DeadLine - expected [true] but found [false]
+2018-02-12 18:59:37,960 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 18:59:42,809 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 18:59:47,733 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:00:04,567 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 19:00:07,233 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 19:00:07,242 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 19:00:30,872 [main] INFO Credit_Card_Cancel_Within_DeadLine - expected [true] but found [false]
+2018-02-12 19:01:05,819 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:01:10,896 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 19:01:16,002 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:01:32,407 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 19:01:35,063 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 19:01:35,072 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 19:01:58,658 [main] INFO Credit_Card_Cancel_Within_DeadLine - expected [true] but found [false]
+2018-02-12 19:03:40,715 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:04:12,038 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:04:34,767 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:05:13,003 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:05:30,978 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:05:45,237 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:06:01,096 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:06:14,738 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:06:19,974 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 19:06:24,801 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:06:39,464 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 19:06:42,107 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 19:06:42,111 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 19:07:05,529 [main] INFO Credit_Card_Cancel_Within_DeadLine - expected [true] but found [false]
+2018-02-12 19:08:32,770 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:08:58,238 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:09:18,066 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:09:22,796 [main] INFO Credit_Card_Cancel_Within_DeadLine - Browser Opened
+2018-02-12 19:09:27,668 [main] INFO Credit_Card_Cancel_Within_DeadLine - Test Case Started
+2018-02-12 19:09:45,193 [main] INFO Credit_Card_Cancel_Within_DeadLine - Login Successful
+2018-02-12 19:09:47,873 [main] INFO Credit_Card_Cancel_Within_DeadLine - Applying search Filters
+2018-02-12 19:09:47,883 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting HotelSearch Credit Card
+2018-02-12 19:10:10,437 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Search Complete Credit Card
+2018-02-12 19:10:10,452 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting Hotel Book
+2018-02-12 19:10:10,594 [main] INFO Credit_Card_Cancel_Within_DeadLine - Selecting Room
+2018-02-12 19:10:10,991 [main] INFO Credit_Card_Cancel_Within_DeadLine - Room Selected
+2018-02-12 19:10:10,991 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entering Passenger details
+2018-02-12 19:10:22,343 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entered Passenger details
+2018-02-12 19:10:29,026 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entering Payment details
+2018-02-12 19:10:33,495 [main] INFO Credit_Card_Cancel_Within_DeadLine - Entered Payment details
+2018-02-12 19:11:00,718 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Booked
+2018-02-12 19:11:00,733 [main] INFO Credit_Card_Cancel_Within_DeadLine - Starting Hotel Cancel
+2018-02-12 19:11:19,471 [main] INFO Credit_Card_Cancel_Within_DeadLine - Hotel Cancelled
+2018-02-12 19:30:18,518 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:30:23,042 [main] INFO Cancel_Credit_Within_DeadLine - Browser Opened
+2018-02-12 19:30:27,772 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:30:36,019 [main] INFO Cancel_Credit_Within_DeadLine - Login Successful
+2018-02-12 19:30:38,698 [main] INFO Cancel_Credit_Within_DeadLine - Applying search Filters
+2018-02-12 19:30:38,699 [main] INFO Cancel_Credit_Within_DeadLine - Starting HotelSearch Credit Within Deadline
+2018-02-12 19:31:31,454 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:31:35,864 [main] INFO Cancel_Credit_Within_DeadLine - Browser Opened
+2018-02-12 19:31:40,731 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:31:49,433 [main] INFO Cancel_Credit_Within_DeadLine - Login Successful
+2018-02-12 19:31:52,080 [main] INFO Cancel_Credit_Within_DeadLine - Applying search Filters
+2018-02-12 19:31:52,080 [main] INFO Cancel_Credit_Within_DeadLine - Starting HotelSearch Credit Within Deadline
+2018-02-12 19:33:14,889 [main] INFO Cancel_Credit_Within_DeadLine - Timed out after 80 seconds waiting for visibility of element located by By.xpath: //*[@id='destination']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir20240_20022}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 6ac9cb8a8defd27ef7eac6f41bbcd8c2
+2018-02-12 19:38:17,335 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:38:29,550 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:38:34,788 [main] INFO Cancel_Credit_Within_DeadLine - Browser Opened
+2018-02-12 19:38:41,954 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:38:59,018 [main] INFO Cancel_Credit_Within_DeadLine - Login Successful
+2018-02-12 19:39:01,541 [main] INFO Cancel_Credit_Within_DeadLine - Applying search Filters
+2018-02-12 19:39:01,541 [main] INFO Cancel_Credit_Within_DeadLine - Starting HotelSearch Credit Within Deadline
+2018-02-12 19:39:25,183 [main] INFO Cancel_Credit_Within_DeadLine - Hotel Search Complete Credit Within Deadline
+2018-02-12 19:39:25,184 [main] INFO Cancel_Credit_Within_DeadLine - Starting Hotel Book
+2018-02-12 19:39:25,322 [main] INFO Cancel_Credit_Within_DeadLine - Selecting Room
+2018-02-12 19:39:25,663 [main] INFO Cancel_Credit_Within_DeadLine - Room Selected
+2018-02-12 19:39:25,663 [main] INFO Cancel_Credit_Within_DeadLine - Entering Passenger details
+2018-02-12 19:39:32,425 [main] INFO Cancel_Credit_Within_DeadLine - element not visible
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 129 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir29092_18739}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 7b9d45f7f93fcf9405ace316e7fc0738
+2018-02-12 19:40:27,508 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:40:39,590 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:40:50,637 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:40:55,139 [main] INFO Cancel_Credit_Within_DeadLine - Browser Opened
+2018-02-12 19:41:02,372 [main] INFO Cancel_Credit_Within_DeadLine - Test Case Started
+2018-02-12 19:41:22,139 [main] INFO Cancel_Credit_Within_DeadLine - Login Successful
+2018-02-12 19:41:24,647 [main] INFO Cancel_Credit_Within_DeadLine - Applying search Filters
+2018-02-12 19:41:24,648 [main] INFO Cancel_Credit_Within_DeadLine - Starting HotelSearch Credit Within Deadline
+2018-02-12 19:41:47,317 [main] INFO Cancel_Credit_Within_DeadLine - Hotel Search Complete Credit Within Deadline
+2018-02-12 19:41:47,317 [main] INFO Cancel_Credit_Within_DeadLine - Starting Hotel Book
+2018-02-12 19:41:47,446 [main] INFO Cancel_Credit_Within_DeadLine - Selecting Room
+2018-02-12 19:41:47,775 [main] INFO Cancel_Credit_Within_DeadLine - Room Selected
+2018-02-12 19:41:47,775 [main] INFO Cancel_Credit_Within_DeadLine - Entering Passenger details
+2018-02-12 19:41:56,623 [main] INFO Cancel_Credit_Within_DeadLine - Entered Passenger details
+2018-02-12 19:42:05,637 [main] INFO Cancel_Credit_Within_DeadLine - Entering Payment details
+2018-02-12 19:42:08,702 [main] INFO Cancel_Credit_Within_DeadLine - Entered Payment details
