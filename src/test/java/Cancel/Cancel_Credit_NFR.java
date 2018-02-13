@@ -248,7 +248,8 @@ public class Cancel_Credit_NFR {
 			driverqa.findElement(Booking.ConfirmBook).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ProccedToBook));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Credit_NFR/Confirm-Booking.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Credit_NFR/Confirm-Booking.jpg");
 			driverqa.findElement(Booking.ProccedToBook).click();
 			logger.info("Entering Payment details");
 			test.log(LogStatus.INFO, "Entering Payment details");
@@ -274,7 +275,8 @@ public class Cancel_Credit_NFR {
 			test.log(LogStatus.INFO, "Entered Payment details");
 			test.log(LogStatus.PASS, "Payment details");
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Credit_NFR/Payment-Details.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Credit_NFR/Payment-Details.jpg");
 			driverqa.findElement(PaymentPage.AcceptTerms).click();
 			Thread.sleep(3000);
 			driverqa.findElement(PaymentPage.AcceptTerms).click();
@@ -342,7 +344,7 @@ public class Cancel_Credit_NFR {
 					Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Credit_NFR/Can't-Cancel-NFR-Rates.jpg");
 			ExpectedUnabletoAmend = "Cancel is not allowed";
 			System.out.println(ExpectedUnabletoAmend);
-			//System.out.println(ExpectedUnabletoAmend);
+			// System.out.println(ExpectedUnabletoAmend);
 			ActualUnabletoAmend = driverqa.findElement(Cancel.UnableToCancelNFR).getText();
 			Assert.assertTrue(ActualUnabletoAmend.contains(ExpectedUnabletoAmend));
 			test.log(LogStatus.PASS, "Verifed Non-Clickable Cancel Button");
@@ -350,7 +352,8 @@ public class Cancel_Credit_NFR {
 
 		} catch (Throwable e) {
 			test.log(LogStatus.FAIL, "Hotel Cancel Credit NFR");
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Cancel/Error/Accommodation_Cancel_Credit_NFR/Cancelling.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Cancel/Error/Accommodation_Cancel_Credit_NFR/Cancelling.jpg");
 			errorpath = Config.SnapShotPath() + "/Cancel/Error/Accommodation_Cancel_Credit_NFR/Cancelling.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
@@ -382,4 +385,3 @@ public class Cancel_Credit_NFR {
 		driverqa.close();
 	}
 }
-

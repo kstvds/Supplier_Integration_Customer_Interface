@@ -84,9 +84,6 @@ public class Prepay_Cancel {
 			WebElement username = driverqa.findElement(LoginPage.LoginId);
 			username.clear();
 			username.sendKeys(excel.getData(0, 47, 1));
-
-			// WebElement password = driverqa.findElement(LoginPage.password);
-			// password.clear();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.password));
 			driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 47, 2));
 			Thread.sleep(1000);
@@ -101,17 +98,15 @@ public class Prepay_Cancel {
 			test.log(LogStatus.INFO, "Ending Login");
 			test.log(LogStatus.PASS, "PASSED Login");
 			logger.info("Login Successful");
-			// Thread.sleep(7000);
 			ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
 				public Boolean apply(WebDriver driver) {
 					return ((JavascriptExecutor) driverqa).executeScript("return document.readyState")
 							.equals("complete");
 				}
 			};
-			// WebDriverWait waiting = new WebDriverWait(driverqa, 30);
+
 			wait.until(pageLoadCondition);
-			// wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.Closetuto));
-			// driverqa.findElement(LoginPage.Closetuto).click();
+
 			action.sendKeys(Keys.ESCAPE).build().perform();
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Prepay/Log-In.jpg");
@@ -129,7 +124,7 @@ public class Prepay_Cancel {
 
 		}
 
-		/* ####### Applying filters and searching for filters ######### **/
+		/* ####### Applying filters and searching for Hotel ######### **/
 
 		try {
 			logger.info("Applying search Filters");
@@ -220,7 +215,7 @@ public class Prepay_Cancel {
 			driverqa.findElement(Booking.OnePaxlastName).sendKeys(excel.getData(0, 21, 2));
 			Select passengertitle = new Select(driverqa.findElement(Booking.OnePaxTitle));
 			passengertitle.selectByIndex(1);
-	    	if (driverqa.findElements(Booking.TwoPaxFirstName).size() != 0) {
+			if (driverqa.findElements(Booking.TwoPaxFirstName).size() != 0) {
 				driverqa.findElement(Booking.TwoPaxFirstName).sendKeys(excel.getData(0, 22, 1));
 				Thread.sleep(1000);
 				driverqa.findElement(Booking.TwoPaxLastName).sendKeys(excel.getData(0, 22, 2));
@@ -248,6 +243,7 @@ public class Prepay_Cancel {
 			WebElement Element = driverqa.findElement(Booking.Invoice);
 
 			// This will scroll the page till the element is found
+
 			js.executeScript("arguments[0].scrollIntoView();", Element);
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Prepay/Booking-Details2.jpg");
@@ -291,6 +287,7 @@ public class Prepay_Cancel {
 			WebElement Element = driverqa.findElement(Cancel.BookingCancellation);
 
 			// This will scroll the page till the element is found
+
 			js.executeScript("arguments[0].scrollIntoView();", Element);
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Prepay/After-Cancel2.jpg");
@@ -312,6 +309,8 @@ public class Prepay_Cancel {
 		}
 	}
 
+	/* ####### Generating the Failure Reports and Screenshots ######### **/
+
 	@AfterMethod
 	public void getResult(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
@@ -322,11 +321,13 @@ public class Prepay_Cancel {
 		rep.endTest(test);
 	}
 
+	/* ####### Ending Tests ######### **/
+
 	@AfterTest
 	public void afterTest() {
 
 		rep.endTest(test);
 		rep.flush();
-		//driverqa.close();
+		// driverqa.close();
 	}
 }

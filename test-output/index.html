@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SupplierSuite">
-              <span class="suite-name border-failed">SupplierSuite</span>
+              <span class="suite-name border-passed">SupplierSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,21 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-SupplierSuite" class="hide-methods failed suite-SupplierSuite"> (hide)</a> <!-- hide-methods failed suite-SupplierSuite -->
-                      <a href="#" panel-name="suite-SupplierSuite" class="show-methods failed suite-SupplierSuite"> (show)</a> <!-- show-methods failed suite-SupplierSuite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SupplierSuite" class="hide-methods passed suite-SupplierSuite"> (hide)</a> <!-- hide-methods passed suite-SupplierSuite -->
+                      <a href="#" panel-name="suite-SupplierSuite" class="show-methods passed suite-SupplierSuite"> (show)</a> <!-- show-methods passed suite-SupplierSuite -->
                     </span>
-                    <div class="method-list-content failed suite-SupplierSuite">
+                    <div class="method-list-content passed suite-SupplierSuite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-SupplierSuite" title="Cancel.Cancel_Credit_Within_DeadLine" hash-for-method="CreditCancelWithinDeadline(CH)">CreditCancelWithinDeadline(CH)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SupplierSuite" title="Search.Search_Dotw" hash-for-method="SearchDotw(CH)">SearchDotw(CH)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-SupplierSuite -->
+                    </div> <!-- method-list-content passed suite-SupplierSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,71 +116,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SupplierSuite" class="panel SupplierSuite">
-          <div class="suite-SupplierSuite-class-failed">
+          <div class="suite-SupplierSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Cancel.Cancel_Credit_Within_DeadLine</span>
+              <img src="passed.png"/>
+              <span class="class-name">Search.Search_Dotw</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CreditCancelWithinDeadline(CH)">
-                  </a> <!-- CreditCancelWithinDeadline(CH) -->
-                  <span class="method-name">CreditCancelWithinDeadline</span>
+                  <a name="SearchDotw(CH)">
+                  </a> <!-- SearchDotw(CH) -->
+                  <span class="method-name">SearchDotw</span>
                   <span class="parameters">(CH)</span>
-                  <div class="stack-trace"><b>"java.lang.AssertionError: element not visible
-  (Session info: chrome=62.0.3202.62)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 129 milliseconds
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;PC350015&apos;, ip: &apos;10.245.98.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir29092_18739}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 7b9d45f7f93fcf9405ace316e7fc0738 expected [true] but found [false]
-	at Cancel.Cancel_Credit_Within_DeadLine.CreditCancelWithinDeadline(Cancel_Credit_Within_DeadLine.java:334)
-... Removed 27 stack frames<br/> java.lang.AssertionError: element not visible
-  (Session info: chrome=62.0.3202.62)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 129 milliseconds
-Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
-System info: host: &apos;PC350015&apos;, ip: &apos;10.245.98.86&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir29092_18739}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 7b9d45f7f93fcf9405ace316e7fc0738 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at Cancel.Cancel_Credit_Within_DeadLine.CreditCancelWithinDeadline(Cancel_Credit_Within_DeadLine.java:334)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-"</b><br>org.testng.Assert.fail(Assert.java:94)<br>org.testng.Assert.failNotEquals(Assert.java:494)<br>org.testng.Assert.assertTrue(Assert.java:42)<br>Cancel.Cancel_Credit_Within_DeadLine.CreditCancelWithinDeadline(Cancel_Credit_Within_DeadLine.java:334)<br>sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.lang.reflect.Method.invoke(Method.java:498)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)<br>
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SupplierSuite-class-failed -->
+          </div> <!-- suite-SupplierSuite-class-passed -->
         </div> <!-- panel SupplierSuite -->
         <div panel-name="test-xml-SupplierSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -194,7 +145,7 @@ Session ID: 7b9d45f7f93fcf9405ace316e7fc0738 expected [true] but found [false]
   &lt;test name=&quot;SupplierTestone&quot;&gt;
     &lt;parameter name=&quot;browsername&quot; value=&quot;CH&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Cancel.Cancel_Credit_Within_DeadLine&quot;/&gt;
+      &lt;class name=&quot;Search.Search_Dotw&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- SupplierTestone --&gt;
 &lt;/suite&gt; &lt;!-- SupplierSuite --&gt;
@@ -236,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CreditCancelWithinDeadline')
-data.setCell(0, 2, 'Cancel.Cancel_Credit_Within_DeadLine')
-data.setCell(0, 3, 63688);
+data.setCell(0, 1, 'SearchDotw')
+data.setCell(0, 2, 'Search.Search_Dotw')
+data.setCell(0, 3, 57963);
 window.suiteTableData['SupplierSuite']= { tableData: data, tableDiv: 'times-div-SupplierSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-SupplierSuite">
               </div> <!-- times-div-SupplierSuite -->
             </div> <!-- times-div -->
@@ -269,20 +220,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Cancel.Cancel_Credit_Within_DeadLine</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Search.Search_Dotw</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">CreditCancelWithinDeadline(CH)</span>
+                <span class="method-name">SearchDotw(CH)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=CreditCancelWithinDeadline status=FAILURE method=Cancel_Credit_Within_DeadLine.Cred...)</span>
-                <span class="method-start">63691 ms</span>
+                <span class="method-name">getResult([TestResult name=SearchDotw status=SUCCESS method=Search_Dotw.SearchDotw(java.lang.String)[pri:0, in...)</span>
+                <span class="method-start">57964 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">63694 ms</span>
+                <span class="method-start">57968 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SupplierSuite" duration-ms="65861" started-at="2018-02-12T14:08:28Z" finished-at="2018-02-12T14:09:34Z">
+  <suite name="SupplierSuite" duration-ms="60617" started-at="2018-02-13T13:37:42Z" finished-at="2018-02-13T13:38:43Z">
     <groups>
     </groups>
-    <test name="SupplierTestone" duration-ms="65861" started-at="2018-02-12T14:08:28Z" finished-at="2018-02-12T14:09:34Z">
-      <class name="Cancel.Cancel_Credit_Within_DeadLine">
-        <test-method status="FAIL" signature="CreditCancelWithinDeadline(java.lang.String)[pri:0, instance:Cancel.Cancel_Credit_Within_DeadLine@3d921e20]" name="CreditCancelWithinDeadline" duration-ms="63688" started-at="2018-02-12T19:38:28Z" finished-at="2018-02-12T19:39:32Z">
+    <test name="SupplierTestone" duration-ms="60617" started-at="2018-02-13T13:37:42Z" finished-at="2018-02-13T13:38:43Z">
+      <class name="Search.Search_Dotw">
+        <test-method status="PASS" signature="SearchDotw(java.lang.String)[pri:0, instance:Search.Search_Dotw@3d921e20]" name="SearchDotw" duration-ms="57963" started-at="2018-02-13T19:07:42Z" finished-at="2018-02-13T19:08:40Z">
           <params>
             <param index="0">
               <value>
@@ -15,78 +15,25 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[element not visible
-  (Session info: chrome=62.0.3202.62)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 129 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir29092_18739}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 7b9d45f7f93fcf9405ace316e7fc0738 expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: element not visible
-  (Session info: chrome=62.0.3202.62)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 129 milliseconds
-Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
-System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir29092_18739}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 7b9d45f7f93fcf9405ace316e7fc0738 expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:494)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at Cancel.Cancel_Credit_Within_DeadLine.CreditCancelWithinDeadline(Cancel_Credit_Within_DeadLine.java:334)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreditCancelWithinDeadline -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Cancel.Cancel_Credit_Within_DeadLine@3d921e20]" name="getResult" is-config="true" duration-ms="2" started-at="2018-02-12T19:39:32Z" finished-at="2018-02-12T19:39:32Z">
+        </test-method> <!-- SearchDotw -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Search.Search_Dotw@3d921e20]" name="getResult" is-config="true" duration-ms="3" started-at="2018-02-13T19:08:40Z" finished-at="2018-02-13T19:08:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CreditCancelWithinDeadline status=FAILURE method=Cancel_Credit_Within_DeadLine.CreditCancelWithinDeadline(java.lang.String)[pri:0, instance:Cancel.Cancel_Credit_Within_DeadLine@3d921e20] output={null}]]]>
+                <![CDATA[[TestResult name=SearchDotw status=SUCCESS method=Search_Dotw.SearchDotw(java.lang.String)[pri:0, instance:Search.Search_Dotw@3d921e20] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Cancel.Cancel_Credit_Within_DeadLine@3d921e20]" name="afterTest" is-config="true" duration-ms="2156" started-at="2018-02-12T19:39:32Z" finished-at="2018-02-12T19:39:34Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Search.Search_Dotw@3d921e20]" name="afterTest" is-config="true" duration-ms="2636" started-at="2018-02-13T19:08:40Z" finished-at="2018-02-13T19:08:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- Cancel.Cancel_Credit_Within_DeadLine -->
+      </class> <!-- Search.Search_Dotw -->
     </test> <!-- SupplierTestone -->
   </suite> <!-- SupplierSuite -->
 </testng-results>

@@ -35,174 +35,183 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
+/* #######  Test for accommodation Search for Credit #########
+######  Scenario Logs In, Searches a specified hotel   ##### */
+
 public class Search_Credit {
 	public WebDriver driverqa;
-	Configuration Config = new Configuration();
-	Takescreenshot obj= new Takescreenshot();
-	ExtentReports rep = ExtentManager.getInstance();
-	ExtentTest test;
-	LoginPage login = new LoginPage();
-	//HomePage home = new HomePage();
-	//NewAccoBooking acco = new NewAccoBooking();
-	//Operations opo = new Operations();
-	Logger logger = Logger.getLogger("Search_Credit");
 	String errorpath;
-	 @Test
-	 @Parameters({ "browsername" })
-	  public void SearchCredit(String browsername) throws Exception {
-		  test = rep.startTest("Credit Search");
-		  ExcelDataConfig excel;
-		  excel = new ExcelDataConfig(Config.getExcelPathBook());
-		  PropertyConfigurator.configure("Log4j.properties");
-		  logger.info("Test Case Started");
-		if (browsername.equalsIgnoreCase("CH")) {
-			       driverqa = new DriverAndObjectDetails(DriverName.CH).CreateDriver();
-				} else if (browsername.equalsIgnoreCase("IE")) {
-					driverqa = new DriverAndObjectDetails(DriverName.IE).CreateDriver();
-				} else {
-					driverqa = new DriverAndObjectDetails(DriverName.FF).CreateDriver();
-				}
-			    WebDriverWait wait= new WebDriverWait(driverqa, 30);
-			    Actions action = new Actions(driverqa);
-	           try{
-			    logger.info("Browser Opened");
-			    String URL = excel.getData(0, 1, 5) + "/interface/en";
-				driverqa.get(URL);
-				logger.info("Test Case Started");
-				test.log(LogStatus.INFO, "Starting Login");
-				WebElement username = driverqa.findElement(LoginPage.LoginId);
-				username.clear();
-				username.sendKeys(excel.getData(0, 48, 1));
-				
-				//WebElement password = driverqa.findElement(LoginPage.password);
-				//password.clear();
-				wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.password));
-				driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 48, 2));
-				Thread.sleep(1000);
-				WebElement company = driverqa.findElement(LoginPage.Companycode);
-				company.clear();
-				company.sendKeys(excel.getData(0, 48, 3));
-				driverqa.findElement(LoginPage.Submit).click();
-				Thread.sleep(2000);
-				String expectedtitle = "DOTWconnect.com";
-				String atualtitle = driverqa.getTitle();
-				Assert.assertEquals(atualtitle, expectedtitle);
-				test.log(LogStatus.INFO, "Ending Login");
-				test.log(LogStatus.PASS, "PASSED Login");
-				logger.info("Login Successful");
-				//Thread.sleep(7000);
-				ExpectedCondition<Boolean> pageLoadCondition = new
-		                ExpectedCondition<Boolean>() {
-		                    public Boolean apply(WebDriver driver) {
-		                        return ((JavascriptExecutor)driverqa).executeScript("return document.readyState").equals("complete");
-		                    }
-		                };
-		        //WebDriverWait waiting = new WebDriverWait(driverqa, 30);
-		        wait.until(pageLoadCondition);
-				//wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.Closetuto));
-				//driverqa.findElement(LoginPage.Closetuto).click();
-				action.sendKeys(Keys.ESCAPE).build().perform();
-				Thread.sleep(2000);
-				obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit/Log-In.jpg");
+	ExtentTest test;
+	ExcelDataConfig excel;
+	Configuration Config = new Configuration();
+	Takescreenshot obj = new Takescreenshot();
+	ExtentReports rep = ExtentManager.getInstance();
 
-		} catch (Exception e) {
-			
+	LoginPage login = new LoginPage();
+	Logger logger = Logger.getLogger("Search_Credit");
+
+	/* ####### Passing browser as parameters in test ######### **/
+
+	@Test
+	@Parameters({ "browsername" })
+	public void SearchCredit(String browsername) throws Exception {
+		test = rep.startTest("Credit Search");
+
+		excel = new ExcelDataConfig(Config.getExcelPathBook());
+		PropertyConfigurator.configure("Log4j.properties");
+		logger.info("Test Case Started");
+		if (browsername.equalsIgnoreCase("CH")) {
+			driverqa = new DriverAndObjectDetails(DriverName.CH).CreateDriver();
+		} else if (browsername.equalsIgnoreCase("IE")) {
+			driverqa = new DriverAndObjectDetails(DriverName.IE).CreateDriver();
+		} else {
+			driverqa = new DriverAndObjectDetails(DriverName.FF).CreateDriver();
+		}
+		WebDriverWait wait = new WebDriverWait(driverqa, 30);
+		Actions action = new Actions(driverqa);
+
+		/* ####### Login functionality ######### **/
+
+		try {
+			logger.info("Browser Opened");
+			String URL = excel.getData(0, 1, 5) + "/interface/en";
+			driverqa.get(URL);
+			logger.info("Test Case Started");
+			test.log(LogStatus.INFO, "Starting Login");
+			WebElement username = driverqa.findElement(LoginPage.LoginId);
+			username.clear();
+			username.sendKeys(excel.getData(0, 48, 1));
+
+			// WebElement password = driverqa.findElement(LoginPage.password);
+			// password.clear();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.password));
+			driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 48, 2));
+			Thread.sleep(1000);
+			WebElement company = driverqa.findElement(LoginPage.Companycode);
+			company.clear();
+			company.sendKeys(excel.getData(0, 48, 3));
+			driverqa.findElement(LoginPage.Submit).click();
+			Thread.sleep(2000);
+			String expectedtitle = "DOTWconnect.com";
+			String atualtitle = driverqa.getTitle();
+			Assert.assertEquals(atualtitle, expectedtitle);
+			test.log(LogStatus.INFO, "Ending Login");
+			test.log(LogStatus.PASS, "PASSED Login");
+			logger.info("Login Successful");
+			// Thread.sleep(7000);
+			ExpectedCondition<Boolean> pageLoadCondition = new ExpectedCondition<Boolean>() {
+				public Boolean apply(WebDriver driver) {
+					return ((JavascriptExecutor) driverqa).executeScript("return document.readyState")
+							.equals("complete");
+				}
+			};
+
+			wait.until(pageLoadCondition);
+
+			action.sendKeys(Keys.ESCAPE).build().perform();
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit/Log-In.jpg");
+
+		} catch (Throwable e) {
+
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Log-In.jpg");
 			test.log(LogStatus.FAIL, "Login");
-			errorpath=Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Log-In.jpg";
+			errorpath = Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Log-In.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
 			rep.flush();
 			Assert.assertTrue(false, e.getMessage());
-						
+
 		}
-	           try {
-				logger.info("Applying search Filters");
-				   logger.info("Starting HotelSearch Credit");
-				   test.log(LogStatus.INFO, "Starting HotelSearch Credit");
-				   wait.until(ExpectedConditions.visibilityOfElementLocated(Search.dest));
-				   driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
-				   Thread.sleep(2000);
-				   action.sendKeys(Keys.ARROW_DOWN).build().perform();
-				   action.sendKeys(Keys.ENTER).build().perform();
-				   test.log(LogStatus.INFO, "Selecting dates");
-				   driverqa.findElement(Search.InDate).click();
-				   wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-				   driverqa.findElement(Search.nextmnth).click();
-				   driverqa.findElement(Search.nextmnth).click();
-					List<WebElement> allDates=driverqa.findElements(Search.CalenderIN);
-					
-					for(WebElement ele:allDates)
-					{
-						
-						String date=ele.getText();
-						
-						if(date.equalsIgnoreCase(excel.getData(0, 51, 1)))
-						{
-							ele.click();
-							break;
-						}
-						
-					}
-					wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-					   //driverqa.findElement(Search.nextmnth).click();
-					   //driverqa.findElement(Search.nextmnth).click();
-						List<WebElement> allDates2=driverqa.findElements(Search.CalenderIN);
-						
-						for(WebElement ele:allDates2)
-						{
-							
-							String date=ele.getText();
-							
-							if(date.equalsIgnoreCase(excel.getData(0, 51, 2)))
-							{
-								ele.click();
-								break;
-							}
-							
-						}
-						test.log(LogStatus.PASS, "Selection of Dates");
-						Thread.sleep(2000);
-						obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit/Filters.jpg");
-						 String expectedresult=excel.getData(0, 9, 1);
-						 driverqa.findElement(Search.SearchBtn).click();
-						 wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
-						 Thread.sleep(2000);
-						 obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit/Search-Result.jpg");
-                         String actualresult= driverqa.findElement(Search.HotelTitle).getText();
-						 Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
-						 test.log(LogStatus.INFO, "Ending HotelSearch Credit");
-						 test.log(LogStatus.PASS, "PASSED HotelSearch Credit");
-						 logger.info("Hotel Search Complete Credit");
-			} catch (Exception e) {
-				test.log(LogStatus.FAIL, "Hotel Search Credit");
-				obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Search-Result.jpg");
-				errorpath=Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Search-Result.jpg";
-				logger.info(e.getMessage());
-				test.log(LogStatus.FAIL, e.getMessage());
-				rep.endTest(test);
-				rep.flush();
-				Assert.assertTrue(false, e.getMessage());
+		/* ####### Applying filters and searching for Hotel ######### **/
+
+		try {
+			logger.info("Applying search Filters");
+			logger.info("Starting HotelSearch Credit");
+			test.log(LogStatus.INFO, "Starting HotelSearch Credit");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.dest));
+			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
+			Thread.sleep(4000);
+			action.sendKeys(Keys.ARROW_DOWN).build().perform();
+			action.sendKeys(Keys.ENTER).build().perform();
+			test.log(LogStatus.INFO, "Selecting dates");
+			driverqa.findElement(Search.InDate).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+			driverqa.findElement(Search.nextmnth).click();
+			driverqa.findElement(Search.nextmnth).click();
+			List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
+
+			for (WebElement ele : allDates) {
+
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 51, 1))) {
+					ele.click();
+					break;
+				}
+
 			}
-				
-			  	 }
-	 @AfterMethod
-	 public void getResult(ITestResult result) {
-		  if (result.getStatus() == ITestResult.FAILURE) {
-		 
-		  test.log(LogStatus.FAIL, test.addScreenCapture(errorpath));
-		  test.log(LogStatus.FAIL, result.getThrowable());
-		  }
-		  rep.endTest(test);
-		  }
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
 
-		@AfterTest
-		public void afterTest() {
+			List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
 
+			for (WebElement ele : allDates2) {
+
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 51, 2))) {
+					ele.click();
+					break;
+				}
+
+			}
+			test.log(LogStatus.PASS, "Selection of Dates");
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit/Filters.jpg");
+			String expectedresult = excel.getData(0, 9, 1);
+			driverqa.findElement(Search.SearchBtn).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Search/Accommodation_Search_Credit/Search-Result.jpg");
+			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
+			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
+			test.log(LogStatus.INFO, "Ending HotelSearch Credit");
+			test.log(LogStatus.PASS, "PASSED HotelSearch Credit");
+			logger.info("Hotel Search Complete Credit");
+		} catch (Throwable e) {
+			test.log(LogStatus.FAIL, "Hotel Search Credit");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Search-Result.jpg");
+			errorpath = Config.SnapShotPath() + "/Search/Error/Accommodation_Search_Credit/Search-Result.jpg";
+			logger.info(e.getMessage());
+			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
 			rep.flush();
-			driverqa.close();
+			Assert.assertTrue(false, e.getMessage());
 		}
-	 }
 
+	}
+
+	/* ####### Generating the Failure Reports and Screenshots ######### **/
+
+	@AfterMethod
+	public void getResult(ITestResult result) {
+		if (result.getStatus() == ITestResult.FAILURE) {
+
+			test.log(LogStatus.FAIL, test.addScreenCapture(errorpath));
+			test.log(LogStatus.FAIL, result.getThrowable());
+		}
+		rep.endTest(test);
+	}
+
+	/* ####### Ending Tests ######### **/
+
+	@AfterTest
+	public void afterTest() {
+
+		rep.endTest(test);
+		rep.flush();
+		driverqa.close();
+	}
+}

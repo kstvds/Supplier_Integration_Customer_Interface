@@ -37,6 +37,9 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
+/* #######  Test for accommodation booking and amend for Credit Card user #########
+######  Scenario Logs In, Books a specified hotel with NFR rate and checks that the booking is non-amendable ##### */
+
 public class Cancel_Credit_Card_NFR {
 	public WebDriver driverqa;
 	ExtentTest test;
@@ -136,7 +139,7 @@ public class Cancel_Credit_Card_NFR {
 
 		}
 
-		/* ####### Applying filters and searching for filters ######### **/
+		/* ####### Applying filters and searching for hotels ######### **/
 
 		try {
 			logger.info("Applying search Filters");
@@ -342,7 +345,7 @@ public class Cancel_Credit_Card_NFR {
 					Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Credit_Card_NFR/Can't-Amend-NFR-Rates.jpg");
 			ExpectedUnabletoAmend = "Cancel is not allowed";
 			System.out.println(ExpectedUnabletoAmend);
-			//System.out.println(ExpectedUnabletoAmend);
+			// System.out.println(ExpectedUnabletoAmend);
 			ActualUnabletoAmend = driverqa.findElement(Cancel.UnableToCancelNFR).getText();
 			Assert.assertTrue(ActualUnabletoAmend.contains(ExpectedUnabletoAmend));
 			test.log(LogStatus.PASS, "Verifed Non-Clickable Cancel Button");
@@ -383,4 +386,3 @@ public class Cancel_Credit_Card_NFR {
 		driverqa.close();
 	}
 }
-

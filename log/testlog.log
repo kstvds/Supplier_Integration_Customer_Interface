@@ -4927,3 +4927,132 @@ Session ID: 7b9d45f7f93fcf9405ace316e7fc0738
 2018-02-12 19:41:56,623 - Cancel_Credit_Within_DeadLine -INFO - Entered Passenger details
 2018-02-12 19:42:05,637 - Cancel_Credit_Within_DeadLine -INFO - Entering Payment details
 2018-02-12 19:42:08,702 - Cancel_Credit_Within_DeadLine -INFO - Entered Payment details
+2018-02-13 14:40:57,155 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:41:11,890 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:41:21,468 - Search_Prepay -INFO - Browser Opened
+2018-02-13 14:41:29,603 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:41:38,919 - Search_Prepay -INFO - Login Successful
+2018-02-13 14:41:41,762 - Search_Prepay -INFO - Applying search Filters
+2018-02-13 14:41:41,763 - Search_Prepay -INFO - Starting HotelSearch Prepay
+2018-02-13 14:41:53,439 - Search_Prepay -INFO - 
+2018-02-13 14:45:00,792 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:45:07,985 - Search_Prepay -INFO - Browser Opened
+2018-02-13 14:45:16,684 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:45:33,521 - Search_Prepay -INFO - Login Successful
+2018-02-13 14:45:36,062 - Search_Prepay -INFO - Applying search Filters
+2018-02-13 14:45:36,062 - Search_Prepay -INFO - Starting HotelSearch Prepay
+2018-02-13 14:45:43,655 - Search_Prepay -INFO - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="13/02/2018" data-validations="required"> is not clickable at point (538, 233). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir24296_16322}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: a43917bda9cd0196e55393544f647287
+2018-02-13 14:46:46,233 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:46:52,479 - Search_Prepay -INFO - Browser Opened
+2018-02-13 14:46:59,295 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:47:17,943 - Search_Prepay -INFO - Login Successful
+2018-02-13 14:47:20,473 - Search_Prepay -INFO - Applying search Filters
+2018-02-13 14:47:20,473 - Search_Prepay -INFO - Starting HotelSearch Prepay
+2018-02-13 14:47:29,207 - Search_Prepay -INFO - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="13/02/2018" data-validations="required"> is not clickable at point (538, 233). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 195 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir23032_5517}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d622534215c8716e2f4227bc238c1d74
+2018-02-13 14:47:41,591 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:47:46,395 - Search_Prepay -INFO - Browser Opened
+2018-02-13 14:47:54,600 - Search_Prepay -INFO - Test Case Started
+2018-02-13 14:48:11,523 - Search_Prepay -INFO - Login Successful
+2018-02-13 14:48:14,055 - Search_Prepay -INFO - Applying search Filters
+2018-02-13 14:48:14,056 - Search_Prepay -INFO - Starting HotelSearch Prepay
+2018-02-13 14:48:37,346 - Search_Prepay -INFO - Hotel Search Complete Prepay
+2018-02-13 15:27:54,283 - Search_Credit -INFO - Test Case Started
+2018-02-13 15:28:00,399 - Search_Credit -INFO - Browser Opened
+2018-02-13 15:28:08,256 - Search_Credit -INFO - Test Case Started
+2018-02-13 15:28:13,840 - Search_Credit -INFO - Login Successful
+2018-02-13 15:28:16,585 - Search_Credit -INFO - Applying search Filters
+2018-02-13 15:28:16,586 - Search_Credit -INFO - Starting HotelSearch Credit
+2018-02-13 15:28:47,445 - Search_Credit -INFO - Timed out after 30 seconds waiting for visibility of element located by By.xpath: //*[@id='destination']
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir12796_3191}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: d80bdd7fa3a8c22f8f756c403e815f1f
+2018-02-13 15:30:30,435 - Search_Credit -INFO - Test Case Started
+2018-02-13 15:30:56,706 - Search_Credit -INFO - Test Case Started
+2018-02-13 15:31:01,900 - Search_Credit -INFO - Browser Opened
+2018-02-13 15:31:08,712 - Search_Credit -INFO - Test Case Started
+2018-02-13 15:31:24,140 - Search_Credit -INFO - Login Successful
+2018-02-13 15:31:26,668 - Search_Credit -INFO - Applying search Filters
+2018-02-13 15:31:26,668 - Search_Credit -INFO - Starting HotelSearch Credit
+2018-02-13 15:31:49,292 - Search_Credit -INFO - Hotel Search Complete Credit
+2018-02-13 17:32:44,339 - Search_Credit -INFO - Test Case Started
+2018-02-13 17:32:50,853 - Search_Credit -INFO - Browser Opened
+2018-02-13 17:32:59,327 - Search_Credit -INFO - Test Case Started
+2018-02-13 17:33:19,208 - Search_Credit -INFO - Login Successful
+2018-02-13 17:33:22,012 - Search_Credit -INFO - Applying search Filters
+2018-02-13 17:33:22,022 - Search_Credit -INFO - Starting HotelSearch Credit Card
+2018-02-13 17:33:46,209 - Search_Credit -INFO - Hotel Search Complete Credit Card
+2018-02-13 18:10:14,572 - Search_Prepay_Within_DeadLine -INFO - Test Case Started
+2018-02-13 18:10:21,815 - Search_Prepay_Within_DeadLine -INFO - Browser Opened
+2018-02-13 18:10:30,098 - Search_Prepay_Within_DeadLine -INFO - Test Case Started
+2018-02-13 18:10:52,615 - Search_Prepay_Within_DeadLine -INFO - Login Successful
+2018-02-13 18:10:55,471 - Search_Prepay_Within_DeadLine -INFO - Applying search Filters
+2018-02-13 18:10:55,477 - Search_Prepay_Within_DeadLine -INFO - Starting HotelSearch Prepay Within DeadLine
+2018-02-13 18:11:19,814 - Search_Prepay_Within_DeadLine -INFO - Hotel Search Complete Prepay Within DeadLine
+2018-02-13 18:20:38,460 - Search_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-13 18:20:44,459 - Search_Credit_Within_DeadLine -INFO - Browser Opened
+2018-02-13 18:20:52,475 - Search_Credit_Within_DeadLine -INFO - Test Case Started
+2018-02-13 18:21:13,419 - Search_Credit_Within_DeadLine -INFO - Login Successful
+2018-02-13 18:21:16,136 - Search_Credit_Within_DeadLine -INFO - Applying search Filters
+2018-02-13 18:21:16,136 - Search_Credit_Within_DeadLine -INFO - Starting HotelSearch Credit Within DeadLine
+2018-02-13 18:21:39,756 - Search_Credit_Within_DeadLine -INFO - Hotel Search Complete Credit Within DeadLine
+2018-02-13 18:50:01,065 - Search_Credit_Card_Within_DeadLine -INFO - Test Case Started
+2018-02-13 18:52:30,674 - Search_Credit_Card_Within_DeadLine -INFO - Test Case Started
+2018-02-13 18:52:38,492 - Search_Credit_Card_Within_DeadLine -INFO - Browser Opened
+2018-02-13 18:52:47,611 - Search_Credit_Card_Within_DeadLine -INFO - Test Case Started
+2018-02-13 18:53:06,296 - Search_Credit_Card_Within_DeadLine -INFO - Login Successful
+2018-02-13 18:53:09,105 - Search_Credit_Card_Within_DeadLine -INFO - Applying search Filters
+2018-02-13 18:53:09,105 - Search_Credit_Card_Within_DeadLine -INFO - Starting HotelSearch Credit Card Within DeadLine
+2018-02-13 18:53:33,371 - Search_Credit_Card_Within_DeadLine -INFO - Hotel Search Complete Credit Card Within DeadLine
+2018-02-13 18:57:14,822 - Search_Dotw -INFO - Test Case Started
+2018-02-13 18:57:21,612 - Search_Dotw -INFO - Browser Opened
+2018-02-13 18:57:28,597 - Search_Dotw -INFO - Test Case Started
+2018-02-13 18:57:47,023 - Search_Dotw -INFO - Login Successful
+2018-02-13 18:57:49,672 - Search_Dotw -INFO - Applying search Filters
+2018-02-13 18:57:49,673 - Search_Dotw -INFO - Starting HotelSearch Dotw
+2018-02-13 18:57:56,313 - Search_Dotw -INFO - unknown error: Element <input class="search_textbox  input-small minMediumCalWidth cal hasDatepicker" id="fromDatepicker" name="DateFrom" type="text" value="13/02/2018" data-validations="required"> is not clickable at point (538, 233). Other element would receive the click: <h1>...</h1>
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 239 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir29124_29484}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 4d0a4a4fd58e25aa654c13456c5527d2
+2018-02-13 18:59:01,837 - Search_Dotw -INFO - Test Case Started
+2018-02-13 18:59:07,805 - Search_Dotw -INFO - Browser Opened
+2018-02-13 18:59:15,465 - Search_Dotw -INFO - Test Case Started
+2018-02-13 18:59:35,291 - Search_Dotw -INFO - Login Successful
+2018-02-13 18:59:37,934 - Search_Dotw -INFO - Applying search Filters
+2018-02-13 18:59:37,934 - Search_Dotw -INFO - Starting HotelSearch Dotw
+2018-02-13 19:02:59,692 - Search_Dotw -INFO - Test Case Started
+2018-02-13 19:03:06,640 - Search_Dotw -INFO - Browser Opened
+2018-02-13 19:03:14,733 - Search_Dotw -INFO - Test Case Started
+2018-02-13 19:03:36,868 - Search_Dotw -INFO - Login Successful
+2018-02-13 19:03:39,508 - Search_Dotw -INFO - Applying search Filters
+2018-02-13 19:03:39,509 - Search_Dotw -INFO - Starting HotelSearch Dotw
+2018-02-13 19:03:59,962 - Search_Dotw -INFO - expected [true] but found [false]
+2018-02-13 19:07:43,391 - Search_Dotw -INFO - Test Case Started
+2018-02-13 19:07:50,124 - Search_Dotw -INFO - Browser Opened
+2018-02-13 19:07:57,168 - Search_Dotw -INFO - Test Case Started
+2018-02-13 19:08:16,123 - Search_Dotw -INFO - Login Successful
+2018-02-13 19:08:18,748 - Search_Dotw -INFO - Applying search Filters
+2018-02-13 19:08:18,748 - Search_Dotw -INFO - Starting HotelSearch Dotw
+2018-02-13 19:08:40,593 - Search_Dotw -INFO - Hotel Search Complete Dotw

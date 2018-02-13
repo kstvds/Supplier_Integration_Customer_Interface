@@ -1,5 +1,7 @@
 package Search;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.JavascriptExecutor;
@@ -31,24 +33,31 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
+/* #######  Test for accommodation Search for Credit Card within DeadLine #########
+######  Scenario Logs In, Searches a specified hotel within DeadLine  ##### */
+
 public class Search_Credit_Card_Within_DeadLine {
 	public WebDriver driverqa;
+	String errorpath;
 	Configuration Config = new Configuration();
 	Takescreenshot obj = new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
 	ExtentTest test;
+	ExcelDataConfig excel;
+	String expectedresult;
+	String expectedDaedline;
+	String actualresult;
+	String ActualDeadLine;
 	LoginPage login = new LoginPage();
-	// HomePage home = new HomePage();
-	// NewAccoBooking acco = new NewAccoBooking();
-	// Operations opo = new Operations();
-	Logger logger = Logger.getLogger("Search_Credit_Card_Within_DeadLine");
-	String errorpath;
-
+    Logger logger = Logger.getLogger("Search_Credit_Card_Within_DeadLine");
+	
+    /* ####### Login functionality ######### **/
+    
 	@Test
 	@Parameters({ "browsername" })
 	public void SearchCreditWithinDeadLine(String browsername) throws Exception {
 		test = rep.startTest("Credit Card Search Within DeadLine");
-		ExcelDataConfig excel;
+		
 		excel = new ExcelDataConfig(Config.getExcelPathBook());
 		PropertyConfigurator.configure("Log4j.properties");
 		logger.info("Test Case Started");
@@ -61,6 +70,9 @@ public class Search_Credit_Card_Within_DeadLine {
 		}
 		WebDriverWait wait = new WebDriverWait(driverqa, 30);
 		Actions action = new Actions(driverqa);
+		
+		/* ####### Applying filters and searching for Hotel ######### **/
+		
 		try {
 			logger.info("Browser Opened");
 			String URL = excel.getData(0, 1, 5) + "/interface/en";
@@ -70,9 +82,6 @@ public class Search_Credit_Card_Within_DeadLine {
 			WebElement username = driverqa.findElement(LoginPage.LoginId);
 			username.clear();
 			username.sendKeys(excel.getData(0, 48, 1));
-
-			// WebElement password = driverqa.findElement(LoginPage.password);
-			// password.clear();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.password));
 			driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 48, 2));
 			Thread.sleep(1000);
@@ -94,16 +103,13 @@ public class Search_Credit_Card_Within_DeadLine {
 							.equals("complete");
 				}
 			};
-			// WebDriverWait waiting = new WebDriverWait(driverqa, 30);
 			wait.until(pageLoadCondition);
-			// wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.Closetuto));
-			// driverqa.findElement(LoginPage.Closetuto).click();
 			action.sendKeys(Keys.ESCAPE).build().perform();
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Search/Accommodation_Search_Credit_Card_Within_DeadLine/Log-In.jpg");
 
-		} catch (Exception e) {
+		} catch (Throwable e) {
 
 			obj.Takesnap(driverqa, Config.SnapShotPath()
 					+ "/Search/Error/Accommodation_Search_Credit_Card_Within_DeadLine/Log-In.jpg");
@@ -117,6 +123,9 @@ public class Search_Credit_Card_Within_DeadLine {
 			Assert.assertTrue(false, e.getMessage());
 
 		}
+		
+		/* ####### Applying filters and searching for Hotel ######### **/
+		
 		try {
 			logger.info("Applying search Filters");
 			logger.info("Starting HotelSearch Credit Card Within DeadLine");
@@ -126,36 +135,36 @@ public class Search_Credit_Card_Within_DeadLine {
 			Thread.sleep(4000);
 			action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action.sendKeys(Keys.ENTER).build().perform();
-			/*
-			 * test.log(LogStatus.INFO, "Selecting dates");
-			 * driverqa.findElement(Search.InDate).click();
-			 * wait.until(ExpectedConditions.visibilityOfElementLocated(Search.
-			 * CalenderIN)); driverqa.findElement(Search.nextmnth).click();
-			 * driverqa.findElement(Search.nextmnth).click(); List<WebElement>
-			 * allDates=driverqa.findElements(Search.CalenderIN);
-			 * 
-			 * for(WebElement ele:allDates) {
-			 * 
-			 * String date=ele.getText();
-			 * 
-			 * if(date.equalsIgnoreCase(excel.getData(0, 51, 1))) { ele.click();
-			 * break; }
-			 * 
-			 * }
-			 * wait.until(ExpectedConditions.visibilityOfElementLocated(Search.
-			 * CalenderIN)); //driverqa.findElement(Search.nextmnth).click();
-			 * //driverqa.findElement(Search.nextmnth).click(); List<WebElement>
-			 * allDates2=driverqa.findElements(Search.CalenderIN);
-			 * 
-			 * for(WebElement ele:allDates2) {
-			 * 
-			 * String date=ele.getText();
-			 * 
-			 * if(date.equalsIgnoreCase(excel.getData(0, 51, 2))) { ele.click();
-			 * break; }
-			 * 
-			 * } test.log(LogStatus.PASS, "Selection of Dates");
-			 */
+			test.log(LogStatus.INFO, "Selecting dates");
+			driverqa.findElement(Search.InDate).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+
+			List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
+
+			for (WebElement ele : allDates) {
+
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 54, 1))) {
+					ele.click();
+					break;
+				}
+
+			}
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+			List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
+
+			for (WebElement ele : allDates2) {
+
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 54, 2))) {
+					ele.click();
+					break;
+				}
+
+			}
+			test.log(LogStatus.PASS, "Selection of Dates");
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Search/Accommodation_Search_Credit_Card_Within_DeadLine/Filters.jpg");
@@ -182,7 +191,7 @@ public class Search_Credit_Card_Within_DeadLine {
 			test.log(LogStatus.INFO, "Ending HotelSearch Credit Card Within DeadLine");
 			test.log(LogStatus.PASS, "PASSED HotelSearch Credit Card Within DeadLine");
 			logger.info("Hotel Search Complete Credit Card Within DeadLine");
-		} catch (Exception e) {
+		} catch (Throwable e) {
 			test.log(LogStatus.FAIL, "Hotel Search Credit Card Within DeadLine");
 			obj.Takesnap(driverqa, Config.SnapShotPath()
 					+ "/Search/Accommodation_Search_Credit_Card_Within_DeadLine/Search-Result.jpg");
@@ -197,6 +206,8 @@ public class Search_Credit_Card_Within_DeadLine {
 
 	}
 
+	/* ####### Generating the Failure Reports and Screenshots ######### **/
+	
 	@AfterMethod
 	public void getResult(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
@@ -207,6 +218,8 @@ public class Search_Credit_Card_Within_DeadLine {
 		rep.endTest(test);
 	}
 
+	/* ####### Generating the Failure Reports and Screenshots ######### **/
+	
 	@AfterTest
 	public void afterTest() {
 
