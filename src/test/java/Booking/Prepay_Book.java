@@ -39,22 +39,24 @@ import lib.DriverAndObjectDetails.DriverName;
 
 public class Prepay_Book {
 	public WebDriver driverqa;
+	String errorpath;
+	String Roomtype;
+	ExtentTest test;
+	String expectedtitle;
+	String atualtitle;
+	ExcelDataConfig excel;
 	Configuration Config = new Configuration();
 	Takescreenshot obj= new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
-	ExtentTest test;
 	LoginPage login = new LoginPage();
-	//HomePage home = new HomePage();
-	//NewAccoBooking acco = new NewAccoBooking();
-	//Operations opo = new Operations();
-	Logger logger = Logger.getLogger("Prepay_Book");
-	String errorpath;
-	String Roomtype;
+    Logger logger = Logger.getLogger("Prepay_Book");
+	
+    /* ####### Passing browser as parameters in test ######### **/
+    
 	 @Test
 	 @Parameters({ "browsername" })
 	  public void PrepayBook(String browsername) throws Exception {
 		  test = rep.startTest("Prepay Book");
-		  ExcelDataConfig excel;
 		  excel = new ExcelDataConfig(Config.getExcelPathBook());
 		  PropertyConfigurator.configure("Log4j.properties");
 		  logger.info("Test Case Started");
@@ -67,6 +69,9 @@ public class Prepay_Book {
 				}
 			    WebDriverWait wait= new WebDriverWait(driverqa, 30);
 			    Actions action = new Actions(driverqa);
+			    
+			    /* ####### Login functionality ######### **/
+			    
 	           try{
 			    logger.info("Browser Opened");
 			    String URL = excel.getData(0, 1, 5) + "/interface/en";
@@ -76,9 +81,6 @@ public class Prepay_Book {
 				WebElement username = driverqa.findElement(LoginPage.LoginId);
 				username.clear();
 				username.sendKeys(excel.getData(0, 47, 1));
-				
-				//WebElement password = driverqa.findElement(LoginPage.password);
-				//password.clear();
 				wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.password));
 				driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 47, 2));
 				Thread.sleep(1000);
@@ -87,8 +89,8 @@ public class Prepay_Book {
 				company.sendKeys(excel.getData(0, 47, 3));
 				driverqa.findElement(LoginPage.Submit).click();
 				Thread.sleep(2000);
-				String expectedtitle = "DOTWconnect.com";
-				String atualtitle = driverqa.getTitle();
+				expectedtitle = "DOTWconnect.com";
+				atualtitle = driverqa.getTitle();
 				Assert.assertEquals(atualtitle, expectedtitle);
 				test.log(LogStatus.INFO, "Ending Login");
 				test.log(LogStatus.PASS, "PASSED Login");
@@ -100,10 +102,9 @@ public class Prepay_Book {
 		                        return ((JavascriptExecutor)driverqa).executeScript("return document.readyState").equals("complete");
 		                    }
 		                };
-		        //WebDriverWait waiting = new WebDriverWait(driverqa, 30);
+		       
 		        wait.until(pageLoadCondition);
-				//wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.Closetuto));
-				//driverqa.findElement(LoginPage.Closetuto).click();
+				
 				action.sendKeys(Keys.ESCAPE).build().perform();
 				Thread.sleep(2000);
 				obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Prepay/Log-In.jpg");
@@ -120,6 +121,8 @@ public class Prepay_Book {
 			Assert.assertTrue(false, e.getMessage());
 						
 		}
+	           /* ####### Applying filters and searching for Hotel ######### **/
+	           
 	           try {
 				logger.info("Applying search Filters");
 				   logger.info("Starting HotelSearch Prepay");
@@ -150,8 +153,6 @@ public class Prepay_Book {
 						
 					}
 					wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-					   //driverqa.findElement(Search.nextmnth).click();
-					   //driverqa.findElement(Search.nextmnth).click();
 						List<WebElement> allDates2=driverqa.findElements(Search.CalenderIN);
 						
 						for(WebElement ele:allDates2)
@@ -191,6 +192,9 @@ public class Prepay_Book {
 				rep.flush();
 				Assert.assertTrue(false, e.getMessage());
 			}
+	           
+	           /* ####### Booking Hotel on a specific date ######### **/
+	           
 	           try {
 				test.log(LogStatus.INFO, "Starting Hotel Book");
 				   logger.info("Starting Hotel Book");
@@ -229,15 +233,15 @@ public class Prepay_Book {
 					String ExpectedNoOfAdults = "2 Adults";
 					String ActualNoOfAdults= driverqa.findElement(Booking.noOfAdultsPrepay).getText();
 					String ActualStatus= driverqa.findElement(Booking.BookingStatusPrepay).getText();
-					//System.out.println(ActualNoOfAdults);
-					//System.out.println(ActualStatus);
+					
 					JavascriptExecutor js = (JavascriptExecutor) driverqa;
 					Thread.sleep(2000);
 					obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Prepay/Booking-Details1.jpg");
 					 WebElement Element = driverqa.findElement(Booking.Invoice);
 
-				        //This will scroll the page till the element is found		
-				     js.executeScript("arguments[0].scrollIntoView();", Element);
+				        //This will scroll the page till the element is found	
+					 
+				    js.executeScript("arguments[0].scrollIntoView();", Element);
 					Thread.sleep(2000);
 					obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Prepay/Booking-Details2.jpg");
 					Assert.assertTrue(ActualStatus.equalsIgnoreCase(ExpectedStatus));
@@ -257,6 +261,9 @@ public class Prepay_Book {
 				Assert.assertTrue(false, e.getMessage());
 			}
 			  	 }
+	 
+	 /* ####### Generating the Failure Reports and Screenshots ######### **/
+	 
 	 @AfterMethod
 	 public void getResult(ITestResult result) {
 		  if (result.getStatus() == ITestResult.FAILURE) {
@@ -267,6 +274,8 @@ public class Prepay_Book {
 		  rep.endTest(test);
 		  }
 
+	 /* ####### Generating the Failure Reports and Screenshots ######### **/
+	 
 		@AfterTest
 		public void afterTest() {
 

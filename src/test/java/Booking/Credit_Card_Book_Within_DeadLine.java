@@ -43,6 +43,8 @@ public class Credit_Card_Book_Within_DeadLine {
 	ExtentTest test;
 	String errorpath;
 	String Roomtype;
+	String expectedDaedline;
+	String ActualDeadLine;
 	ExcelDataConfig excel;
 	Configuration Config = new Configuration();
 	Takescreenshot obj = new Takescreenshot();
@@ -137,37 +139,36 @@ public class Credit_Card_Book_Within_DeadLine {
 			action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			//action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action.sendKeys(Keys.ENTER).build().perform();
-			/*
-			 * test.log(LogStatus.INFO, "Selecting dates");
-			 * driverqa.findElement(Search.InDate).click();
-			 * wait.until(ExpectedConditions.visibilityOfElementLocated(Search.
-			 * CalenderIN)); driverqa.findElement(Search.nextmnth).click();
-			 * driverqa.findElement(Search.nextmnth).click(); List<WebElement>
-			 * allDates = driverqa.findElements(Search.CalenderIN);
-			 * 
-			 * for (WebElement ele : allDates) {
-			 * 
-			 * String date = ele.getText();
-			 * 
-			 * if (date.equalsIgnoreCase(excel.getData(0, 51, 1))) {
-			 * ele.click(); break; }
-			 * 
-			 * }
-			 * wait.until(ExpectedConditions.visibilityOfElementLocated(Search.
-			 * CalenderIN)); // driverqa.findElement(Search.nextmnth).click();
-			 * // driverqa.findElement(Search.nextmnth).click();
-			 * List<WebElement> allDates2 =
-			 * driverqa.findElements(Search.CalenderIN);
-			 * 
-			 * for (WebElement ele : allDates2) {
-			 * 
-			 * String date = ele.getText();
-			 * 
-			 * if (date.equalsIgnoreCase(excel.getData(0, 51, 2))) {
-			 * ele.click(); break; }
-			 * 
-			 * } test.log(LogStatus.PASS, "Selection of Dates");
-			 */
+			test.log(LogStatus.INFO, "Selecting dates");
+			driverqa.findElement(Search.InDate).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+
+			List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
+
+			for (WebElement ele : allDates) {
+
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 54, 1))) {
+					ele.click();
+					break;
+				}
+
+			}
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+			List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
+
+			for (WebElement ele : allDates2) {
+
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 54, 2))) {
+					ele.click();
+					break;
+				}
+
+			}
+			test.log(LogStatus.PASS, "Selection of Dates");
 			WebElement Noofadults = driverqa.findElement(Search.NoOfAdults);
 			Noofadults.clear();
 			Noofadults.sendKeys("01");
@@ -190,7 +191,9 @@ public class Credit_Card_Book_Within_DeadLine {
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_Within_DeadLine/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
+			ActualDeadLine = driverqa.findElement(Search.Deadlinetext).getText();
 			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
+			Assert.assertTrue(ActualDeadLine.contains(expectedDaedline));
 			test.log(LogStatus.INFO, "Ending HotelSearch Credit Card");
 			test.log(LogStatus.PASS, "PASSED HotelSearch Credit Card");
 			logger.info("Hotel Search Complete Credit Card");
