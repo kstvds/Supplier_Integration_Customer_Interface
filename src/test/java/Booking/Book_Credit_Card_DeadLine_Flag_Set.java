@@ -1,5 +1,7 @@
 package Booking;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.JavascriptExecutor;
@@ -46,15 +48,14 @@ public class Book_Credit_Card_DeadLine_Flag_Set {
 	String ExpectedUnabletoBlockRooms;
 	String SearchRateexpected;
 	String errorpath;
+	String expectedDaedline;
+	String ActualDeadLine;
+	ExtentTest test;
 	ExcelDataConfig excel;
 	Configuration Config = new Configuration();
 	Takescreenshot obj = new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
-	ExtentTest test;
 	LoginPage login = new LoginPage();
-	// HomePage home = new HomePage();
-	// NewAccoBooking acco = new NewAccoBooking();
-	// Operations opo = new Operations();
 	Logger logger = Logger.getLogger("Book_Credit_Card_DeadLine_Flag_Set");
 
 	/* ####### Passing browser as parameters in test ######### **/
@@ -235,37 +236,36 @@ public class Book_Credit_Card_DeadLine_Flag_Set {
 			action1.sendKeys(Keys.ARROW_DOWN).build().perform();
 			// action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action1.sendKeys(Keys.ENTER).build().perform();
-			/*
-			 * test.log(LogStatus.INFO, "Selecting dates");
-			 * driverqa.findElement(Search.InDate).click();
-			 * wait.until(ExpectedConditions.visibilityOfElementLocated(Search.
-			 * CalenderIN)); driverqa.findElement(Search.nextmnth).click();
-			 * driverqa.findElement(Search.nextmnth).click(); List<WebElement>
-			 * allDates = driverqa.findElements(Search.CalenderIN);
-			 * 
-			 * for (WebElement ele : allDates) {
-			 * 
-			 * String date = ele.getText();
-			 * 
-			 * if (date.equalsIgnoreCase(excel.getData(0, 51, 1))) {
-			 * ele.click(); break; }
-			 * 
-			 * }
-			 * wait.until(ExpectedConditions.visibilityOfElementLocated(Search.
-			 * CalenderIN)); // driverqa.findElement(Search.nextmnth).click();
-			 * // driverqa.findElement(Search.nextmnth).click();
-			 * List<WebElement> allDates2 =
-			 * driverqa.findElements(Search.CalenderIN);
-			 * 
-			 * for (WebElement ele : allDates2) {
-			 * 
-			 * String date = ele.getText();
-			 * 
-			 * if (date.equalsIgnoreCase(excel.getData(0, 51, 2))) {
-			 * ele.click(); break; }
-			 * 
-			 * } test.log(LogStatus.PASS, "Selection of Dates");
-			 */
+			test.log(LogStatus.INFO, "Selecting dates");
+			driverqa.findElement(Search.InDate).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+
+			List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
+
+			for (WebElement ele : allDates) {
+
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 54, 1))) {
+					ele.click();
+					break;
+				}
+
+			}
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+			List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
+
+			for (WebElement ele : allDates2) {
+
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 54, 2))) {
+					ele.click();
+					break;
+				}
+
+			}
+			test.log(LogStatus.PASS, "Selection of Dates");
 			driverqa.findElement(Search.NoOfRoomList).click();
 			Thread.sleep(1000);
 			WebElement element1 = driverqa.findElement(Search.NoOfRooms);
@@ -279,6 +279,7 @@ public class Book_Credit_Card_DeadLine_Flag_Set {
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_DeadLine_Flag_Set/Filters.jpg");
 			String expectedresult = excel.getData(0, 9, 1);
+			expectedDaedline = excel.getData(0, 30, 1);
 			driverqa.findElement(Search.SearchBtn).click();
 			wait1.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
 			if (driverqa.findElements(Booking.ClickDeadline).size() != 0) {
@@ -294,6 +295,8 @@ public class Book_Credit_Card_DeadLine_Flag_Set {
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_DeadLine_Flag_Set/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
+			ActualDeadLine = driverqa.findElement(Search.Deadlinetext).getText();
+			Assert.assertTrue(ActualDeadLine.contains(expectedDaedline));
 			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 			test.log(LogStatus.INFO, "Ending HotelSearch Credit Card");
 			test.log(LogStatus.PASS, "PASSED HotelSearch Credit Card");

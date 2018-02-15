@@ -55,6 +55,8 @@ public class Amend_Credit_Card_Within_DeadLine {
 	String ExpectedAfterAmendDateChkIn;
 	String ActualAfterAmendDateChkOut;
 	String ExpectedAfterAmendDateChkOut;
+	String actualresultDeadline;
+	String expectedresultDeadline;
 	Configuration Config = new Configuration();
 	Takescreenshot obj = new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
@@ -217,6 +219,12 @@ public class Amend_Credit_Card_Within_DeadLine {
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Card_Within_DeadLine/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
+			actualresultDeadline = driverqa.findElement(Search.Deadlinetext).getText();
+			System.out.println(actualresultDeadline);
+			expectedresultDeadline = "Within Deadline";
+			System.out.println(actualresult);
+			System.out.println(expectedresult);
+			Assert.assertTrue(actualresultDeadline.contains(expectedresultDeadline));
 			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 			test.log(LogStatus.INFO, "Ending HotelSearch Credit Card Within DeadLine");
 			test.log(LogStatus.PASS, "PASSED HotelSearch Credit Card Within DeadLine");

@@ -179,9 +179,10 @@ public class Credit_Card_Amend {
 
 			}
 			test.log(LogStatus.PASS, "Selection of Dates");
-			/*WebElement Noofadults = driverqa.findElement(Search.NoOfAdults);
-			Noofadults.clear();
-			Noofadults.sendKeys("01");*/
+			/*
+			 * WebElement Noofadults = driverqa.findElement(Search.NoOfAdults);
+			 * Noofadults.clear(); Noofadults.sendKeys("01");
+			 */
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Card/Filters.jpg");
 			String expectedresult = excel.getData(0, 9, 1);
@@ -226,8 +227,7 @@ public class Credit_Card_Amend {
 			driverqa.findElement(Booking.OnePaxlastName).sendKeys(excel.getData(0, 21, 2));
 			Select passengertitle = new Select(driverqa.findElement(Booking.OnePaxTitle));
 			passengertitle.selectByIndex(1);
-			if (!driverqa.findElements(Booking.TwoPaxFirstName).isEmpty())
-			{
+			if (!driverqa.findElements(Booking.TwoPaxFirstName).isEmpty()) {
 				driverqa.findElement(Booking.TwoPaxFirstName).sendKeys(excel.getData(0, 22, 1));
 				Thread.sleep(2000);
 				driverqa.findElement(Booking.TwoPaxLastName).sendKeys(excel.getData(0, 22, 2));
@@ -289,7 +289,9 @@ public class Credit_Card_Amend {
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Card/Booking-Details1.jpg");
+
 			// This will scroll the page till the element is found
+
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa,

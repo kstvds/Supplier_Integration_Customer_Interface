@@ -303,7 +303,9 @@ public class Amend_Credit {
 			driverqa.findElement(Booking.ViewBooking).click();
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit/Booking-Details1.jpg");
+
 			// This will scroll the page till the element is found
+
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit/Booking-Details2.jpg");
@@ -341,7 +343,7 @@ public class Amend_Credit {
 			Adults.selectByIndex(2);
 			Select Child = new Select(driverqa.findElement(Amend.Children));
 			Child.selectByIndex(0);
-			
+
 			test.log(LogStatus.PASS, "Changing No Of Passengers");
 
 			Thread.sleep(2000);
@@ -349,12 +351,14 @@ public class Amend_Credit {
 			driverqa.findElement(Amend.AfterAmendButton).click();
 
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendConfirmPageCheckIn));
-			//ActualAmendDateChkIn = driverqa.findElement(Amend.AmendConfirmPageCheckIn).getText();
-			//ActualAmendDateChkOut = driverqa.findElement(Amend.AmendConfirmPageCheckOut).getText();
-			//ExpectedAmendDateChkIn = excel.getData(0, 52, 1);
-			//ExpectedAmendDateChkOut = excel.getData(0, 52, 2);
-			//Assert.assertTrue(ActualAmendDateChkIn.contains(ExpectedAmendDateChkIn));
-			//Assert.assertTrue(ActualAmendDateChkOut.contains(ExpectedAmendDateChkOut));
+			// ActualAmendDateChkIn =
+			// driverqa.findElement(Amend.AmendConfirmPageCheckIn).getText();
+			// ActualAmendDateChkOut =
+			// driverqa.findElement(Amend.AmendConfirmPageCheckOut).getText();
+			// ExpectedAmendDateChkIn = excel.getData(0, 52, 1);
+			// ExpectedAmendDateChkOut = excel.getData(0, 52, 2);
+			// Assert.assertTrue(ActualAmendDateChkIn.contains(ExpectedAmendDateChkIn));
+			// Assert.assertTrue(ActualAmendDateChkOut.contains(ExpectedAmendDateChkOut));
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit/Amend-Confirmation-Page.jpg");
@@ -363,11 +367,17 @@ public class Amend_Credit {
 			driverqa.findElement(Amend.ConfirmChanges).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendSuccessTitle));
 			ActualConfirmedAmendTitle = driverqa.findElement(Amend.AmendSuccessTitle).getText();
-			/*ActualAfterAmendDateChkIn = driverqa.findElement(Amend.AfterAmendChckIn).getText();
-			ActualAfterAmendDateChkOut = driverqa.findElement(Amend.AfterAmendChckOut).getText();*/
+			/*
+			 * ActualAfterAmendDateChkIn =
+			 * driverqa.findElement(Amend.AfterAmendChckIn).getText();
+			 * ActualAfterAmendDateChkOut =
+			 * driverqa.findElement(Amend.AfterAmendChckOut).getText();
+			 */
 			System.out.println(ActualConfirmedAmendTitle);
-			/*ExpectedAfterAmendDateChkIn = excel.getData(0, 52, 1);
-			ExpectedAfterAmendDateChkOut = excel.getData(0, 52, 2);*/
+			/*
+			 * ExpectedAfterAmendDateChkIn = excel.getData(0, 52, 1);
+			 * ExpectedAfterAmendDateChkOut = excel.getData(0, 52, 2);
+			 */
 			ExpectedNoOfAdults = "3 Adults";
 			ActualNoOfAdults = driverqa.findElement(Amend.AfterAmendNoOfPassengers).getText();
 			ExpectedConfirmedAmendTitle = "Successfully amended";
@@ -379,8 +389,12 @@ public class Amend_Credit {
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit/Amend-Confirmed2.jpg");
-			/*Assert.assertTrue(ActualAfterAmendDateChkIn.contains(ExpectedAfterAmendDateChkIn));
-			Assert.assertTrue(ActualAfterAmendDateChkOut.contains(ExpectedAfterAmendDateChkOut));*/
+			/*
+			 * Assert.assertTrue(ActualAfterAmendDateChkIn.contains(
+			 * ExpectedAfterAmendDateChkIn));
+			 * Assert.assertTrue(ActualAfterAmendDateChkOut.contains(
+			 * ExpectedAfterAmendDateChkOut));
+			 */
 			test.log(LogStatus.PASS, "Confirmed Changes");
 			logger.info("Confirmed Changes");
 			test.log(LogStatus.INFO, "Ending Hotel Amend");
@@ -421,4 +435,3 @@ public class Amend_Credit {
 		driverqa.close();
 	}
 }
-

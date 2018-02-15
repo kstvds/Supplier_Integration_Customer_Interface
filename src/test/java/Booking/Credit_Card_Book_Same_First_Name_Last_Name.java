@@ -156,8 +156,6 @@ public class Credit_Card_Book_Same_First_Name_Last_Name {
 
 			}
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-			// driverqa.findElement(Search.nextmnth).click();
-			// driverqa.findElement(Search.nextmnth).click();
 			List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
 
 			for (WebElement ele : allDates2) {
@@ -272,18 +270,14 @@ public class Credit_Card_Book_Same_First_Name_Last_Name {
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath()
 					+ "/Book/Accommodation_Book_Credit_Card_Same_First_Name_Last_Name/Search-Booking-Page.jpg");
-			// WebElement Element = driverqa.findElement(Booking.Invoice);
-			// This will scroll the page till the element is found
-			/*
-			 * Assert.assertTrue(ActualStatus.equalsIgnoreCase(ExpectedStatus));
-			 * Assert.assertTrue(ActualNoOfAdults.equalsIgnoreCase(
-			 * ExpectedNoOfAdults));
-			 */
+
 			driverqa.findElement(Booking.ViewBooking).click();
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath()
 					+ "/Book/Accommodation_Book_Credit_Card_Same_First_Name_Last_Name/Booking-Details1.jpg");
+
 			// This will scroll the page till the element is found
+
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath()
@@ -332,6 +326,6 @@ public class Credit_Card_Book_Same_First_Name_Last_Name {
 
 		rep.endTest(test);
 		rep.flush();
-		// driverqa.close();
+		driverqa.close();
 	}
 }

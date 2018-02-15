@@ -55,6 +55,8 @@ public class Amend_Credit_Within_DeadLine {
 	String ExpectedAfterAmendDateChkIn;
 	String ActualAfterAmendDateChkOut;
 	String ExpectedAfterAmendDateChkOut;
+	String actualresultDeadline;
+	String expectedresultDeadline;
 	Configuration Config = new Configuration();
 	Takescreenshot obj = new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
@@ -118,11 +120,13 @@ public class Amend_Credit_Within_DeadLine {
 			// driverqa.findElement(LoginPage.Closetuto).click();
 			action.sendKeys(Keys.ESCAPE).build().perform();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Log-In.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Log-In.jpg");
 
 		} catch (Throwable e) {
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Log-In.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Log-In.jpg");
 			test.log(LogStatus.FAIL, "Login");
 			errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Log-In.jpg";
 			logger.info(e.getMessage());
@@ -149,8 +153,10 @@ public class Amend_Credit_Within_DeadLine {
 			test.log(LogStatus.INFO, "Selecting dates");
 			driverqa.findElement(Search.InDate).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-			/*driverqa.findElement(Search.nextmnth).click();
-			driverqa.findElement(Search.nextmnth).click();*/
+			/*
+			 * driverqa.findElement(Search.nextmnth).click();
+			 * driverqa.findElement(Search.nextmnth).click();
+			 */
 			List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
 
 			for (WebElement ele : allDates) {
@@ -191,7 +197,8 @@ public class Amend_Credit_Within_DeadLine {
 
 			actions.moveToElement(element).click().perform();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Filters.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Filters.jpg");
 			String expectedresult = excel.getData(0, 9, 1);
 			driverqa.findElement(Search.SearchBtn).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
@@ -205,8 +212,15 @@ public class Amend_Credit_Within_DeadLine {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(Search.Deadlinetext));
 			}
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Search-Result.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
+			actualresultDeadline = driverqa.findElement(Search.Deadlinetext).getText();
+			System.out.println(actualresultDeadline);
+			expectedresultDeadline = "Within Deadline";
+			System.out.println(actualresult);
+			System.out.println(expectedresult);
+			Assert.assertTrue(actualresultDeadline.contains(expectedresultDeadline));
 			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 			test.log(LogStatus.INFO, "Ending HotelSearch Credit Within DeadLine");
 			test.log(LogStatus.PASS, "PASSED HotelSearch Credit Within DeadLine");
@@ -214,8 +228,10 @@ public class Amend_Credit_Within_DeadLine {
 		} catch (Throwable e) {
 			test.log(LogStatus.FAIL, "Hotel Search Credit Within DeadLine");
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Search-Result.jpg");
-			errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Search-Result.jpg";
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Search-Result.jpg");
+			errorpath = Config.SnapShotPath()
+					+ "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Search-Result.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -258,14 +274,16 @@ public class Amend_Credit_Within_DeadLine {
 			}
 			driverqa.findElement(Booking.PrcdToBookChckBox).click();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Passenger-Details.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Passenger-Details.jpg");
 			logger.info("Entered Passenger details");
 			test.log(LogStatus.INFO, "Entered Passenger details");
 			test.log(LogStatus.PASS, "Passenger details");
 			driverqa.findElement(Booking.ConfirmBook).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ProccedToBook));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Confirm-Booking.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Confirm-Booking.jpg");
 			driverqa.findElement(Booking.ProccedToBook).click();
 			logger.info("Entering Passenger details");
 			test.log(LogStatus.INFO, "Entering Passenger details");
@@ -280,18 +298,23 @@ public class Amend_Credit_Within_DeadLine {
 			WebElement locOfOrder = driverqa.findElement(Booking.BookingCost);
 			Actions act = new Actions(driverqa);
 			act.moveToElement(locOfOrder).doubleClick().build().perform();
+
 			// catch here is double click on the text will by default select the
 			// text
 			// now apply copy command
+
 			driverqa.findElement(Booking.BookingCost).sendKeys(Keys.chord(Keys.CONTROL, "c"));
 			Thread.sleep(2000);
+
 			// now apply the command to paste
+
 			driverqa.findElement(Booking.CreditCost).sendKeys(Keys.chord(Keys.CONTROL, "v"));
 			logger.info("Entered Payment details");
 			test.log(LogStatus.INFO, "Entered Payment details");
 			test.log(LogStatus.PASS, "Payment details");
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Payment-Details.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Payment-Details.jpg");
 			driverqa.findElement(PaymentPage.AcceptTerms).click();
 			Thread.sleep(3000);
 			driverqa.findElement(PaymentPage.AcceptTerms).click();
@@ -299,21 +322,19 @@ public class Amend_Credit_Within_DeadLine {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ViewBooking));
 			JavascriptExecutor js = (JavascriptExecutor) driverqa;
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Search-Booking-Page.jpg");
-			// WebElement Element = driverqa.findElement(Booking.Invoice);
-			// This will scroll the page till the element is found
-			/*
-			 * Assert.assertTrue(ActualStatus.equalsIgnoreCase(ExpectedStatus));
-			 * Assert.assertTrue(ActualNoOfAdults.equalsIgnoreCase(
-			 * ExpectedNoOfAdults));
-			 */
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Search-Booking-Page.jpg");
 			driverqa.findElement(Booking.ViewBooking).click();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Booking-Details1.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Booking-Details1.jpg");
+
 			// This will scroll the page till the element is found
+
 			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Booking-Details2.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Booking-Details2.jpg");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingStatusPrepay));
 			String ExpectedStatus = "Confirmed";
 			String ExpectedNoOfAdults = "2 Adults";
@@ -329,7 +350,8 @@ public class Amend_Credit_Within_DeadLine {
 
 		} catch (Throwable e) {
 			test.log(LogStatus.FAIL, "Hotel Book Credit");
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Booking.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Booking.jpg");
 			errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Booking.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
@@ -337,131 +359,139 @@ public class Amend_Credit_Within_DeadLine {
 			rep.flush();
 			Assert.assertTrue(false, e.getMessage());
 		}
-	
-	/* ####### Amending the booking on a different date ######### **/
 
-	test.log(LogStatus.INFO, "Starting Hotel Amend");
-	logger.info("Starting Hotel Amend");
-	try {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendButton));
-		driverqa.findElement(Amend.AmendButton).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.VerifyAmendPage));
-		test.log(LogStatus.INFO, "Selecting new dates");
-		driverqa.findElement(Amend.Checkin).click();
-		// wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-		// driverqa.findElement(Search.nextmnth).click();
-		// driverqa.findElement(Search.nextmnth).click();
-		List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
+		/* ####### Amending the booking on a different date ######### **/
 
-		for (WebElement ele : allDates) {
+		test.log(LogStatus.INFO, "Starting Hotel Amend");
+		logger.info("Starting Hotel Amend");
+		try {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendButton));
+			driverqa.findElement(Amend.AmendButton).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.VerifyAmendPage));
+			test.log(LogStatus.INFO, "Selecting new dates");
+			driverqa.findElement(Amend.Checkin).click();
+			// wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+			// driverqa.findElement(Search.nextmnth).click();
+			// driverqa.findElement(Search.nextmnth).click();
+			List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
 
-			String date = ele.getText();
+			for (WebElement ele : allDates) {
 
-			if (date.equalsIgnoreCase(excel.getData(0, 52, 1))) {
-				ele.click();
-				break;
+				String date = ele.getText();
+
+				if (date.equalsIgnoreCase(excel.getData(0, 52, 1))) {
+					ele.click();
+					break;
+				}
+
 			}
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
+			// driverqa.findElement(Search.nextmnth).click();
+			// driverqa.findElement(Search.nextmnth).click();
+			List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
 
-		}
-		wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-		// driverqa.findElement(Search.nextmnth).click();
-		// driverqa.findElement(Search.nextmnth).click();
-		List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
+			for (WebElement ele : allDates2) {
 
-		for (WebElement ele : allDates2) {
+				String date = ele.getText();
 
-			String date = ele.getText();
+				if (date.equalsIgnoreCase(excel.getData(0, 52, 2))) {
+					ele.click();
+					break;
+				}
 
-			if (date.equalsIgnoreCase(excel.getData(0, 52, 2))) {
-				ele.click();
-				break;
 			}
+			test.log(LogStatus.PASS, "Selection of new Dates");
 
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Changed-Dates.jpg");
+			driverqa.findElement(Amend.AfterAmendButton).click();
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendConfirmPageCheckIn));
+			ActualAmendDateChkIn = driverqa.findElement(Amend.AmendConfirmPageCheckIn).getText();
+			ActualAmendDateChkOut = driverqa.findElement(Amend.AmendConfirmPageCheckOut).getText();
+			ExpectedAmendDateChkIn = excel.getData(0, 52, 1);
+			ExpectedAmendDateChkOut = excel.getData(0, 52, 2);
+			Assert.assertTrue(ActualAmendDateChkIn.contains(ExpectedAmendDateChkIn));
+			Assert.assertTrue(ActualAmendDateChkOut.contains(ExpectedAmendDateChkOut));
+			driverqa.findElement(Amend.AcceptAmendCharge).click();
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Amend-Confirmation-Page.jpg");
+			test.log(LogStatus.INFO, "Confirming Changes");
+			logger.info("Confirming Changes");
+			driverqa.findElement(Amend.ConfirmChanges).click();
+			test.log(LogStatus.INFO, "Entering Payment details for amendment");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingCost));
+			/*
+			 * String HotelCost =
+			 * driverqa.findElement(Booking.BookingCost).getText();
+			 * System.out.println(HotelCost); Thread.sleep(2000);
+			 * driverqa.findElement(Booking.CreditCost).sendKeys(HotelCost);
+			 */
+			// or any locator strategy that you find suitable
+			WebElement locOfOrder = driverqa.findElement(Booking.BookingCost);
+			Actions act = new Actions(driverqa);
+			act.moveToElement(locOfOrder).doubleClick().build().perform();
+
+			// catch here is double click on the text will by default select the
+			// text
+			// now apply copy command
+
+			driverqa.findElement(Booking.BookingCost).sendKeys(Keys.chord(Keys.CONTROL, "c"));
+			Thread.sleep(2000);
+
+			// now apply the command to paste
+
+			driverqa.findElement(Booking.CreditCost).sendKeys(Keys.chord(Keys.CONTROL, "v"));
+			logger.info("Entered Payment details");
+			test.log(LogStatus.INFO, "Entered Payment details for amendment");
+			test.log(LogStatus.PASS, "Payment details for amendment");
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Payment-Details-Amend-Charge.jpg");
+			driverqa.findElement(PaymentPage.FirstName).click();
+			Thread.sleep(3000);
+			driverqa.findElement(PaymentPage.AcceptTerms).click();
+			driverqa.findElement(PaymentPage.Acceptpayment).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendSuccessTitle));
+			ActualConfirmedAmendTitle = driverqa.findElement(Amend.AmendSuccessTitle).getText();
+			ActualAfterAmendDateChkIn = driverqa.findElement(Amend.AfterAmendChckIn).getText();
+			ActualAfterAmendDateChkOut = driverqa.findElement(Amend.AfterAmendChckOut).getText();
+			System.out.println(ActualConfirmedAmendTitle);
+			ExpectedAfterAmendDateChkIn = excel.getData(0, 52, 1);
+			ExpectedAfterAmendDateChkOut = excel.getData(0, 52, 2);
+			ExpectedConfirmedAmendTitle = "Successfully amended";
+			Assert.assertTrue(ActualConfirmedAmendTitle.contains(ExpectedConfirmedAmendTitle));
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Amend-Confirmed1.jpg");
+			JavascriptExecutor js = (JavascriptExecutor) driverqa;
+			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Amend-Confirmed2.jpg");
+			Assert.assertTrue(ActualAfterAmendDateChkIn.contains(ExpectedAfterAmendDateChkIn));
+			Assert.assertTrue(ActualAfterAmendDateChkOut.contains(ExpectedAfterAmendDateChkOut));
+			test.log(LogStatus.PASS, "Confirmed Changes");
+			logger.info("Confirmed Changes");
+			test.log(LogStatus.INFO, "Ending Hotel Amend");
+			test.log(LogStatus.PASS, "Hotel Amend");
+			logger.info("Hotel Amended");
+
+		} catch (Throwable e) {
+			test.log(LogStatus.FAIL, "Hotel Amend Credit Within DeadLine");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Amending.jpg");
+			errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Amending.jpg";
+			logger.info(e.getMessage());
+			test.log(LogStatus.FAIL, e.getMessage());
+			rep.endTest(test);
+			rep.flush();
+			Assert.assertTrue(false, e.getMessage());
 		}
-		test.log(LogStatus.PASS, "Selection of new Dates");
-
-		Thread.sleep(2000);
-		obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Changed-Dates.jpg");
-		driverqa.findElement(Amend.AfterAmendButton).click();
-
-		wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendConfirmPageCheckIn));
-		ActualAmendDateChkIn = driverqa.findElement(Amend.AmendConfirmPageCheckIn).getText();
-		ActualAmendDateChkOut = driverqa.findElement(Amend.AmendConfirmPageCheckOut).getText();
-		ExpectedAmendDateChkIn = excel.getData(0, 52, 1);
-		ExpectedAmendDateChkOut = excel.getData(0, 52, 2);
-		Assert.assertTrue(ActualAmendDateChkIn.contains(ExpectedAmendDateChkIn));
-		Assert.assertTrue(ActualAmendDateChkOut.contains(ExpectedAmendDateChkOut));
-		driverqa.findElement(Amend.AcceptAmendCharge).click();
-		Thread.sleep(2000);
-		obj.Takesnap(driverqa,
-				Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Amend-Confirmation-Page.jpg");
-		test.log(LogStatus.INFO, "Confirming Changes");
-		logger.info("Confirming Changes");
-		driverqa.findElement(Amend.ConfirmChanges).click();
-		test.log(LogStatus.INFO, "Entering Payment details for amendment");
-		wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingCost));
-		/*
-		 * String HotelCost =
-		 * driverqa.findElement(Booking.BookingCost).getText();
-		 * System.out.println(HotelCost); Thread.sleep(2000);
-		 * driverqa.findElement(Booking.CreditCost).sendKeys(HotelCost);
-		 */
-		// or any locator strategy that you find suitable
-		WebElement locOfOrder = driverqa.findElement(Booking.BookingCost);
-		Actions act = new Actions(driverqa);
-		act.moveToElement(locOfOrder).doubleClick().build().perform();
-		// catch here is double click on the text will by default select the
-		// text
-		// now apply copy command
-		driverqa.findElement(Booking.BookingCost).sendKeys(Keys.chord(Keys.CONTROL, "c"));
-		Thread.sleep(2000);
-		// now apply the command to paste
-		driverqa.findElement(Booking.CreditCost).sendKeys(Keys.chord(Keys.CONTROL, "v"));
-		logger.info("Entered Payment details");
-		test.log(LogStatus.INFO, "Entered Payment details for amendment");
-		test.log(LogStatus.PASS, "Payment details for amendment");
-		Thread.sleep(2000);
-		obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Payment-Details-Amend-Charge.jpg");
-		driverqa.findElement(PaymentPage.FirstName).click();
-		Thread.sleep(3000);
-		driverqa.findElement(PaymentPage.AcceptTerms).click();
-		driverqa.findElement(PaymentPage.Acceptpayment).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendSuccessTitle));
-		ActualConfirmedAmendTitle = driverqa.findElement(Amend.AmendSuccessTitle).getText();
-		ActualAfterAmendDateChkIn = driverqa.findElement(Amend.AfterAmendChckIn).getText();
-		ActualAfterAmendDateChkOut = driverqa.findElement(Amend.AfterAmendChckOut).getText();
-		System.out.println(ActualConfirmedAmendTitle);
-		ExpectedAfterAmendDateChkIn = excel.getData(0, 52, 1);
-		ExpectedAfterAmendDateChkOut = excel.getData(0, 52, 2);
-		ExpectedConfirmedAmendTitle = "Successfully amended";
-		Assert.assertTrue(ActualConfirmedAmendTitle.contains(ExpectedConfirmedAmendTitle));
-		Thread.sleep(2000);
-		obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Amend-Confirmed1.jpg");
-		JavascriptExecutor js = (JavascriptExecutor) driverqa;
-		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-		Thread.sleep(2000);
-		obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Credit_Within_DeadLine/Amend-Confirmed2.jpg");
-		Assert.assertTrue(ActualAfterAmendDateChkIn.contains(ExpectedAfterAmendDateChkIn));
-		Assert.assertTrue(ActualAfterAmendDateChkOut.contains(ExpectedAfterAmendDateChkOut));
-		test.log(LogStatus.PASS, "Confirmed Changes");
-		logger.info("Confirmed Changes");
-		test.log(LogStatus.INFO, "Ending Hotel Amend");
-		test.log(LogStatus.PASS, "Hotel Amend");
-		logger.info("Hotel Amended");
-
-	} catch (Throwable e) {
-		test.log(LogStatus.FAIL, "Hotel Amend Credit Within DeadLine");
-		obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Amending.jpg");
-		errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Credit_Within_DeadLine/Amending.jpg";
-		logger.info(e.getMessage());
-		test.log(LogStatus.FAIL, e.getMessage());
-		rep.endTest(test);
-		rep.flush();
-		Assert.assertTrue(false, e.getMessage());
 	}
-}
 
-	
 	/* ####### Generating the Failure Reports and Screenshots ######### **/
 
 	@AfterMethod
@@ -481,9 +511,6 @@ public class Amend_Credit_Within_DeadLine {
 
 		rep.endTest(test);
 		rep.flush();
-		//driverqa.close();
+		driverqa.close();
 	}
 }
-
-
-

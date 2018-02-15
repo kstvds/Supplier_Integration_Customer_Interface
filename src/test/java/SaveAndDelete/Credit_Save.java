@@ -35,24 +35,29 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
+/* #######  Test for accommodation saving itenary for Credit user #########
+######  Scenario Logs In, Searches a specified hotel and then saves the itenary   ##### */
+
+
 public class Credit_Save {
 	public WebDriver driverqa;
+	ExtentTest test;
+	String errorpath;
+	String Roomtype;
+	ExcelDataConfig excel;
 	Configuration Config = new Configuration();
 	Takescreenshot obj= new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
-	ExtentTest test;
 	LoginPage login = new LoginPage();
-	//HomePage home = new HomePage();
-	//NewAccoBooking acco = new NewAccoBooking();
-	//Operations opo = new Operations();
 	Logger logger = Logger.getLogger("Credit_Save");
-	String errorpath;
-	String Roomtype;
+	
+	/* ####### Passing browser as parameters in test ######### **/
+	
 	 @Test
 	 @Parameters({ "browsername" })
 	  public void CreditSave(String browsername) throws Exception {
 		  test = rep.startTest("Credit Save");
-		  ExcelDataConfig excel;
+		  
 		  excel = new ExcelDataConfig(Config.getExcelPathBook());
 		  PropertyConfigurator.configure("Log4j.properties");
 		  logger.info("Test Case Started");
@@ -65,6 +70,9 @@ public class Credit_Save {
 				}
 			    WebDriverWait wait= new WebDriverWait(driverqa, 30);
 			    Actions action = new Actions(driverqa);
+			    
+			    /* ####### Login functionality ######### **/
+			    
 	           try{
 			    logger.info("Browser Opened");
 			    String URL = excel.getData(0, 1, 5) + "/interface/en";
@@ -74,9 +82,6 @@ public class Credit_Save {
 				WebElement username = driverqa.findElement(LoginPage.LoginId);
 				username.clear();
 				username.sendKeys(excel.getData(0, 48, 1));
-				
-				//WebElement password = driverqa.findElement(LoginPage.password);
-				//password.clear();
 				wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.password));
 				driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 48, 2));
 				Thread.sleep(1000);
@@ -98,10 +103,7 @@ public class Credit_Save {
 		                        return ((JavascriptExecutor)driverqa).executeScript("return document.readyState").equals("complete");
 		                    }
 		                };
-		        //WebDriverWait waiting = new WebDriverWait(driverqa, 30);
 		        wait.until(pageLoadCondition);
-				//wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.Closetuto));
-				//driverqa.findElement(LoginPage.Closetuto).click();
 				action.sendKeys(Keys.ESCAPE).build().perform();
 				Thread.sleep(2000);
 				obj.Takesnap(driverqa, Config.SnapShotPath() + "/Save/Accommodation_Save_Credit/Log-In.jpg");
@@ -118,6 +120,8 @@ public class Credit_Save {
 			Assert.assertTrue(false, e.getMessage());
 						
 		}
+	           /* ####### Applying filters and searching for Hotel ######### **/   
+	           
 	           try {
 				logger.info("Applying search Filters");
 				   logger.info("Starting HotelSearch Credit");
@@ -148,8 +152,6 @@ public class Credit_Save {
 						
 					}
 					wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-					   //driverqa.findElement(Search.nextmnth).click();
-					   //driverqa.findElement(Search.nextmnth).click();
 						List<WebElement> allDates2=driverqa.findElements(Search.CalenderIN);
 						
 						for(WebElement ele:allDates2)
@@ -188,6 +190,8 @@ public class Credit_Save {
 				rep.flush();
 				Assert.assertTrue(false, e.getMessage());
 			}
+	           /* ####### Saving Itenary for the specified hotel ######### **/
+	           
 	           try {
 				test.log(LogStatus.INFO, "Starting Hotel Save Itenary");
 				   logger.info("Starting Hotel Save");
@@ -258,6 +262,9 @@ public class Credit_Save {
 				Assert.assertTrue(false, e.getMessage());
 			}
 			  	 }
+	 
+	 /* ####### Generating the Failure Reports and Screenshots ######### **/
+	 
 	 @AfterMethod
 	 public void getResult(ITestResult result) {
 		  if (result.getStatus() == ITestResult.FAILURE) {
@@ -268,6 +275,8 @@ public class Credit_Save {
 		  rep.endTest(test);
 		  }
 
+	 /* ####### Ending Tests ######### **/
+	 
 		@AfterTest
 		public void afterTest() {
 

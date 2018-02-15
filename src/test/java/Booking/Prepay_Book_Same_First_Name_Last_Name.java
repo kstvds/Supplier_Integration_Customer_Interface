@@ -137,7 +137,7 @@ public class Prepay_Book_Same_First_Name_Last_Name {
 			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
 			Thread.sleep(3000);
 			action.sendKeys(Keys.ARROW_DOWN).build().perform();
-			//action.sendKeys(Keys.ARROW_DOWN).build().perform();
+			// action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action.sendKeys(Keys.ENTER).build().perform();
 			test.log(LogStatus.INFO, "Selecting dates");
 			driverqa.findElement(Search.InDate).click();
@@ -245,6 +245,7 @@ public class Prepay_Book_Same_First_Name_Last_Name {
 			WebElement Element = driverqa.findElement(Booking.Invoice);
 
 			// This will scroll the page till the element is found
+
 			js.executeScript("arguments[0].scrollIntoView();", Element);
 			Thread.sleep(2000);
 			obj.Takesnap(driverqa, Config.SnapShotPath()

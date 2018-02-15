@@ -197,6 +197,7 @@ public class Credit_Book_Within_DeadLine {
 			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Within_DeadLine/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
 			ActualDeadLine = driverqa.findElement(Search.Deadlinetext).getText();
+			//expectedDaedline = "Within Deadline";
 			Assert.assertTrue(ActualDeadLine.contains(expectedDaedline));
 			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
 			test.log(LogStatus.INFO, "Ending HotelSearch Credit Within DeadLine");

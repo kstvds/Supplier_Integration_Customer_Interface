@@ -1,4 +1,4 @@
-package Amend;
+package Cancel;
 
 import java.util.List;
 
@@ -25,9 +25,10 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import ObjectRepository.Booking;
+import ObjectRepository.Cancel;
 import ObjectRepository.LoginPage;
+import ObjectRepository.PaymentPage;
 import ObjectRepository.Search;
-import ObjectRepository.Amend;
 import Utility.Configuration;
 import lib.DriverAndObjectDetails;
 import lib.ExcelDataConfig;
@@ -35,38 +36,31 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
-/* #######  Test for accommodation booking and amend for Prepay user #########
-######  Scenario Logs In, Books a specified hotel and amends the booking ##### */
+/* #######  Test for accommodation booking and Cancel for Credit Card user within Deadline #########
+######  Scenario Logs In, Books a specified hotel within Deadline and cancels the booking   ##### */
 
-public class Prepay_Amend {
+public class Cancel_Credit_Card_Within_DeadLine {
 	public WebDriver driverqa;
 	ExtentTest test;
 	String errorpath;
 	String Roomtype;
+	String ActualCancelStatus;
+	String ExpectedCancelStatus;
 	ExcelDataConfig excel;
-	String ActualAmendDateChkIn;
-	String ExpectedAmendDateChkIn;
-	String ActualAmendDateChkOut;
-	String ExpectedAmendDateChkOut;
-	String ActualConfirmedAmendTitle;
-	String ExpectedConfirmedAmendTitle;
-	String ActualAfterAmendDateChkIn;
-	String ExpectedAfterAmendDateChkIn;
-	String ActualAfterAmendDateChkOut;
-	String ExpectedAfterAmendDateChkOut;
+	String actualresultDeadline;
+	String expectedresultDeadline;
 	Configuration Config = new Configuration();
 	Takescreenshot obj = new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
-    LoginPage login = new LoginPage();
-	Logger logger = Logger.getLogger("Prepay_Amend");
+	LoginPage login = new LoginPage();
+	Logger logger = Logger.getLogger("Credit_Card_Cancel_Within_DeadLine");
 
 	/* ####### Passing browser as parameters in test ######### **/
 
 	@Test
 	@Parameters({ "browsername" })
-	public void PrepayAmend(String browsername) throws Exception {
-		test = rep.startTest("Prepay Amend");
-
+	public void CreditCardCancelWithinDeadLine(String browsername) throws Exception {
+		test = rep.startTest("Credit Card Cancel Within DeadLine");
 		excel = new ExcelDataConfig(Config.getExcelPathBook());
 		PropertyConfigurator.configure("Log4j.properties");
 		logger.info("Test Case Started");
@@ -77,7 +71,7 @@ public class Prepay_Amend {
 		} else {
 			driverqa = new DriverAndObjectDetails(DriverName.FF).CreateDriver();
 		}
-		WebDriverWait wait = new WebDriverWait(driverqa, 30);
+		WebDriverWait wait = new WebDriverWait(driverqa, 80);
 		Actions action = new Actions(driverqa);
 
 		/* ####### Login functionality ######### **/
@@ -90,13 +84,13 @@ public class Prepay_Amend {
 			test.log(LogStatus.INFO, "Starting Login");
 			WebElement username = driverqa.findElement(LoginPage.LoginId);
 			username.clear();
-			username.sendKeys(excel.getData(0, 47, 1));
+			username.sendKeys(excel.getData(0, 48, 1));
 			wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.password));
-			driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 47, 2));
+			driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 48, 2));
 			Thread.sleep(1000);
 			WebElement company = driverqa.findElement(LoginPage.Companycode);
 			company.clear();
-			company.sendKeys(excel.getData(0, 47, 3));
+			company.sendKeys(excel.getData(0, 48, 3));
 			driverqa.findElement(LoginPage.Submit).click();
 			Thread.sleep(2000);
 			String expectedtitle = "DOTWconnect.com";
@@ -115,13 +109,16 @@ public class Prepay_Amend {
 			wait.until(pageLoadCondition);
 			action.sendKeys(Keys.ESCAPE).build().perform();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Log-In.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Log-In.jpg");
 
 		} catch (Throwable e) {
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Prepay/Log-In.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Error/Accommodation_Cancel_Credit_Card_Within_DeadLine/Log-In.jpg");
 			test.log(LogStatus.FAIL, "Login");
-			errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Prepay/Log-In.jpg";
+			errorpath = Config.SnapShotPath()
+					+ "/Cancel/Error/Accommodation_Cancel_Credit_Card_Within_DeadLine/Log-In.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -130,12 +127,12 @@ public class Prepay_Amend {
 
 		}
 
-		/* ####### Applying filters and searching for filters ######### **/
+		/* ####### Applying filters and searching for Hotel ######### **/
 
 		try {
 			logger.info("Applying search Filters");
-			logger.info("Starting HotelSearch Prepay");
-			test.log(LogStatus.INFO, "Starting HotelSearch Prepay");
+			logger.info("Starting HotelSearch Credit Card");
+			test.log(LogStatus.INFO, "Starting HotelSearch Credit Card");
 			Thread.sleep(2000);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.dest));
 			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
@@ -146,54 +143,70 @@ public class Prepay_Amend {
 			test.log(LogStatus.INFO, "Selecting dates");
 			driverqa.findElement(Search.InDate).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-			driverqa.findElement(Search.nextmnth).click();
-			driverqa.findElement(Search.nextmnth).click();
 			List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
 
 			for (WebElement ele : allDates) {
 
 				String date = ele.getText();
 
-				if (date.equalsIgnoreCase(excel.getData(0, 51, 1))) {
+				if (date.equalsIgnoreCase(excel.getData(0, 54, 1))) {
 					ele.click();
 					break;
 				}
 
 			}
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-			// driverqa.findElement(Search.nextmnth).click();
-			// driverqa.findElement(Search.nextmnth).click();
+
 			List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
 
 			for (WebElement ele : allDates2) {
 
 				String date = ele.getText();
 
-				if (date.equalsIgnoreCase(excel.getData(0, 51, 2))) {
+				if (date.equalsIgnoreCase(excel.getData(0, 54, 2))) {
 					ele.click();
 					break;
 				}
 
 			}
 			test.log(LogStatus.PASS, "Selection of Dates");
-
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Filters.jpg");
+			obj.Takesnap(driverqa,
+					Config.SnapShotPath() + "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Filters.jpg");
 			String expectedresult = excel.getData(0, 9, 1);
+			expectedresultDeadline = excel.getData(0, 30, 1);
 			driverqa.findElement(Search.SearchBtn).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
+			if (driverqa.findElements(Booking.ClickDeadline).size() != 0) {
+				WebElement element1 = driverqa.findElement(Booking.ClickDeadline);
+				JavascriptExecutor js = (JavascriptExecutor) driverqa;
+				js.executeScript("var evt = document.createEvent('MouseEvents');"
+						+ "evt.initMouseEvent('click',true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0,null);"
+						+ "arguments[0].dispatchEvent(evt);", element1);
+				Thread.sleep(2000);
+				wait.until(ExpectedConditions.visibilityOfElementLocated(Search.Deadlinetext));
+			}
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Search-Result.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Search-Result.jpg");
 			String actualresult = driverqa.findElement(Search.HotelTitle).getText();
+			actualresultDeadline = driverqa.findElement(Search.Deadlinetext).getText();
+			System.out.println(actualresultDeadline);
+			// expectedresultDeadline = "Within Deadline";
+			System.out.println(actualresult);
+			System.out.println(expectedresult);
+			Assert.assertTrue(actualresultDeadline.contains(expectedresultDeadline));
 			Assert.assertTrue(actualresult.equalsIgnoreCase(expectedresult));
-			test.log(LogStatus.INFO, "Ending HotelSearch Prepay");
-			test.log(LogStatus.PASS, "PASSED HotelSearch Prepay");
-			logger.info("Hotel Search Complete Prepay");
+			test.log(LogStatus.INFO, "Ending HotelSearch Credit Card");
+			test.log(LogStatus.PASS, "PASSED HotelSearch Credit Card");
+			logger.info("Hotel Search Complete Credit Card");
 		} catch (Throwable e) {
-			test.log(LogStatus.FAIL, "Hotel Search Prepay");
+			test.log(LogStatus.FAIL, "Hotel Search Credit Card");
 
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Prepay/Search-Result.jpg");
-			errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Prepay/Search-Result.jpg";
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Error/Accommodation_Cancel_Credit_Card_Within_DeadLine/Search-Result.jpg");
+			errorpath = Config.SnapShotPath()
+					+ "/Cancel/Error/Accommodation_Cancel_Credit_Card_Within_DeadLine/Search-Result.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -222,36 +235,71 @@ public class Prepay_Amend {
 			passengertitle.selectByIndex(1);
 			if (driverqa.findElements(Booking.TwoPaxFirstName).size() != 0) {
 				driverqa.findElement(Booking.TwoPaxFirstName).sendKeys(excel.getData(0, 22, 1));
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 				driverqa.findElement(Booking.TwoPaxLastName).sendKeys(excel.getData(0, 22, 2));
 				Select passengertitle2 = new Select(driverqa.findElement(Booking.TwoPaxTitle));
 				passengertitle2.selectByIndex(1);
 			}
 			driverqa.findElement(Booking.PrcdToBookChckBox).click();
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Passenger-Details.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Passenger-Details.jpg");
 			logger.info("Entered Passenger details");
 			test.log(LogStatus.INFO, "Entered Passenger details");
 			test.log(LogStatus.PASS, "Passenger details");
 			driverqa.findElement(Booking.ConfirmBook).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ProccedToBook));
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Confirm-Booking.jpg");
+			driverqa.findElement(Booking.ProccedToBook).click();
+			logger.info("Entering Payment details");
+			test.log(LogStatus.INFO, "Entering Payment details");
+			wait.until(ExpectedConditions.visibilityOfElementLocated(PaymentPage.FirstName));
+			WebElement FirstName = driverqa.findElement(PaymentPage.FirstName);
+			FirstName.clear();
+			FirstName.sendKeys(excel.getData(0, 22, 1));
+			WebElement LastName = driverqa.findElement(PaymentPage.LastName);
+			LastName.clear();
+			LastName.sendKeys(excel.getData(0, 22, 2));
+			WebElement Address = driverqa.findElement(PaymentPage.Address);
+			Address.clear();
+			Address.sendKeys("Kolkata1234");
+			WebElement CardNo = driverqa.findElement(PaymentPage.CardNumber);
+			CardNo.clear();
+			CardNo.sendKeys(excel.getData(0, 42, 1));
+			WebElement CVVNo = driverqa.findElement(PaymentPage.CVVNumber);
+			CVVNo.clear();
+			CVVNo.sendKeys(excel.getData(0, 43, 1));
+			driverqa.findElement(PaymentPage.AcceptTerms).click();
+			logger.info("Entered Payment details");
+			test.log(LogStatus.INFO, "Entered Payment details");
+			test.log(LogStatus.PASS, "Payment details");
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Payment-Details.jpg");
+			driverqa.findElement(PaymentPage.Acceptpayment).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.ViewBooking));
+			JavascriptExecutor js = (JavascriptExecutor) driverqa;
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Search-Booking-Page.jpg");
+			driverqa.findElement(Booking.ViewBooking).click();
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Booking-Details1.jpg");
 
+			// This will scroll the page till the end of the page
+
+			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			Thread.sleep(2000);
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Booking-Details2.jpg");
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Booking.BookingStatusPrepay));
 			String ExpectedStatus = "Confirmed";
 			String ExpectedNoOfAdults = "2 Adults";
 			String ActualNoOfAdults = driverqa.findElement(Booking.noOfAdultsPrepay).getText();
 			String ActualStatus = driverqa.findElement(Booking.BookingStatusPrepay).getText();
-			// System.out.println(ActualNoOfAdults);
-			// System.out.println(ActualStatus);
-			JavascriptExecutor js = (JavascriptExecutor) driverqa;
-			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Booking-Details1.jpg");
-			WebElement Element = driverqa.findElement(Booking.Invoice);
-
-			// This will scroll the page till the element is found
-			
-			js.executeScript("arguments[0].scrollIntoView();", Element);
-			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Booking-Details2.jpg");
 			Assert.assertTrue(ActualStatus.equalsIgnoreCase(ExpectedStatus));
 			Assert.assertTrue(ActualNoOfAdults.equalsIgnoreCase(ExpectedNoOfAdults));
 			test.log(LogStatus.INFO, "Ending Hotel Book");
@@ -259,9 +307,11 @@ public class Prepay_Amend {
 			logger.info("Hotel Booked");
 
 		} catch (Throwable e) {
-			test.log(LogStatus.FAIL, "Hotel Book Prepay");
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Prepay/Booking.jpg");
-			errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Prepay/Booking.jpg";
+			test.log(LogStatus.FAIL, "Hotel Book Credit Card");
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Error/Accommodation_Cancel_Credit_Card_Within_DeadLine/Booking.jpg");
+			errorpath = Config.SnapShotPath()
+					+ "/Cancel/Error/Accommodation_Cancel_Credit_Card_Within_DeadLine/Booking.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -269,92 +319,51 @@ public class Prepay_Amend {
 			Assert.assertTrue(false, e.getMessage());
 		}
 
-		/* ####### Amending the booking on a different date ######### **/
+		/* ####### Canceling the booking ######### **/
 
-		test.log(LogStatus.INFO, "Starting Hotel Amend");
-		logger.info("Starting Hotel Amend");
+		test.log(LogStatus.INFO, "Starting Hotel Cancel");
+		logger.info("Starting Hotel Cancel");
 		try {
-			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendButton));
-			driverqa.findElement(Amend.AmendButton).click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.VerifyAmendPage));
-			test.log(LogStatus.INFO, "Selecting new dates");
-			driverqa.findElement(Amend.Checkin).click();
-			// wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-			// driverqa.findElement(Search.nextmnth).click();
-			// driverqa.findElement(Search.nextmnth).click();
-			List<WebElement> allDates = driverqa.findElements(Search.CalenderIN);
-
-			for (WebElement ele : allDates) {
-
-				String date = ele.getText();
-
-				if (date.equalsIgnoreCase(excel.getData(0, 52, 1))) {
-					ele.click();
-					break;
-				}
-
-			}
-			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.CalenderIN));
-			// driverqa.findElement(Search.nextmnth).click();
-			// driverqa.findElement(Search.nextmnth).click();
-			List<WebElement> allDates2 = driverqa.findElements(Search.CalenderIN);
-
-			for (WebElement ele : allDates2) {
-
-				String date = ele.getText();
-
-				if (date.equalsIgnoreCase(excel.getData(0, 52, 2))) {
-					ele.click();
-					break;
-				}
-
-			}
-			test.log(LogStatus.PASS, "Selection of new Dates");
-
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Cancel.CancelButton));
+			driverqa.findElement(Cancel.CancelButton).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Cancel.ConfirmWithinDeadLineCancel));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Changed-Dates.jpg");
-			driverqa.findElement(Amend.AfterAmendButton).click();
-
-			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendConfirmPageCheckIn));
-			ActualAmendDateChkIn = driverqa.findElement(Amend.AmendConfirmPageCheckIn).getText();
-			ActualAmendDateChkOut = driverqa.findElement(Amend.AmendConfirmPageCheckOut).getText();
-			ExpectedAmendDateChkIn = excel.getData(0, 52, 1);
-			ExpectedAmendDateChkOut = excel.getData(0, 52, 2);
-			Assert.assertTrue(ActualAmendDateChkIn.contains(ExpectedAmendDateChkIn));
-			Assert.assertTrue(ActualAmendDateChkOut.contains(ExpectedAmendDateChkOut));
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Confirm-Within-DeadLine.jpg");
+			driverqa.findElement(Cancel.ConfirmWithinDeadLineCancel).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Cancel.ProceedWithCancel));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa,
-					Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Amend-Confirmation-Page.jpg");
-			test.log(LogStatus.INFO, "Confirming Changes");
-			logger.info("Confirming Changes");
-			driverqa.findElement(Amend.ConfirmChanges).click();
-			wait.until(ExpectedConditions.visibilityOfElementLocated(Amend.AmendSuccessTitle));
-			ActualConfirmedAmendTitle = driverqa.findElement(Amend.AmendSuccessTitle).getText();
-			ActualAfterAmendDateChkIn = driverqa.findElement(Amend.AfterAmendChckIn).getText();
-			ActualAfterAmendDateChkOut = driverqa.findElement(Amend.AfterAmendChckOut).getText();
-			System.out.println(ActualConfirmedAmendTitle);
-			ExpectedAfterAmendDateChkIn = excel.getData(0, 52, 1);
-			ExpectedAfterAmendDateChkOut = excel.getData(0, 52, 2);
-			ExpectedConfirmedAmendTitle = "Successfully amended";
-			Assert.assertTrue(ActualConfirmedAmendTitle.contains(ExpectedConfirmedAmendTitle));
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/Proceed-With-Cancellation.jpg");
+			driverqa.findElement(Cancel.ProceedWithCancel).click();
+			wait.until(ExpectedConditions.visibilityOfElementLocated(Cancel.AfterCancelStatus));
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Amend-Confirmed1.jpg");
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/After-Cancel1.jpg");
 			JavascriptExecutor js = (JavascriptExecutor) driverqa;
-			js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			ActualCancelStatus = driverqa.findElement(Cancel.AfterCancelStatus).getText();
+			System.out.println(ActualCancelStatus);
+			ExpectedCancelStatus = "CANCELLED";
+			Assert.assertTrue(ActualCancelStatus.contains(ExpectedCancelStatus));
+			WebElement Element = driverqa.findElement(Cancel.BookingCancellation);
+
+			// This will scroll the page till the element is found
+
+			js.executeScript("arguments[0].scrollIntoView();", Element);
 			Thread.sleep(2000);
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Accommodation_Amend_Prepay/Amend-Confirmed2.jpg");
-			Assert.assertTrue(ActualAfterAmendDateChkIn.contains(ExpectedAfterAmendDateChkIn));
-			Assert.assertTrue(ActualAfterAmendDateChkOut.contains(ExpectedAfterAmendDateChkOut));
-			test.log(LogStatus.PASS, "Confirmed Changes");
-			logger.info("Confirmed Changes");
-			test.log(LogStatus.INFO, "Ending Hotel Amend");
-			test.log(LogStatus.PASS, "Hotel Amend");
-			logger.info("Hotel Amended");
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Accommodation_Cancel_Credit_Card_Within_DeadLine/After-Cancel2.jpg");
+
+			test.log(LogStatus.INFO, "Ending Hotel Cancel");
+			test.log(LogStatus.PASS, "Hotel Cancel");
+			logger.info("Hotel Cancelled");
 
 		} catch (Throwable e) {
-			test.log(LogStatus.FAIL, "Hotel Amend Prepay");
-			obj.Takesnap(driverqa, Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Prepay/Amending.jpg");
-			errorpath = Config.SnapShotPath() + "/Amend/Error/Accommodation_Amend_Prepay/Amending.jpg";
+			test.log(LogStatus.FAIL, "Hotel Cancel Credit Card Within DeadLine");
+			obj.Takesnap(driverqa, Config.SnapShotPath()
+					+ "/Cancel/Error/Accommodation_Cancel_Credit_Card_Within_DeadLine/Cancellation.jpg");
+			errorpath = Config.SnapShotPath()
+					+ "/Cancel/Error/Accommodation_Cancel_Credit_Card_Within_DeadLine/Cancellation.jpg";
 			logger.info(e.getMessage());
 			test.log(LogStatus.FAIL, e.getMessage());
 			rep.endTest(test);
@@ -364,7 +373,7 @@ public class Prepay_Amend {
 	}
 
 	/* ####### Generating the Failure Reports and Screenshots ######### **/
-	
+
 	@AfterMethod
 	public void getResult(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
@@ -376,7 +385,7 @@ public class Prepay_Amend {
 	}
 
 	/* ####### Ending Tests ######### **/
-	
+
 	@AfterTest
 	public void afterTest() {
 

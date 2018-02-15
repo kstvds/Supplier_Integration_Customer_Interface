@@ -34,19 +34,23 @@ import lib.ExtentManager;
 import lib.Takescreenshot;
 import lib.DriverAndObjectDetails.DriverName;
 
+/* #######  Test for accommodation saving itenary for Credit card user #########
+######  Scenario Logs In, Searches a specified hotel and then saves the itenary   ##### */
+
 public class Credit_Card_Save {
 	public WebDriver driverqa;
+	ExtentTest test;
+	String errorpath;
+	String Roomtype;
+	ExcelDataConfig excel;
 	Configuration Config = new Configuration();
 	Takescreenshot obj= new Takescreenshot();
 	ExtentReports rep = ExtentManager.getInstance();
-	ExtentTest test;
 	LoginPage login = new LoginPage();
-	//HomePage home = new HomePage();
-	//NewAccoBooking acco = new NewAccoBooking();
-	//Operations opo = new Operations();
 	Logger logger = Logger.getLogger("Credit_Card_Save");
-	String errorpath;
-	String Roomtype;
+	
+	/* ####### Passing browser as parameters in test ######### **/
+	
 	 @Test
 	 @Parameters({ "browsername" })
 	  public void CreditCardSave(String browsername) throws Exception {
@@ -64,6 +68,9 @@ public class Credit_Card_Save {
 				}
 			    WebDriverWait wait= new WebDriverWait(driverqa, 30);
 			    Actions action = new Actions(driverqa);
+			    
+			    /* ####### Login functionality ######### **/
+			    
 	           try{
 			    logger.info("Browser Opened");
 			    String URL = excel.getData(0, 1, 5) + "/interface/en";
@@ -73,9 +80,6 @@ public class Credit_Card_Save {
 				WebElement username = driverqa.findElement(LoginPage.LoginId);
 				username.clear();
 				username.sendKeys(excel.getData(0, 48, 1));
-				
-				//WebElement password = driverqa.findElement(LoginPage.password);
-				//password.clear();
 				wait.until(ExpectedConditions.visibilityOfElementLocated(LoginPage.password));
 				driverqa.findElement(LoginPage.password).sendKeys(excel.getData(0, 48, 2));
 				Thread.sleep(1000);
@@ -118,6 +122,9 @@ public class Credit_Card_Save {
 			Assert.assertTrue(false, e.getMessage());
 						
 		}
+	           
+	           /* ####### Applying filters and searching for Hotel ######### **/  
+	           
 	           try {
 				logger.info("Applying search Filters");
 				   logger.info("Starting HotelSearch Credit Card");
@@ -188,6 +195,9 @@ public class Credit_Card_Save {
 				rep.flush();
 				Assert.assertTrue(false, e.getMessage());
 			}
+	           
+	           /* ####### Saving Itenary for the specified hotel ######### **/
+	           
 	           try {
 				test.log(LogStatus.INFO, "Starting Hotel Save 1st Itenary");
 				   logger.info("Starting Hotel Save");
@@ -308,6 +318,9 @@ public class Credit_Card_Save {
 				Assert.assertTrue(false, e.getMessage());
 			}
 			  	 }
+	 
+	 /* ####### Generating the Failure Reports and Screenshots ######### **/
+	 
 	 @AfterMethod
 	 public void getResult(ITestResult result) {
 		  if (result.getStatus() == ITestResult.FAILURE) {
@@ -318,6 +331,8 @@ public class Credit_Card_Save {
 		  rep.endTest(test);
 		  }
 
+	 /* ####### Ending Tests ######### **/
+	 
 		@AfterTest
 		public void afterTest() {
 

@@ -137,7 +137,7 @@ public class Credit_Card_Book_Within_DeadLine {
 			driverqa.findElement(Search.dest).sendKeys(excel.getData(0, 9, 1));
 			Thread.sleep(3000);
 			action.sendKeys(Keys.ARROW_DOWN).build().perform();
-			//action.sendKeys(Keys.ARROW_DOWN).build().perform();
+			// action.sendKeys(Keys.ARROW_DOWN).build().perform();
 			action.sendKeys(Keys.ENTER).build().perform();
 			test.log(LogStatus.INFO, "Selecting dates");
 			driverqa.findElement(Search.InDate).click();
@@ -176,6 +176,7 @@ public class Credit_Card_Book_Within_DeadLine {
 			obj.Takesnap(driverqa,
 					Config.SnapShotPath() + "/Book/Accommodation_Book_Credit_Card_Within_DeadLine/Filters.jpg");
 			String expectedresult = excel.getData(0, 9, 1);
+			expectedDaedline = excel.getData(0, 30, 1);
 			driverqa.findElement(Search.SearchBtn).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(Search.HotelTitle));
 			if (driverqa.findElements(Booking.ClickDeadline).size() != 0) {
