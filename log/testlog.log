@@ -5336,3 +5336,17 @@ Session ID: 02bfff19a2cdc31eecd177ddc19afee4
 2018-02-15 18:02:12,770 - Credit_Save -INFO - Hotel Saved
 2018-02-15 18:02:12,770 - Credit_Save -INFO - Deleting itenary from Cart
 2018-02-15 18:02:17,784 - Credit_Save -INFO - Deleted from Cart
+2018-02-28 13:16:05,915 - Credit_Save -INFO - Test Case Started
+2018-02-28 13:16:11,810 - Credit_Save -INFO - Browser Opened
+2018-02-28 13:16:54,740 - Credit_Save -INFO - Test Case Started
+2018-02-28 13:16:55,215 - Credit_Save -INFO - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='userID']"}
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 10.0.14393 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 93 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'PC350015', ip: '10.245.98.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\479739\AppData\Local\Temp\scoped_dir17828_19831}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.62, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=false, acceptInsecureCerts=false, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: ea73a0be9284281da63a2dd9cc85c4be
+*** Element info: {Using=xpath, value=//*[@id='userID']}
